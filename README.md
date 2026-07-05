@@ -47,7 +47,7 @@ to screen.
 
 ## Contact
 
-Email: **agrabaad@gmail.com**
+Email: **anahita.arhania@gmail.com**, **zzaa.wann@gmail.com**
 
 ## License
 
