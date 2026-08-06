@@ -47,7 +47,7 @@ to screen.
 
 ## Contact
 
-Email: **anahita.arhania@gmail.com**, **zzaa.wann@gmail.com**
+Email: **anahita.arhania@gmail.com**, **zzaa.wann@gmail.com**, **aetherica.inc@gmail.com**
 
 ## License
 
