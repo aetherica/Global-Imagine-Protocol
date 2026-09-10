@@ -14,7 +14,7 @@ The audit checks:
 4. alignment of identity, namespace, terminology, documentation, governance, change, quality, release, compatibility, interoperability, contribution, roadmap, mission, vision, scope, and principles;
 5. distinction between status, validation, confidence, authority, provenance, integrity, and authentication/signature;
 6. preservation and versioning discipline;
-7. integrity-proof definition and its relationship to release policy;
+7. integrity-proof definition, operational application, and its relationship to release policy;
 8. absence of V4 material from V3.1 Foundation content unless explicitly discussing migration architecture.
 
 ## Final findings
@@ -29,9 +29,11 @@ The audit checks:
 | Documentation vs canonical knowledge | PASS | Documentation policy governs presentation and retrieval behavior without changing canonical meaning. |
 | Governance vs change management | PASS | Governance defines decision authority; change management defines the controlled change sequence and preservation discipline. |
 | Quality vs release | PASS | Quality defines quality dimensions/gates; release policy defines release readiness and lifecycle discipline. |
-| Immutable proof boundary | PASS | SHA-512, 512-bit digest, lowercase hexadecimal encoding, and 128-character canonical representation are defined in the dedicated integrity policy. |
+| Immutable-proof convention definition | PASS | SHA-512, 512-bit digest, lowercase hexadecimal encoding, and 128-character canonical representation are defined in the dedicated integrity policy. |
+| Immutable-proof operational application | PASS | A declared V3.1 canonical proof input has been hashed with SHA-512 and recorded as a 128-character lowercase hexadecimal digest in `IMMUTABLE-PROOF-RECORD-V3.1.md`. |
 | Integrity vs provenance/validation/authority | PASS | These trust concepts are explicitly separated. |
 | Release integrity linkage | PASS | Release policy references the canonical integrity policy without duplicating its hash specification. |
+| Release-bearing artifact proof coverage | NOT YET IMPLEMENTED | No claim is made here that every future release-bearing artifact already has an operational digest record. Such verification is required when the release process declares it applicable. |
 | Compatibility vs interoperability | PASS | Compatibility governs version/artifact compatibility dimensions; interoperability governs external mappings and relations. |
 | Preservation / no silent deletion | PASS | Preservation is stated across principles, change management, compatibility, versioning, and release discipline. |
 | Versioning consistency | PASS | Major/minor/patch significance is defined without forcing artifact versions to equal repository release versions. |
@@ -40,6 +42,8 @@ The audit checks:
 ## Controlled observations
 
 The Foundation policies are intentionally concise. They establish the governing contract needed for downstream work; detailed domain definitions, registry mechanics, schemas, and implementation behavior remain outside Foundation unless explicitly required to govern the framework itself.
+
+The immutable-proof rule is no longer policy-only: its first operational conformance record exists in the Foundation quality-policy layer. The proof record is limited to the declared canonical test input and must not be interpreted as proof coverage for unrelated repository artifacts, releases, authorship, or legal authority.
 
 The current policy set does not by itself constitute a complete implementation of every future automation, validation pipeline, or registry service. Those belong to downstream operationalization and must trace back to these Foundation rules.
 
