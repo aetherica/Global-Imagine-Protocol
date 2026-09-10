@@ -18,6 +18,8 @@ A material artifact should pass: identity check → responsibility check → str
 
 Cryptographic integrity fingerprints MUST follow `INTEGRITY-AND-IMMUTABLE-PROOF-POLICY.md` when the GIOP immutable-proof convention is declared. The canonical V3.1 form is SHA-512, encoded as exactly 128 lowercase hexadecimal characters.
 
+The operational application of this rule is recorded in `IMMUTABLE-PROOF-RECORD-V3.1.md` against `IMMUTABLE-PROOF-INPUT-V3.1.md`. That record demonstrates the required 128-character SHA-512 representation and the verification procedure for a declared canonical input.
+
 ## Trust distinctions
 
 Status, validation, confidence, authority, provenance, and integrity are distinct fields and must not be used as synonyms.
