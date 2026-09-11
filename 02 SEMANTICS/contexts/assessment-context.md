@@ -57,10 +57,6 @@ Use Assessment Context to qualify benchmark or evaluation results. Preserve task
 
 `assessment context`, `evaluation context`, `subjective assessment`, `test material`, `assessment session`, `service-use context`, `evaluation setting`.
 
-## Visitor Universe
-
-Primary: QA/Testing/Benchmark, Standards/Specification, Human Vision/Perception Researcher, Color Scientist, Imaging Scientist, Journalist/Technical Communicator, Policy/Legal/Compliance, and Machine/AI benchmark consumers. Creators and engineers enter when interpreting test results or comparative evaluations.
-
 ## What This Context Does Not Mean
 
 Not the assessment result, test material itself, observer, procedure, or viewing condition alone.
