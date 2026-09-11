@@ -1,61 +1,112 @@
 # Optical Condition
 
-**Semantic ID:** `SEM-CONDITION-OPTICAL-001`
-**Preferred Name:** Optical Condition
-**Semantic Class:** Condition
-**Domain:** Optical Imaging
-**Status:** Provisional
-**Version:** 0.1.0
+**Semantic ID:** `SEM-CONDITION-OPTICAL-001`  
+**Preferred Name:** Optical Condition  
+**Semantic Class:** Condition  
+**Domain:** Optical Imaging  
+**Status:** Provisional  
+**Version:** 0.2.0
 
 ## 5W1H Orientation
 
 ### What
-An optical condition is a defined state of relevant optical influence at a specified spatial, temporal, spectral, directional, and observational context.
+
+An Optical Condition is the defined state of relevant optical influence within a specified spatial, temporal, spectral, directional, observational, or measurement context.
+
+It provides a common semantic basis for describing conditions such as Light, Dark, Illumination, optical availability, and related imaging circumstances.
 
 ### Why
-Imaging begins with physical conditions that determine whether radiation is available to interact with an object, surface, aperture, observer, or sensing system. A common semantic concept is required so that terms such as light, dark, illumination, shadow, visibility, and received radiation can be related without treating them as interchangeable.
+
+Imaging depends on physical and contextual conditions that determine whether radiation exists, propagates, interacts with matter, reaches a receiver, or becomes observable or measurable.
+
+Without a common condition concept, terms such as Light, Dark, Illumination, Shadow, Visibility, and Received Radiation can be incorrectly treated as interchangeable.
 
 ### Who
-This concept is relevant to anyone who needs to understand, measure, model, capture, reproduce, simulate, or interpret optical imaging conditions, from general visitors and students through imaging professionals, engineers, scientists, validation specialists, and machine-readable consumers.
+
+The concept is relevant to anyone who needs to describe, interpret, model, measure, capture, simulate, reproduce, validate, or retrieve optical imaging conditions.
+
+This includes general visitors, students, educators, photographers, cinematographers, imaging engineers, scientists, metrology professionals, AI systems, and machine-readable consumers.
 
 ### Where
-It applies wherever optical radiation is observed, measured, modeled, transformed, represented, or reproduced.
+
+Optical conditions may be defined in a physical scene, optical system, measurement setup, sensor environment, viewing environment, display environment, simulation, or computational imaging system.
 
 ### When
-The condition is always evaluated for a defined temporal context. An optical condition may change with exposure time, motion, illumination, environment, adaptation, or other time-dependent factors.
+
+An Optical Condition is always associated with a temporal context.
+
+It may vary continuously or discretely with illumination, motion, exposure, environmental change, source activity, sensor state, observer adaptation, or other time-dependent factors.
 
 ### How
-An optical condition is characterized relative to relevant radiation and the receiving or observing system. The same physical scene may therefore have different operational consequences for different sensors or observers.
+
+An Optical Condition is characterized relative to relevant optical radiation and the entities, regions, observers, sensors, or measurement systems affected by that radiation.
+
+The same physical environment may therefore produce different operational consequences for different observers or sensing systems.
 
 ## Semantic Definition
 
-**Optical Condition** is the state of relevant optical influence at a defined spatial, temporal, spectral, directional, and observational context.
+**Optical Condition** is the contextual state of relevant optical influence at a defined spatial, temporal, spectral, directional, observational, or measurement context.
 
-This definition is contextual rather than absolute. It does not assert that an optical condition is a substance, object, or universal binary numerical state.
+The concept is contextual rather than absolute.
+
+An Optical Condition is not itself:
+
+- a physical substance;
+- an optical quantity;
+- a measurement result;
+- a perceptual state;
+- a digital representation;
+- a device;
+- a registered entity.
 
 ## Core Distinctions
 
-- **Light** and **Dark** are complementary semantic conditions within the optical domain.
-- **Dark** does not necessarily mean zero radiation.
-- **Physical darkness**, **sensor dark signal**, **display dark**, and **perceived darkness** are distinct contexts.
-- **Shadow** is an optical phenomenon produced by occlusion and reduced direct visibility of a source; it is not synonymous with darkness.
-- **Visibility** describes an observation relationship, not merely the presence of radiation.
+### Optical Condition vs Light Condition
 
-## Context Requirements
+An Optical Condition is the broader contextual category.
 
-An optical-condition statement should identify, where relevant:
+Light Condition identifies a condition in which relevant optical radiation is present or operative within a defined context.
 
-- spatial location or region;
-- temporal interval or instant;
+### Optical Condition vs Dark Condition
+
+Dark Condition identifies a condition in which relevant radiation is absent, negligible, blocked, unavailable, or below a defined operational regime.
+
+Darkness does not necessarily imply zero physical radiation.
+
+### Optical Condition vs Illumination Condition
+
+Illumination Condition concerns the optical influence applied to a receiving region, surface, object, or scene.
+
+Light may be present without a particular receiving region being directly illuminated.
+
+### Optical Condition vs Perception
+
+An optical condition is not the same thing as how an observer perceives it.
+
+Physical radiation, sensor response, and perceived brightness or darkness may differ substantially.
+
+### Optical Condition vs Measurement
+
+An optical condition may be measured, but the condition itself is not the measurement result.
+
+## Context Dimensions
+
+Where relevant, an Optical Condition should be interpreted with respect to:
+
+- spatial region or location;
+- temporal instant or interval;
 - spectral domain;
 - propagation or observation direction;
-- source and receiving system;
-- observer or sensor characteristics;
+- source or originating region;
+- receiving surface, object, sensor, or observer;
+- sensor or observer characteristics;
 - measurement configuration;
 - relevant threshold or sensitivity;
 - whether the statement concerns physical state, measurement, representation, or perception.
 
-## Relations
+## Semantic Relations
+
+Potential canonical relations include:
 
 - `has-condition`
 - `has-optical-availability`
@@ -64,21 +115,34 @@ An optical-condition statement should identify, where relevant:
 - `receives`
 - `occludes`
 - `is-visible-from`
-- `measures`
+- `affects-observation`
+- `affects-measurement`
 - `represents`
+
+These relations are defined independently in the GIOP semantic relation domain.
+
+## Cross-Domain Significance
+
+Optical Condition provides a semantic bridge between:
+
+`Light / Dark → Availability → Illumination → Interaction → Observation → Measurement → Capture → Representation → Perception`
+
+The concept therefore has relevance across the physical, optical, sensing, computational, perceptual, display, and imaging domains.
 
 ## Trust
 
-This entry establishes semantic meaning only. It does not by itself establish a numerical threshold, measurement standard, sensor specification, or perceptual threshold.
+This entry defines semantic meaning.
 
-The concepts are aligned with the broader GIOP imaging chain from observation and measurement through computation and perception. Numerical definitions and domain-specific measurement procedures belong to the relevant technical content and authoritative standards.
+It does not establish a universal numerical threshold for Light, Dark, Visibility, Illumination, or Detectability.
+
+Numerical thresholds, sensor characteristics, radiometric quantities, metrological procedures, perceptual models, and domain-specific performance criteria belong to their responsible semantic or technical domains.
 
 ## Lifecycle
 
 **Current state:** Provisional semantic entry.
 
-This entry is intended for review, cross-domain verification, refinement, and eventual canonical registration when the required evidence and semantic validation are complete.
+The concept is intended for continued cross-domain verification and eventual canonical validation and registration when the required semantic and evidentiary requirements are satisfied.
 
 ## Retrieval Anchors
 
-`OPTICAL CONDITION`, `LIGHT`, `DARK`, `OPTICAL AVAILABILITY`, `VISIBILITY`, `ILLUMINATION`, `OCCLUSION`, `SHADOW`, `RECEIVED RADIATION`, `MEASUREMENT`, `PERCEPTION`
+`OPTICAL CONDITION`, `LIGHT CONDITION`, `DARK CONDITION`, `ILLUMINATION CONDITION`, `OPTICAL AVAILABILITY`, `VISIBILITY`, `OCCLUSION`, `SHADOW`, `RECEIVED RADIATION`, `OBSERVATION`, `MEASUREMENT`, `PERCEPTION`
