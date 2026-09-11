@@ -1,99 +1,146 @@
-# Dark
+# Dark Condition
 
-**Semantic ID:** `SEM-CONDITION-DARK-001`
-**Preferred Name:** Dark
-**Semantic Class:** Optical Condition
-**Domain:** Optical Imaging
-**Status:** Provisional
-**Version:** 0.1.0
+**Semantic ID:** `SEM-CONDITION-DARK-001`  
+**Preferred Name:** Dark Condition  
+**Semantic Class:** Optical Condition  
+**Domain:** Optical Imaging  
+**Status:** Provisional  
+**Version:** 0.2.0
 
 ## 5W1H Orientation
 
 ### What
-Dark is the condition in which relevant optical radiation is absent, negligible, obstructed, or insufficient for a specified observation or measurement under defined conditions.
+
+A Dark Condition is an Optical Condition in which relevant optical radiation is absent, negligible, blocked, unavailable, or insufficient for a defined observational or measurement context.
 
 ### Why
-Darkness is not simply the opposite word for a bright pixel. It is a physically and operationally meaningful condition that affects observation, measurement, capture, detectability, representation, computation, and perception.
+
+Darkness is fundamental to imaging, but it is frequently misunderstood.
+
+Physical darkness is not necessarily equivalent to zero radiation, zero sensor output, zero display output, black image values, underexposure, shadow, or perceived darkness.
+
+A precise Dark Condition allows these different meanings to remain distinct.
 
 ### Who
-The concept is relevant to general visitors and students as well as photographers, cinematographers, sensor and optical engineers, imaging scientists, computer-vision and AI researchers, calibration and metrology professionals, forensic specialists, system integrators, and machine-readable consumers.
+
+The concept is relevant to all imaging participants, including general visitors, photographers, cinematographers, optical and sensor engineers, imaging scientists, metrology professionals, machine-vision engineers, AI systems, forensic analysts, and machine-readable consumers.
 
 ### Where
-It applies to defined spatial regions, optical paths, environments, measurement configurations, sensor conditions, and other imaging contexts in which relevant radiation is unavailable or insufficient.
+
+It may occur in physical scenes, optical paths, shadow regions, measurement configurations, sensor environments, display systems, simulations, or other imaging contexts.
 
 ### When
-Darkness is evaluated for a defined temporal condition. A region may transition between light and dark, and a sensor may experience a dark measurement condition even while the surrounding environment contains radiation outside the measurement path or spectral band.
+
+Dark Condition is always evaluated for a specified temporal context.
+
+A region can transition from Light to Dark, Dark to Light, or through intermediate conditions.
 
 ### How
-Darkness is determined relative to a specified observer or sensing system, spectral domain, geometry, time, and measurement condition. It may result from absence, negligible availability, occlusion, insufficient signal, or deliberate measurement configuration.
+
+A Dark Condition is determined relative to the radiation that is relevant to the specified receiver, observer, sensor, spectral range, direction, threshold, or measurement configuration.
+
+The same environment can therefore be Dark for one system and a Light Condition for another.
 
 ## Semantic Definition
 
-**Dark** is the condition in which relevant optical radiation is absent, negligible, obstructed, or insufficient for a specified observation or measurement under defined conditions.
+**Dark Condition** is an Optical Condition in which relevant optical radiation is absent, negligible, blocked, unavailable, or insufficient within a defined spatial, temporal, spectral, directional, observational, or measurement context.
 
-Dark is therefore contextual. It is not defined as universal zero radiation, universal zero sensor output, universal black, or a single numerical value.
+Dark Condition is contextual and must not be interpreted as an assertion that all electromagnetic radiation is absent.
 
 ## Core Distinctions
 
-- **Physical dark** concerns the relevant optical radiation field under defined conditions.
-- **Sensor dark** concerns detector output measured without the intended optical input; the output may still contain dark current, read noise, offsets, and other detector or electronic contributions.
-- **Display dark** is a display representation produced by controlled light emission and does not reproduce physical absence of radiation.
-- **Perceived darkness** is an observer-dependent perceptual state influenced by adaptation, contrast, surround, and viewing conditions.
-- **Shadow** is not synonymous with dark. A shadow is a spatial consequence of occlusion that reduces direct visibility of a source; indirect or scattered radiation may remain.
-- **Underexposure** is not synonymous with physical darkness. It is a capture condition in which the recorded signal is insufficient for the intended result or measurement.
+### Physical Dark vs Sensor Dark
+
+A physical environment may be sufficiently dark for a sensor while the sensor still produces dark current, offsets, read noise, or other non-zero output.
+
+Therefore:
+
+`Dark Condition ≠ Zero Sensor Signal`
+
+### Physical Dark vs Display Black
+
+A display produces a new optical output.
+
+Display black therefore does not establish that the original scene was physically dark.
+
+### Physical Dark vs Perceptual Darkness
+
+Perceived darkness depends on observer adaptation, visual sensitivity, contrast, surrounding conditions, and other perceptual factors.
+
+### Physical Dark vs Underexposure
+
+Underexposure is a capture condition or outcome involving insufficient exposure relative to the intended representation or measurement objective.
+
+A physically well-lit scene can be underexposed.
+
+### Physical Dark vs Shadow
+
+A shadow is an optical consequence of occlusion relative to a source and receiving region.
+
+A shadow can be dark without being completely radiation-free.
+
+## Boundary Conditions
+
+A Dark Condition may arise because relevant radiation is:
+
+- physically absent;
+- sufficiently weak;
+- outside the relevant spectral sensitivity;
+- blocked by an occluder;
+- unavailable along the relevant propagation path;
+- below a defined detection or measurement threshold;
+- intentionally excluded by an optical or measurement configuration.
+
+Darkness is therefore not necessarily a universal binary condition.
+
+## Continuum Interpretation
+
+Dark and Light should not automatically be treated as two mutually exclusive numerical states.
+
+Relevant conditions may occupy continua such as:
+
+`very low → low → moderate → high → extreme`
+
+Different systems may interpret these conditions differently because physical, measurement, and perceptual scales are not identical.
 
 ## Measurement Context
 
-A dark condition must identify the relevant measurement context when precision is required. Relevant variables can include:
+A sensor operating under a Dark Condition may still produce non-zero measurements.
 
-- spectral range;
-- spatial region;
-- time or exposure interval;
-- direction and optical path;
-- observer or sensor sensitivity;
-- measurement threshold;
-- background and competing signals;
-- whether the condition is physical, instrumental, representational, or perceptual.
+Dark current, read noise, offsets, thermal effects, and electronic noise can remain present without useful incident optical radiation.
 
-A sensor may produce non-zero output in a dark measurement condition. Consequently, `dark` must not be treated as equivalent to `signal = 0` without an explicitly defined model and measurement condition.
+Therefore any statement about a “dark signal” must identify the measurement context.
 
 ## Special Measurement Configurations
 
-Darkness can also be an intentional measurement configuration. In dark-field microscopy, for example, direct illumination is excluded from the collection path while scattered light from the specimen is collected. A dark background therefore does not imply absence of all optical information.
+Darkness can also be an intentional measurement configuration. In dark-field microscopy, for example, direct illumination is excluded from the collection path while scattered light from the specimen is collected.
+
+A dark background therefore does not imply absence of all optical information.
 
 This demonstrates why semantic context is essential: `dark` may describe a physical condition, a measurement arrangement, or a representation.
 
-## Low-Light and Computational Imaging
+## Computational and AI Context
 
-Low-light imaging may produce sparse photon measurements, increased relative noise, reduced detectability, motion blur, or other capture limitations. Computational enhancement can alter the representation or infer information from the measured data.
+An AI system may increase apparent brightness, reconstruct hidden information, or infer scene content from a dark representation.
 
-An enhanced or reconstructed image must not be interpreted as identical to the original physical optical condition merely because its output appears brighter.
+Such output does not retroactively establish the original physical optical condition.
 
-## Relations
+An inferred or enhanced representation must remain distinguishable from the original observation.
 
-- `is-dark-under`
-- `has-insufficient-optical-availability`
-- `is-occluded-by`
-- `reduces-direct-illumination`
-- `produces-dark-signal`
-- `affects-detectability`
-- `is-represented-by`
-- `is-perceived-as`
+## Cross-Domain Significance
+
+Dark Condition connects physical optical absence or insufficiency with sensing thresholds, noise, shadow, visibility, low-light capture, perception, computational enhancement, display rendering, and forensic interpretation.
 
 ## Trust
 
-This entry defines semantic meaning and distinctions. It does not establish a universal numerical definition of darkness.
+A Dark Condition statement should identify the relevant context whenever ambiguity could alter its meaning.
 
-Quantitative thresholds, dark-current characterization, noise models, low-light performance, perceptual thresholds, and measurement procedures must be taken from their applicable technical definitions and authoritative standards.
-
-The entry is intentionally conservative: absence of measurable signal is not assumed to prove absence of physical radiation, and a reconstructed representation is not assumed to prove the original scene state.
+Statements such as “the scene was dark” are incomplete unless the relevant observer, sensor, spectral band, spatial region, temporal interval, or measurement regime is understood.
 
 ## Lifecycle
 
 **Current state:** Provisional semantic entry.
 
-Required next steps include cross-domain verification, terminology review, relation validation, and eventual registry assignment after semantic validation.
-
 ## Retrieval Anchors
 
-`DARK`, `DARKNESS`, `OPTICAL CONDITION`, `LOW LIGHT`, `DARK SIGNAL`, `DARK CURRENT`, `DARK NOISE`, `SHADOW`, `OCCLUSION`, `DETECTABILITY`, `DARK-FIELD MICROSCOPY`, `PERCEIVED DARKNESS`
+`DARK CONDITION`, `DARK`, `OPTICAL CONDITION`, `LOW LIGHT`, `DARK SIGNAL`, `DARK CURRENT`, `DARK NOISE`, `SHADOW`, `OCCLUSION`, `VISIBILITY`, `PERCEPTION`, `UNDEREXPOSURE`
