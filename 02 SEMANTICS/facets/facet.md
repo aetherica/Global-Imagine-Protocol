@@ -186,9 +186,12 @@ Measurement Context
 
 Viewing Context
 → `contexts/viewing-context.md`
+
+Capture Context (candidate)
+→ `contexts/capture-context.md`
 ```
 
-The Facet layer may organize these identities but must not reproduce their canonical definitions as competing authority.
+The Facet layer may organize these identities but must not reproduce their canonical definitions as competing authority. Candidate entries must retain their candidate status until promoted by their owning semantic layer.
 
 ## Technical Organization Model
 
@@ -243,29 +246,6 @@ Stable retrieval anchors include:
 
 A machine must not infer `is-a`, `part-of`, causality, observation, representation, or measurement semantics from Facet membership alone.
 
-## Visitor Universe and Entry Depth
-
-The canonical entry is intentionally organized as progressive depth rather than audience-specific copies.
-
-```text
-GENERAL RECOGNITION
-→ What is a Facet?
-
-LEARNING
-→ Why does it exist? How is it different from a Class, Property, Context, or Tag?
-
-PRACTICAL USE
-→ How can Facets support controlled navigation and discovery?
-
-SPECIALIST DEPTH
-→ How are division criteria, arrays, memberships, evidence, and boundaries validated?
-
-MACHINE DEPTH
-→ How are stable identities, memberships, qualifications, provenance, and validation interpreted?
-```
-
-The Visitor Universe determines the appropriate entry path and stopping depth. It does not alter this definition.
-
 ## Lifecycle
 
 This entry follows the GIOP lifecycle controls. Changes to the definition or semantic boundary require review of affected facet structures and memberships.
@@ -308,3 +288,4 @@ V3.1 intentionally defers domain-specific Facets until their semantic ownership 
 ## Change History
 
 - V3.1 — Initial canonical Facet semantic entry established after consolidated research and GIOP Foundation boundary analysis.
+- V3.1 — Cross-layer validation aligned candidate Context references and removed the standalone Visitor Universe section in accordance with the canonical entry-depth rule.
