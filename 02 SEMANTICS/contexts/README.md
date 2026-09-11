@@ -18,11 +18,11 @@ A Context is a frame, not merely a condition, metadata field, location, time val
 
 ## Architectural Position
 
-GIOP treats Context as part of canonical knowledge while separately treating visitor access as navigation metadata:
+GIOP treats Context as part of canonical knowledge while treating Visitor Universe as the framework through which the same canonical knowledge is entered, navigated, and consumed:
 
 `CANONICAL KNOWLEDGE → VISITOR UNIVERSE → ENTRY DEPTH → HUMAN / MACHINE CONSUMPTION`
 
-The canonical semantic core remains the same for every visitor. Visitor class, intent, entry point, depth, prerequisite, navigation path, and retrieval granularity change access to the same knowledge; they do not create visitor-specific definitions.
+Visitor Universe is not an additional semantic payload and does not require visitor-specific definitions, sections, or copies of canonical knowledge. Entry depth is produced by the structure and progressive technical depth of the canonical content itself.
 
 ## Context Family
 
@@ -38,7 +38,7 @@ The current V3.1 seed vocabulary is:
 8. `processing-context`
 9. `operational-context`
 
-These are current canonical seed concepts. The retained registry contains additional recovered and externally evidenced context terms that remain deferred, under verification, conflicted, or routed to another semantic responsibility. Their retention does not imply canonical admission.
+`context`, `domain-context`, `application-context`, `measurement-context`, `viewing-context`, and `assessment-context` are currently admitted as canonical V3.1 concepts. `capture-context`, `processing-context`, and `operational-context` remain **CANONICAL CANDIDATE — V3.1 SEED** entries pending the cross-analysis required for promotion. The retained registry contains additional recovered and externally evidenced context terms that remain deferred, under verification, conflicted, or routed to another semantic responsibility.
 
 ## Boundary Model
 
@@ -60,7 +60,7 @@ These are current canonical seed concepts. The retained registry contains additi
 
 `REPRESENTATION → information-bearing representational entity`
 
-`VISITOR UNIVERSE → access/navigation frame, not semantic meaning`
+`VISITOR UNIVERSE → access/navigation framework, not semantic meaning`
 
 A Context can include or qualify any of these without becoming equivalent to them.
 
@@ -127,23 +127,13 @@ Epistemic status and canonical status are separate:
 - **Epistemic:** `VERIFIED`, `UNDER VERIFICATION`, `UNVERIFIED`, `CONFLICTED`
 - **Canonical:** `CANONICAL`, `CANONICAL CANDIDATE`, `DEFERRED`, `ROUTED ELSEWHERE`, `HISTORICAL/NON-CANONICAL`
 
-## Visitor Universe Access Frame
+## Visitor Universe and Entry Depth
 
-Every canonical Context entry should expose, where useful:
+Visitor Universe is implemented through the canonical content itself, not as a second semantic section inside each Context entry.
 
-- Visitor Classes;
-- Visitor Intent;
-- Entry Points;
-- Entry Depth;
-- Prerequisites;
-- Recommended Navigation;
-- Technical Expansion Paths;
-- Retrieval Anchors;
-- Related Semantic Layers.
+A well-formed Context page provides natural entry points through its identity, 5W1H orientation, definition, distinctions, contextual dimensions, cross-layer relations, technical explanation, trust, lifecycle, machine interpretation, and retrieval anchors. Different visitors can stop at the depth relevant to their task or continue into deeper technical material without receiving different canonical knowledge.
 
-This frame is access metadata. It MUST NOT alter the canonical definition for a visitor.
-
-The same Context may therefore be entered differently by a curious visitor, student, photographer, camera engineer, imaging scientist, metrology professional, AI/ML engineer, standards specialist, archivist, or Machine/AI/API/SDK consumer while retaining one canonical semantic identity.
+For example, a general visitor may begin with What and Why; a student may continue through Definition and Distinctions; an engineer may follow contextual components, constraints, and cross-layer relations; a scientist or metrologist may continue into evidence, measurement compatibility, and validation; a machine consumer may use stable identity, structured relations, boundaries, and retrieval anchors. These are reading behaviors, not additional semantic fields.
 
 ## Authoring Requirements
 
@@ -163,9 +153,10 @@ A canonical Context page should provide, as applicable:
 12. lifecycle;
 13. machine/AI interpretation;
 14. retrieval anchors;
-15. Visitor Universe access frame;
-16. what the Context does not mean;
-17. semantic boundary and cross-references.
+15. what the Context does not mean;
+16. semantic boundary and cross-references.
+
+The exact section set may vary with semantic responsibility. Conditions, classes, properties, relations, and Contexts need not use identical headings; they must use the same content-first entry discipline and progressive depth established by the GIOP canonical implementation standard.
 
 ## Knowledge Retention Rule
 
@@ -177,4 +168,4 @@ The registry is a retention and audit layer, not a replacement for future canoni
 
 ## Completion Rule
 
-The V3.1 Context pass is complete for the current seed vocabulary when the canonical specification exists, every admitted seed Context has a complete canonical page, and all other recovered context knowledge has a durable registry record with evidence/status/decision/routing rather than being silently omitted.
+The V3.1 Context pass is complete for the current seed vocabulary when the canonical specification exists, every admitted seed Context has a complete canonical page, candidate entries remain explicitly identified until validated, and all other recovered context knowledge has a durable registry record with evidence/status/decision/routing rather than being silently omitted.
