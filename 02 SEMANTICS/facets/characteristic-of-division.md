@@ -113,10 +113,6 @@ These examples illustrate how a criterion can organize concepts. They do not by 
 
 A Property denotes an attributable characteristic. A Characteristic of Division specifies the criterion used to organize concepts. A property may sometimes supply a useful division basis, but the two responsibilities are not identical.
 
-### Characteristic of Division vs Facet
-
-The Facet is the organizational construct. The Characteristic of Division explains the criterion by which concepts within the relevant organization are distinguished.
-
 ### Characteristic of Division vs Relation
 
 A Relation specifies a typed connection between semantic elements. A division criterion organizes comparable concepts; it does not automatically assert a relation between them.
@@ -217,26 +213,6 @@ It should be able to recover:
 
 The machine must not infer that the criterion is a Property, Relation, Class, Context, or other primary semantic type unless separately asserted.
 
-## Visitor Universe and Entry Depth
-
-Different visitors encounter the concept at different depths while consuming the same canonical entry.
-
-```text
-General / Learner
-→ understand that a facet needs a meaningful basis for grouping.
-
-Practitioner
-→ understand how the criterion supports navigation and classification.
-
-Engineer / Scientist / Standards Specialist
-→ inspect scope, comparability, discriminability, boundaries, and evidence.
-
-AI / Data / System Consumer
-→ resolve the criterion, scope, arrays, memberships, provenance, and validation state.
-```
-
-Visitor Universe changes the entry path and depth, not the semantic definition.
-
 ## Trust / Evidence / Validation
 
 External knowledge-organization standards and mature classification systems provide evidence for the concept and its structural role. Their specific classifications must not be imported without GIOP analysis.
@@ -277,3 +253,4 @@ No single division criterion is universally correct for every knowledge domain o
 ## Change History
 
 - V3.1 — Initial canonical Characteristic of Division semantic entry established after consolidated Facet research and GIOP architectural boundary analysis.
+- V3.1 — Cross-layer validation removed the standalone Visitor Universe section in accordance with the canonical entry-depth rule.
