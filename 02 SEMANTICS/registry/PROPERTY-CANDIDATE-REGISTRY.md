@@ -23,7 +23,7 @@ A term remains retained even when routed away from the Property layer or deferre
 | linearity | VERIFIED | PROPERTY | CANONICAL | `properties/linearity.md` |
 | transparency | VERIFIED | PROPERTY | CANONICAL | `properties/transparency.md` |
 | chromaticity | VERIFIED | PROPERTY | CANONICAL | `properties/chromaticity.md` |
-| dynamic-range-characteristic | VERIFIED | PROPERTY CANDIDATE | CANONICAL CANDIDATE | exact canonical wording still under reconciliation |
+| dynamic-range-characteristic | VERIFIED | PROPERTY | CANONICAL | `properties/dynamic-range-characteristic.md` |
 | focal-length | VERIFIED | QUANTITY | NOT PROPERTY | future `quantities/`; no Property duplication |
 | optical-power | VERIFIED | QUANTITY | NOT PROPERTY | future `quantities/` |
 | responsivity | VERIFIED | QUANTITY | NOT PROPERTY | future `quantities/` |
@@ -52,9 +52,9 @@ A term remains retained even when routed away from the Property layer or deferre
 | surface-roughness | UNDER VERIFICATION | PROPERTY / SURFACE-TEXTURE HIERARCHY | DEFERRED | texture/roughness/waviness boundary unresolved |
 | dynamic-range | VERIFIED | QUANTITY / PERFORMANCE MEASURE | NOT PROPERTY | quantitative realization |
 
-## Current Canonical Property Seed
+## Current Canonical Property Set
 
-The verified Property seed currently published in `properties/` is:
+The current V3.1 canonical Property set published in `properties/` is:
 
 1. `optical-distortion`
 2. `chromatic-aberration`
@@ -63,8 +63,7 @@ The verified Property seed currently published in `properties/` is:
 5. `linearity`
 6. `transparency`
 7. `chromaticity`
-
-`dynamic-range-characteristic` remains a controlled candidate and is not yet published.
+8. `dynamic-range-characteristic`
 
 ## Interpretive Rules
 
@@ -90,6 +89,10 @@ Characteristic concepts and their numerical quantities, values, measurement resu
 
 ## Explicitly Protected Knowledge
 
-The following remain intentionally retained outside the current Property seed: optical power, responsivity, quantum efficiency, field of view, reflectance, transmittance, noise, noise level, resolution, sharpness, exposure, accuracy, precision, calibration status, calibration, measurement, measurement result, capability, scattering, aperture, appearance, colorimetric characteristics, scattering characteristics, noise characteristics, surface roughness, and dynamic range.
+The following remain intentionally retained outside the current Property layer: optical power, responsivity, quantum efficiency, field of view, reflectance, transmittance, noise, noise level, resolution, sharpness, exposure, accuracy, precision, calibration status, calibration, measurement, measurement result, capability, scattering, aperture, appearance, colorimetric characteristics, scattering characteristics, noise characteristics, surface roughness, and dynamic range.
 
 Their absence from `properties/` is an intentional semantic routing decision.
+
+## Completion State
+
+The Property layer is complete for the current V3.1 semantic pass. Future additions require a new semantic candidate, evidence assessment, reconciliation, and canonical decision; they are not assumed merely because additional technical terms exist in the retained registry.
