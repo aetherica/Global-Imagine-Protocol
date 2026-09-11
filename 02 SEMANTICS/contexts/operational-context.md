@@ -55,12 +55,6 @@ Use Operational Context to qualify system behavior and workflow execution. Missi
 
 `operational context`, `operating context`, `runtime circumstances`, `deployment context`, `operating environment`, `system operation context`.
 
-## Visitor Universe
-
-Primary: System Integrator/Pipeline TD, Software Vendor, Hardware Manufacturer, Studio/Enterprise Operator, Procurement/Technology Decision Maker, Broadcast Operator, Immersive/XR Engineer, HMD/Telepresence Specialist, QA/Benchmark, and Machine/AI/API/SDK Consumer.
-
-Engineers enter through configuration and constraints; enterprise visitors through deployment/use; QA through reproducibility and test conditions; machines through structured operational parameters.
-
 ## What This Context Does Not Mean
 
 Not a system class, workflow, operating condition, state, status, or single runtime parameter.
