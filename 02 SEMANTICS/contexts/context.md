@@ -77,7 +77,7 @@ A context is applicable when its frame is materially relevant to the semantic in
 
 **Context vs Situation:** Situation is retained as a related but unresolved term because it may denote an instantiated configuration rather than the reusable frame itself.
 
-**Context vs Visitor Universe:** Visitor Universe controls entry, navigation, and retrieval. It does not alter canonical semantic meaning.
+**Context vs Visitor Universe:** Visitor Universe determines entry, navigation, and retrieval perspective. It does not alter canonical semantic meaning.
 
 ## Cross-Layer Relations
 
@@ -113,22 +113,6 @@ A machine should treat Context as a frame used to qualify interpretation, retrie
 
 `context`, `contextual frame`, `setting`, `circumstance`, `purpose`, `perspective`, `situational frame`, `definition context`, `use context`, `interpretation context`, `evaluation context`.
 
-## Visitor Universe
-
-**Primary access:** all 45 Visitor Universe classes, with relevance varying by task.
-
-**Entry depth:**
-
-- Depth 0 — orientation: what Context is and why it matters;
-- Depth 1 — conceptual: components, dimensions, and distinctions;
-- Depth 2 — applied: context selection in imaging/measurement/viewing workflows;
-- Depth 3 — technical: cross-layer qualification and formal relationships;
-- Depth 4 — specialist/research: evidence, competing context models, uncertainty, and semantic boundaries.
-
-These are access depths, not visitor classes.
-
-**Machine access:** stable ID, definition, family, cross-layer relations, registry links, and retrieval anchors.
-
 ## What This Context Does Not Mean
 
 It does not mean:
@@ -151,7 +135,7 @@ It does not mean:
 
 `CONTEXTUALIZED ELEMENT = element whose interpretation/use is framed`
 
-`VISITOR ACCESS FRAME = navigation metadata, not semantic meaning`
+`VISITOR UNIVERSE = access/navigation framework, not semantic meaning`
 
 ## Cross-References
 
