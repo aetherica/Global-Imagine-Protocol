@@ -6,7 +6,7 @@
 
 ## Purpose
 
-This index identifies the current canonical Facet organization vocabulary and records the status of related structural, methodological, and candidate terms. It is an index, not a substitute for the authoritative semantic entries.
+This index identifies the current canonical Facet organization vocabulary and records the status of related structural, methodological, candidate, and validated organizational-view terms. It is an index, not a substitute for the authoritative semantic entries.
 
 ## Canonical V3.1 Seed
 
@@ -40,9 +40,22 @@ This index identifies the current canonical Facet organization vocabulary and re
 | Node Label | Deferred | Structural labeling mechanism; not primary semantic authority |
 | Facet Indicator | Deferred | Classification notation/device |
 
+## Validated Organizational Views
+
+Concrete reusable organizations are published in `FACET-ORGANIZATION-CATALOG.md`. They are validated organizational views over existing canonical identities, not four new canonical Facet semantic concepts.
+
+| View ID | Organization | Principal Scope | Status |
+|---|---|---|---|
+| `FACET-VIEW-IMAGING-SYSTEM-ROLE-001` | Imaging-System Role View | Classes | VALIDATED ORGANIZATIONAL VIEW |
+| `FACET-VIEW-IMAGING-CHARACTERISTIC-001` | Imaging-Characteristic Domain View | Properties | VALIDATED ORGANIZATIONAL VIEW |
+| `FACET-VIEW-CONTEXTUAL-FRAME-USE-001` | Contextual-Frame Use View | Canonical Contexts | VALIDATED ORGANIZATIONAL VIEW |
+| `FACET-VIEW-RELATION-FUNCTION-001` | Relation-Function View | Canonical Relations | VALIDATED ORGANIZATIONAL VIEW |
+
+These views demonstrate concrete Facet operation while preserving the two-concept canonical semantic nucleus.
+
 ## Domain-Specific Candidates
 
-The following are retained as candidates but are not admitted as V3.1 canonical Facet entries:
+The following remain candidates and are not admitted as independent V3.1 canonical Facet entries:
 
 - Spatial Facet;
 - Temporal Facet;
@@ -64,13 +77,13 @@ Each candidate must first be checked against the semantic authority of existing 
 
 | Canonical concept | Primary authority | Facet role |
 |---|---|---|
-| Camera | `classes/camera.md` | May participate in a technical or other validated facet |
-| Spectral Response | `properties/spectral-response.md` | May participate in an optical/measurement organization when justified |
-| Measurement Context | `contexts/measurement-context.md` | May participate in an organizational view of contextual knowledge |
-| Viewing Context | `contexts/viewing-context.md` | May participate in a viewing-related organization |
-| Capture Context (candidate) | `contexts/capture-context.md` | May participate in an organizational view only as a candidate until promoted by the Context layer |
+| Camera | `classes/camera.md` | May participate in a technical or other validated organization |
+| Spectral Response | `properties/spectral-response.md` | Participates in the validated Imaging-Characteristic Domain View |
+| Measurement Context | `contexts/measurement-context.md` | Participates in the validated Contextual-Frame Use View |
+| Viewing Context | `contexts/viewing-context.md` | Participates in the validated Contextual-Frame Use View |
+| Capture Context (candidate) | `contexts/capture-context.md` | Candidate only; not treated as canonical membership until Context-layer promotion |
 
-These examples illustrate membership, not currently approved domain-specific Facets.
+These examples illustrate membership and organization, not creation of a second semantic authority.
 
 ## Admission Rule
 
@@ -93,4 +106,4 @@ A novice may use the index to discover a concept; a professional may use it to i
 
 ## Retrieval Anchors
 
-`FACET`, `CHARACTERISTIC OF DIVISION`, `ARRAY`, `FACET MEMBERSHIP`, `FACET ANALYSIS`, `PRIMARY SEMANTIC AUTHORITY`, `ORGANIZING DIMENSION`, `DIVISION CRITERION`, `SIBLING ARRAY`, `MEMBERSHIP`, `VISITOR UNIVERSE`, `ENTRY DEPTH`.
+`FACET`, `CHARACTERISTIC OF DIVISION`, `ARRAY`, `FACET MEMBERSHIP`, `FACET ANALYSIS`, `FACET ORGANIZATION`, `PRIMARY SEMANTIC AUTHORITY`, `ORGANIZING DIMENSION`, `DIVISION CRITERION`, `SIBLING ARRAY`, `MEMBERSHIP`, `VALIDATED ORGANIZATIONAL VIEW`, `VISITOR UNIVERSE`, `ENTRY DEPTH`.
