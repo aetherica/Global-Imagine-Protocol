@@ -67,12 +67,6 @@ A machine must not compare measurement results across contexts without checking 
 
 `measurement context`, `measurement setting`, `measurement circumstances`, `measurand context`, `measurement conditions`, `influence quantity`, `reference operating condition`, `measurement setup`.
 
-## Visitor Universe
-
-Primary: Calibration/Metrology, QA/Testing/Benchmark, Standards/Specification, Camera Engineer, Sensor Engineer, Imaging Scientist, Color Scientist, Computer Vision Researcher, ML/Data-Curation Engineer, System Integrator, and Machine/AI/API/SDK Consumer.
-
-Students enter through reproducibility and “what makes a measurement meaningful.” Experts enter through VIM concepts, influence quantities, traceability, procedure, and context compatibility. Machine consumers require structured contextual fields and stable identifiers.
-
 ## What This Context Does Not Mean
 
 Not measurement itself, calibration, a quantity, a measurement value, a result, a single operating condition, or a procedure.
