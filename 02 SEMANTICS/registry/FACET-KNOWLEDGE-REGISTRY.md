@@ -6,7 +6,7 @@
 
 ## Purpose
 
-This registry preserves recovered Facet knowledge, alternative terminology, structural candidates, and unresolved classifications while separating evidence from canonical admission. It is a retention and decision layer, not a parallel Facet ontology.
+This registry preserves recovered Facet knowledge, alternative terminology, structural candidates, unresolved classifications, and validated organizational-view decisions while separating evidence from canonical admission. It is a retention and decision layer, not a parallel Facet ontology.
 
 ## Governing Rule
 
@@ -98,6 +98,52 @@ Each record should expose, where applicable:
 **Recovered meaning:** Analytical method for identifying coherent organizing dimensions, division criteria, arrays, and memberships.
 
 **GIOP decision:** Keep as specification methodology. Do not create `facet-analysis.md` unless later analysis establishes an independent semantic responsibility that cannot be represented as methodology.
+
+## Validated Organizational Views
+
+### FAC-VIEW-026 — Imaging-System Role View
+
+**Semantic type:** VALIDATED ORGANIZATIONAL VIEW  
+**Canonical status:** VALIDATED VIEW / NOT INDEPENDENT SEMANTIC ENTRY  
+**Destination:** `02 SEMANTICS/facets/FACET-ORGANIZATION-CATALOG.md`
+
+**Scope:** Existing canonical Class concepts.  
+**Division criterion:** Functional role in an imaging system/environment.
+
+**Decision:** Valid organizational use of existing Class identities. Does not replace the Class layer or create a part-whole model.
+
+### FAC-VIEW-027 — Imaging-Characteristic Domain View
+
+**Semantic type:** VALIDATED ORGANIZATIONAL VIEW  
+**Canonical status:** VALIDATED VIEW / NOT INDEPENDENT SEMANTIC ENTRY  
+**Destination:** `02 SEMANTICS/facets/FACET-ORGANIZATION-CATALOG.md`
+
+**Scope:** Current canonical Property concepts.  
+**Division criterion:** Principal imaging behavior or characteristic family.
+
+**Decision:** Valid organizational use of existing Property identities. Does not redefine Properties or imply shared units, procedures, or applicability.
+
+### FAC-VIEW-028 — Contextual-Frame Use View
+
+**Semantic type:** VALIDATED ORGANIZATIONAL VIEW  
+**Canonical status:** VALIDATED VIEW / NOT INDEPENDENT SEMANTIC ENTRY  
+**Destination:** `02 SEMANTICS/facets/FACET-ORGANIZATION-CATALOG.md`
+
+**Scope:** Canonical Context concepts with established status.  
+**Division criterion:** Principal use or situational purpose of the contextual frame.
+
+**Decision:** Valid for canonical Context members. Candidate Contexts remain excluded until their owning layer promotes them.
+
+### FAC-VIEW-029 — Relation-Function View
+
+**Semantic type:** VALIDATED ORGANIZATIONAL VIEW  
+**Canonical status:** VALIDATED VIEW / NOT INDEPENDENT SEMANTIC ENTRY  
+**Destination:** `02 SEMANTICS/facets/FACET-ORGANIZATION-CATALOG.md`
+
+**Scope:** Current canonical Relation seed vocabulary.  
+**Division criterion:** Primary semantic function of the relation concept.
+
+**Decision:** Valid organizational use of existing Relation identities. Does not alter directionality, logical characteristics, domain/range, qualification, or inference semantics.
 
 ## Deferred Organizational Terms
 
