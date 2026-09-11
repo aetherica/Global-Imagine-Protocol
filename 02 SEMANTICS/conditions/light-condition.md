@@ -1,88 +1,118 @@
-# Light
+# Light Condition
 
-**Semantic ID:** `SEM-CONDITION-LIGHT-001`
-**Preferred Name:** Light
-**Semantic Class:** Optical Condition
-**Domain:** Optical Imaging
-**Status:** Provisional
-**Version:** 0.1.0
+**Semantic ID:** `SEM-CONDITION-LIGHT-001`  
+**Preferred Name:** Light Condition  
+**Semantic Class:** Optical Condition  
+**Domain:** Optical Imaging  
+**Status:** Provisional  
+**Version:** 0.2.0
 
 ## 5W1H Orientation
 
 ### What
-Light is the condition in which relevant optical radiation is available at a specified location, time, direction, spectral domain, observer, or sensing system at a level relevant to the intended observation or measurement.
+
+A Light Condition is an Optical Condition in which relevant optical radiation is present, available, or operative within a specified context.
 
 ### Why
-Light is the physical starting condition for optical imaging. Imaging systems do not operate on an abstract image first; they interact with radiation that can be emitted, transmitted, reflected, scattered, absorbed, received, measured, and represented.
+
+Imaging requires radiation that can propagate, interact with matter, reach a receiving system, or participate in observation or measurement.
+
+A Light Condition therefore describes an optical circumstance rather than identifying a particular light source or assigning a universal brightness value.
 
 ### Who
-The concept is used by general visitors, students, photographers and cinematographers, optical and sensor engineers, imaging scientists, computer-vision and AI researchers, calibration and validation professionals, system integrators, and machine-readable consumers.
+
+The concept is relevant to general visitors, students, photographers, cinematographers, optical engineers, sensor engineers, imaging scientists, metrology professionals, AI systems, simulation systems, and machine-readable consumers.
 
 ### Where
-It applies to optical radiation in imaging environments, including visible and non-visible spectral regions when those regions are relevant to the observing or sensing system.
+
+It may occur in a scene, optical path, receiving region, measurement setup, sensor environment, viewing environment, or simulated imaging environment.
 
 ### When
-Light is evaluated over a defined time or interval. Temporal variation can affect exposure, motion, measurement, detectability, and representation.
+
+A Light Condition exists only relative to a defined temporal context.
+
+The condition may vary with source activity, motion, exposure interval, environmental change, modulation, or other time-dependent factors.
 
 ### How
-The meaning of light depends on what receiver or observer is being considered. Radiation that is sufficient for one sensor may be insufficient for another, and radiation invisible to a human observer may still be measurable by an imaging system.
+
+A Light Condition is determined relative to the relevant radiation and the receiver, observer, sensor, measurement configuration, or region under consideration.
+
+The same environment may be a Light Condition for one observer or sensor and an operationally Dark Condition for another because sensitivity, spectral response, direction, or measurement configuration differs.
 
 ## Semantic Definition
 
-**Light** is the condition in which relevant optical radiation is available at a specified location, time, direction, spectral domain, observer, or sensing system at a level relevant to the intended observation or measurement.
+**Light Condition** is an Optical Condition in which relevant optical radiation is present, available, or operative for a defined spatial, temporal, spectral, directional, observational, or measurement context.
 
-Light is therefore a contextual physical condition, not a universal scalar and not necessarily limited to visible radiation.
+Light Condition does not imply a particular numerical intensity, luminance, radiance, exposure, perceptual brightness, or sensor signal.
 
 ## Core Distinctions
 
-- Light is not synonymous with visible light in every imaging context.
-- Light availability is not identical to visibility; an available signal may remain below an observer's or sensor's effective detectability threshold.
-- Light is not identical to illumination. Illumination concerns radiation reaching a receiving region or surface under a defined geometry and measurement context.
-- Light is not identical to brightness. Brightness is a perceptual concept.
-- A display can emit light while representing a scene that was physically dark; reproduced light is not the original scene radiation.
+### Light Condition vs Light Source
 
-## Optical Roles
+A Light Source is an emitting or otherwise source-forming entity.
 
-Relevant radiation may be:
+A Light Condition describes the resulting contextual optical circumstance.
 
-- emitted by a source;
-- transmitted through a medium or optical element;
-- reflected by a surface;
-- scattered by a medium or surface;
-- absorbed by matter;
-- received by an observer or sensing system.
+### Light Condition vs Illumination Condition
 
-These are distinct semantic relations and must not be collapsed into the single term `light`.
+A Light Condition can describe radiation being present within a region or optical environment.
 
-## Measurement Context
+An Illumination Condition specifically concerns the optical influence delivered to a receiving region, surface, object, or scene.
 
-A statement that an environment is light should, when precision matters, identify the receiving or observing context and the relevant spectral, spatial, temporal, directional, and measurement conditions.
+### Light Condition vs Brightness
 
-Radiometric quantities such as radiance, irradiance, radiant flux, and radiant intensity provide quantitative descriptions of optical radiation. Their numerical definitions do not belong to this semantic entry.
+Brightness is a perceptual concept.
 
-## Relations
+Light Condition is an optical condition.
 
-- `emits`
-- `illuminates`
-- `is-received-by`
-- `is-visible-from`
-- `is-measured-by`
-- `contributes-to`
-- `transforms-into`
-- `is-represented-by`
+### Light Condition vs Radiance or Irradiance
+
+Radiance and irradiance are measurable radiometric quantities.
+
+A Light Condition may be characterized using such quantities but is not itself a quantity.
+
+### Light Condition vs Exposure
+
+Exposure is a capture-related or measurement-related concept involving integration over time and system response.
+
+A Light Condition may exist before, during, or after an exposure interval.
+
+## Boundary Cases
+
+A Light Condition may exist even when:
+
+- radiation is outside the visible spectrum;
+- the radiation is not perceptually visible to a human observer;
+- a sensor is below its detection threshold;
+- a display does not reproduce the original radiation;
+- illumination is indirect rather than direct;
+- radiation exists in only a limited spectral band;
+- radiation is spatially or temporally localized.
+
+Therefore:
+
+**Human invisibility does not imply physical darkness.**
+
+**Low sensor response does not by itself imply absence of radiation.**
+
+## Cross-Domain Significance
+
+Light Condition provides the positive optical counterpart to Dark Condition while remaining distinct from perceptual brightness and numerical radiometric quantities.
+
+It participates in the broader relationship:
+
+`Light → Availability → Interaction → Illumination → Observation → Measurement → Capture`
 
 ## Trust
 
-This entry defines the semantic use of `Light` in GIOP. It does not assert a universal intensity threshold or replace radiometric, photometric, sensor, or perceptual measurement standards.
+This entry does not assign a universal threshold separating Light from Dark.
 
-The entry is consistent with the GIOP principle that imaging knowledge connects observation, measurement, computation, and perception while preserving the distinctions between those layers.
+Thresholds depend on the relevant physical, spectral, sensor, observer, and measurement context.
 
 ## Lifecycle
 
 **Current state:** Provisional semantic entry.
 
-Required next steps include cross-domain verification, relation validation, terminology review, and eventual registry assignment after semantic validation.
-
 ## Retrieval Anchors
 
-`LIGHT`, `OPTICAL CONDITION`, `OPTICAL RADIATION`, `OPTICAL AVAILABILITY`, `ILLUMINATION`, `VISIBILITY`, `RADIANCE`, `IRRADIANCE`, `RECEIVED RADIATION`, `IMAGING`
+`LIGHT CONDITION`, `LIGHT`, `OPTICAL CONDITION`, `OPTICAL AVAILABILITY`, `ILLUMINATION`, `RADIATION`, `RECEIVED RADIATION`, `OBSERVATION`, `MEASUREMENT`
