@@ -68,7 +68,7 @@ Each candidate must first be checked against the semantic authority of existing 
 | Spectral Response | `properties/spectral-response.md` | May participate in an optical/measurement organization when justified |
 | Measurement Context | `contexts/measurement-context.md` | May participate in an organizational view of contextual knowledge |
 | Viewing Context | `contexts/viewing-context.md` | May participate in a viewing-related organization |
-| Capture Context | `contexts/capture-context.md` | May participate in an organizational view without changing Context ownership |
+| Capture Context (candidate) | `contexts/capture-context.md` | May participate in an organizational view only as a candidate until promoted by the Context layer |
 
 These examples illustrate membership, not currently approved domain-specific Facets.
 
