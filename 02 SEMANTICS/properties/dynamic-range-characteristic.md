@@ -11,131 +11,95 @@
 ## 5W1H Orientation
 
 ### What
+Dynamic-Range Characteristic is a characteristic of an eligible imaging, sensing, or measurement-capable system concerning the span of relevant signal or response conditions that the system can accommodate or distinguish under a defined operating and evaluation context.
 
-Dynamic-Range Characteristic is the characteristic of an eligible imaging, sensing, or measurement-capable system concerning the span of relevant signal or response conditions that the system can distinguish or accommodate under a defined operating and measurement context.
-
-### Why
-
-The concept provides a reusable characteristic-level description without embedding a particular numerical dynamic-range result, ratio, logarithmic value, bit representation, or test outcome.
+### Who / What Can Bear It
+Image sensors, cameras, sensing subsystems, measuring systems, and other eligible systems for which dynamic-range behaviour is meaningfully defined.
 
 ### Where
-
-It may apply to imaging sensors, cameras, sensing subsystems, measurement systems, or other eligible systems for which a defined dynamic-range behavior is semantically relevant.
+It concerns the usable or distinguishable span of relevant signal or response conditions of the system.
 
 ### When
+Its realization depends on operating state, signal domain, measurement criteria, saturation behaviour, noise conditions, exposure or integration conditions, and other declared context.
 
-Its realized behavior depends on operating state, signal domain, measurement method, saturation behavior, noise conditions, environmental conditions, and other declared context.
-
-### Who / What Bears It
-
-The bearer is an eligible system or component whose response behavior can meaningfully be characterized in terms of dynamic range.
+### Why
+The Property provides a characteristic-level abstraction without embedding a particular numerical dynamic-range ratio, logarithmic value, bit representation, or test result.
 
 ### How
-
-The characteristic is established through an appropriate quantitative or measurement framework. The resulting numerical dynamic range, limits, ratio, decibel expression, bit-equivalent expression, or test result belongs to quantitative and measurement semantics rather than to the Property definition itself.
+The characteristic is established through an appropriate quantitative or measurement framework that defines the relevant lower and upper response limits and the criterion connecting them.
 
 ## Semantic Definition
 
-**Dynamic-Range Characteristic is a reusable canonical semantic concept denoting the characteristic of an eligible system concerning the extent of relevant signal or response conditions that can be accommodated or distinguished under defined conditions and an explicitly declared measurement or evaluation context.**
+**Dynamic-Range Characteristic is a reusable canonical semantic concept denoting a characteristic of an eligible system concerning the extent of relevant signal or response conditions that can be accommodated or distinguished under defined conditions and an explicitly declared evaluation or measurement context.**
 
 ## What This Property Characterizes
 
-This Property characterizes the existence and semantic nature of a system's dynamic-range behavior. It does not itself assert a particular range, ratio, sensitivity threshold, saturation level, noise level, or performance value.
+This Property characterizes dynamic-range behaviour at the characteristic level. It does not assert a particular range, ratio, sensitivity threshold, saturation level, noise level, or performance value.
 
-## Bearer and Applicability
+## Bearer / Applicability
 
-The Property may characterize:
-
-- image sensors;
-- cameras;
-- sensing subsystems;
-- measurement systems;
-- other technically eligible systems whose response span is meaningfully evaluated.
-
-Applicability MUST be interpreted with the relevant signal domain and context.
+Applicable to image sensors, cameras, sensing subsystems, measuring systems, and other technically eligible systems whose response span is meaningfully evaluated. Applicability does not imply that dynamic range has been measured.
 
 ## Distinctions
 
-### Dynamic-Range Characteristic vs Dynamic Range
+- **Dynamic-Range Characteristic vs Dynamic Range:** the former is the reusable Property abstraction; a dynamic-range ratio or reported range is a quantitative realization under a defined method.
+- **Dynamic-Range Characteristic vs Sensitivity:** sensitivity concerns response dependence on changes in input; dynamic range concerns the span of relevant response conditions.
+- **Dynamic-Range Characteristic vs Noise:** noise concerns disturbance or variability. A dynamic-range criterion may depend on noise, but the concepts are not interchangeable.
+- **Dynamic-Range Characteristic vs Resolution:** resolution concerns distinguishability of detail or values in a specified domain; dynamic range concerns signal/response span.
 
-Dynamic-Range Characteristic is the Property-level abstraction. `Dynamic range` denotes a quantitative realization or performance measure derived under a defined method and context.
+## Quantification
 
-### Dynamic-Range Characteristic vs Sensitivity
+Quantitative realizations may include dynamic-range ratios, logarithmic expressions such as decibel values, bit-equivalent expressions, lower and upper response limits, or measurement-derived performance parameters. Their interpretation requires the declared measurement or evaluation framework.
 
-Sensitivity concerns response to changes in input or measurand conditions. Dynamic-Range Characteristic concerns the span over which relevant response conditions can be accommodated or distinguished.
+## Value Semantics
 
-### Dynamic-Range Characteristic vs Noise
-
-Noise is a disturbance or variability concept. Dynamic range may depend on noise-related criteria, but the two concepts are not interchangeable.
-
-### Dynamic-Range Characteristic vs Resolution
-
-Resolution concerns distinguishability of details, values, or features according to a specified domain. Dynamic-range behavior concerns span of accommodated or distinguished signal/response conditions.
-
-## Quantification Boundary
-
-This Property does not contain an instance value.
-
-Quantitative realizations may include, depending on the declared measurement framework:
-
-- dynamic-range ratios;
-- logarithmic expressions such as decibel values;
-- bit-equivalent expressions;
-- upper and lower response limits;
-- measurement-derived performance parameters.
-
-Such values belong to quantity/value/result semantics.
+The Property itself contains no numerical value. A reported dynamic range MUST retain its quantity definition, calculation basis, limits or criteria, representation, context, and provenance.
 
 ## Conditions and Context
 
-A dynamic-range realization is context-dependent. Relevant context may include:
+Relevant context may include signal or measurand domain, operating state, exposure or integration conditions, spectral conditions, illumination, noise conditions, saturation or clipping behaviour, gain, calibration state, and measurement method. These qualify a realization and are not asserted by the Property.
 
-- signal or measurand domain;
-- operating state;
-- exposure or integration conditions;
-- spectral conditions;
-- illumination conditions;
-- noise conditions;
-- saturation or clipping behavior;
-- measurement method and procedure;
-- calibration and test configuration.
+## Measurement Context
 
-The Property itself does not assert any of these conditions.
-
-## Evidence and Provenance
-
-The concept is retained as a characteristic-level abstraction because technical imaging and sensor standards treat dynamic range as a measurable performance quantity while also distinguishing it from other characterization parameters. GIOP therefore preserves the characteristic abstraction separately from its quantitative realizations.
+A dynamic-range value requires explicit lower and upper criteria and a defined method or evaluation framework. A Property assertion does not establish that measurement occurred, that a particular standard was used, or that a manufacturer specification is valid.
 
 ## Relations
 
-Possible relations include:
+Potential relations include `has-property`, `quantified-by`, `evaluated-under`, `measured-by`, and `characterized-by`. Quantities, measurement results, procedures, and calibration states remain separate semantic entities.
 
-- `has-property` → Dynamic-Range Characteristic;
-- `quantified-by` → dynamic-range quantity or derived performance measure;
-- `evaluated-under` → measurement context;
-- `characterized-by` → measurement procedure or test method.
+## Subproperties
 
-These are relations to other semantic layers, not embedded Property content.
+No specialized dynamic-range subtype is canonicalized in the seed vocabulary. Domain-specific forms may be introduced after independent verification.
 
-## Machine Interpretation
+## Synonyms / Related Terms
 
-A machine MUST interpret this Property as a characteristic concept, not as a numerical dynamic-range value.
+Related terms include dynamic range, dynamic-range capability, and signal-range characteristic. They MUST NOT be treated as equivalent without reconciling their quantitative and contextual definitions.
 
-The presence of this Property MUST NOT imply:
+## Evidence and Provenance
 
-- a particular numerical range;
-- a particular unit or logarithmic representation;
-- a particular sensor technology;
-- a particular noise criterion;
-- calibration validity;
-- compliance with a specific test standard;
-- a guaranteed manufacturer specification.
+The characteristic-level abstraction is supported by imaging and sensor characterization standards that treat dynamic range as a measurable performance concept alongside other distinct characterization parameters. GIOP separates that quantitative realization from the reusable characteristic concept.
+
+## Trust and Validation
+
+Presence of this Property MUST NOT be interpreted as proof of a numerical range, a particular noise criterion, saturation limit, calibration validity, standards compliance, or guaranteed manufacturer performance.
 
 ## Lifecycle
 
 - **Status:** CANONICAL
 - **Seed Vocabulary:** Yes
-- **Future Expansion:** Additional quantitative and measurement concepts may be linked without redefining this Property.
+- **Expansion:** Quantitative and measurement concepts may be linked or added independently without redefining this Property.
+
+## Machine / AI Interpretation
+
+A machine MAY attach this Property to an eligible bearer. It MUST NOT infer a numerical dynamic range, unit, logarithmic representation, measurement criterion, calibration state, or performance claim from the Property alone.
+
+## Retrieval Anchors
+
+`dynamic-range characteristic`, `dynamic range`, `signal range`, `response span`, `dynamic-range behaviour`
+
+## What This Property Does NOT Mean
+
+It does not mean high sensitivity, low noise, high image quality, a particular bit depth, or a measured performance value.
 
 ## Semantic Boundary
 
@@ -143,10 +107,10 @@ The presence of this Property MUST NOT imply:
 
 `DYNAMIC RANGE / RANGE RATIO → QUANTITATIVE CONCEPT`
 
-`MEASUREMENT PROCEDURE → PROCEDURE / PROCESS`
+`DYNAMIC-RANGE MEASUREMENT / EVALUATION → ACTIVITY / MEASUREMENT`
 
-`MEASUREMENT RESULT → RESULT`
+`DYNAMIC-RANGE MEASUREMENT RESULT → RESULT`
 
 `CALIBRATION STATUS → STATE / STATUS`
 
-The canonical boundary prevents a measurable performance value from being mistaken for the reusable Property concept.
+This document defines the reusable characteristic concept only.
