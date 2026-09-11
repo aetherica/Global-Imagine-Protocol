@@ -55,12 +55,6 @@ Use Viewing Context as a qualification for visual interpretation and appearance-
 
 `viewing context`, `viewing conditions`, `stimulus`, `background`, `surround`, `adaptation`, `viewing distance`, `observation angle`, `display context`, `color appearance context`.
 
-## Visitor Universe
-
-Primary: Photographer, Cinematographer/DoP, DIT/Colorist, Display/Color-Management Engineer, Color Scientist, Human Vision/Perception Researcher, QA/Benchmark, Standards specialist, VFX/Finishing, Immersive/XR, HMD/Telepresence, Archivist, and Machine/AI consumer.
-
-General visitors enter through “why the same image can look different.” Technical visitors enter through viewing geometry, display, adaptation, and observer variables. Experts enter through appearance models and assessment methodology.
-
 ## What This Context Does Not Mean
 
 Not the observer, display, perception, a single room condition, illumination, or a guarantee of perceptual equality.
