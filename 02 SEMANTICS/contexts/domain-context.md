@@ -59,12 +59,6 @@ Use Domain Context as a scope constraint for retrieval, terminology disambiguati
 
 `domain context`, `universe of discourse`, `disciplinary context`, `subject domain`, `semantic scope`, `knowledge domain`.
 
-## Visitor Universe
-
-General visitors enter through “what field does this meaning belong to?” Students through domain boundaries and terminology; engineers and scientists through domain-specific semantics and standards; policy/legal/archival visitors through institutional scope; machine consumers through domain identifiers and scope constraints.
-
-Entry depth follows the shared GIOP access-depth model and never changes the canonical definition.
-
 ## What This Context Does Not Mean
 
 It is not a visitor profile, organizational department, software namespace, physical environment, or class hierarchy.
