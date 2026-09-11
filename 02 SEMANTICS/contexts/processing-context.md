@@ -49,17 +49,11 @@ Promote only after validation against Process, Model, Software, Representation, 
 
 ## Machine / AI Interpretation
 
-Use Processing Context as structured execution metadata/semantics. Version, parameter, dependency, and input identities should be explicit when relevant. Never infer a processing path from output appearance alone.
+Use Processing Context as structured execution context. Version, parameter, dependency, and input identities should be explicit when relevant. Never infer a processing path from output appearance alone.
 
 ## Retrieval Anchors
 
 `processing context`, `pipeline context`, `algorithm context`, `model execution context`, `runtime context`, `image processing setting`.
-
-## Visitor Universe
-
-Primary: ISP/Image Pipeline Engineer, VFX/Compositing/Finishing, DIT/Colorist, Computer Vision Researcher, AI/ML Researcher, AI/ML Engineer, Neural Rendering specialist, Dataset/Data-Curation Engineer, System Integrator/Pipeline TD, Software Vendor, and Machine/AI/API/SDK Consumer.
-
-General visitors enter through “what surrounds an image-processing operation.” Experts enter through versions, parameters, dependencies, and provenance.
 
 ## What This Context Does Not Mean
 
