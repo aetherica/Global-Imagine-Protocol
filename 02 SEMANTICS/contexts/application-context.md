@@ -37,7 +37,7 @@ Application Context differs from Domain Context: domain identifies the knowledge
 
 ## Cross-Layer Relations
 
-Application Context may qualify activities, processes, measurements, representations, system operation, and evaluation. It can reference Domain Context and relevant Visitor Universe access metadata.
+Application Context may qualify activities, processes, measurements, representations, system operation, and evaluation. It can reference Domain Context and relevant contextual access/navigation considerations.
 
 ## Evidence / Provenance
 
@@ -45,7 +45,7 @@ Supported by ISO/IEC 11179 context traditions describing purpose and perspective
 
 ## Trust / Validation
 
-Validate that the proposed frame expresses a genuine application purpose or use scenario rather than merely naming an activity, system, or visitor.
+Validate that the proposed frame expresses a genuine application purpose or use scenario rather than merely naming an activity, system, or audience.
 
 ## Lifecycle
 
@@ -58,10 +58,6 @@ Use Application Context as a qualification for retrieval, recommendation, config
 ## Retrieval Anchors
 
 `application context`, `use context`, `use case`, `task context`, `purpose`, `application scenario`.
-
-## Visitor Universe
-
-Students and educators benefit from purpose-first entry. Creators enter through production tasks. Engineers enter through requirements and constraints. Scientists enter through experimental/application scope. QA, procurement, policy, and enterprise visitors enter through evaluation or deployment objectives. Machine consumers use application context as a retrieval and decision constraint.
 
 ## What This Context Does Not Mean
 
