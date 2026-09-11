@@ -70,12 +70,6 @@ Represent Capture Context as structured qualification around a capture event or 
 
 `capture context`, `imaging capture`, `acquisition context`, `capture configuration`, `capture circumstances`, `acquisition setting`.
 
-## Visitor Universe
-
-Primary: Photographer, Cinematographer/DoP, Camera Engineer/Designer, Sensor Engineer, Imaging Scientist, Computer Vision Researcher, ML Engineer, Metrology Professional, QA/Benchmark, System Integrator, Studio/Enterprise Operator, Archivist, and Machine/AI/API/SDK Consumer.
-
-General visitors enter through “what surrounds a capture.” Technical visitors enter through configuration, conditions, geometry, timing, and provenance. Expert visitors can inspect cross-layer dependencies. Machine consumers use the stable ID and structured contextual components.
-
 ## What This Context Does Not Mean
 
 Not the camera itself, a capture procedure, a single exposure setting, an illumination condition, a scene, or a visitor-specific interpretation.
