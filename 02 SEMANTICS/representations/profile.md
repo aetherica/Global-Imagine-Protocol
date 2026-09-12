@@ -59,7 +59,7 @@ A vendor preset is not automatically a Profile. A strict subset of a format may 
 
 ## Relations
 
-Relevant relations include `profile-of`, `constrains`, `extends`, `uses-profile`, and `conforms-to`, subject to the authoritative GIOP relation vocabulary.
+Profile-related assertions must use the authoritative GIOP relation vocabulary. Existing canonical relations such as `derived-from`, `represents`, `part-of`, `participates-in`, and `has-result` may be used where semantically applicable. Terms such as `profile-of`, `constrains`, `extends`, `uses-profile`, or `conforms-to` are not introduced here as new canonical relation concepts.
 
 ## Trust and Validation
 
