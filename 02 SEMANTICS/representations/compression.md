@@ -4,12 +4,12 @@
 **Preferred Name:** Compression  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Transformation that reduces representation-data size or otherwise optimizes storage/transport representation  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from HTTP content-coding semantics, DCAT compression vocabulary, and GIOP representation/fidelity analysis.  
-**Validation:** Compression/encoding/fidelity boundaries reviewed.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-ENCODING-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-ENCODING-001`, `SEM-FIDELITY-GENERIC-001`
 
 > Compression is a transformation that changes representation data to reduce its size or satisfy storage, transport, or processing objectives, with preservation or loss of information determined by the applicable method and context.
 
@@ -59,8 +59,8 @@ Claims of losslessness must be tied to a defined input/output scope and reconstr
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate.
+**Current state:** Active. This generic Compression concept is now canonical; specific compression methods remain subject to their applicable technical and domain evidence.
 
 ## Retrieval Anchors
 
-`COMPRESSION`, `LOSSLESS COMPRESSION`, `LOSSY COMPRESSION`, `COMPRESSED DATA`, `COMPRESSION RATIO`, `DECOMPRESSION`, `CODEC`, `CONTENT CODING`
+`SEM-REPRESENTATION-COMPRESSION-001`, `COMPRESSION`, `LOSSLESS COMPRESSION`, `LOSSY COMPRESSION`, `COMPRESSED DATA`, `COMPRESSION RATIO`, `DECOMPRESSION`, `CODEC`, `CONTENT CODING`
