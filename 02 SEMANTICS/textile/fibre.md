@@ -1,53 +1,55 @@
-# Textile Fibre
+# Fibre
 
-**Semantic ID:** `SEM-TEXTILE-FIBRE-001`
-**Preferred Name:** Textile Fibre
-**Semantic Class:** Textile Domain Concept
-**Domain:** Textile
-**Status:** CANONICAL CANDIDATE — V3.1 SEED
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-FIBRE-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Material, Property, Quantity, Process
 
 ## 5W1H Orientation
 
 ### What
-A Textile Fibre is a natural or manufactured fibre or filament suitable for textile structures or textile yarn formation.
+Fibre is a textile-relevant elongated, flexible structural element characterized by dimensions, morphology, composition, and other properties that enable it to participate in textile assemblies.
 
 ### Why
-Fibre is the constituent level from which many textile yarns, fabrics, and articles are constructed.
+Fibre provides the foundational physical unit from which yarns and many textile structures are formed. Its characteristics influence downstream textile behavior, appearance, processing, and performance.
 
 ### Who
-Relevant to textile engineering, fibre science, apparel, materials analysis, manufacturing, and imaging/inspection systems.
+Fibre semantics are used by textile scientists, manufacturers, laboratories, designers, quality systems, and imaging or analysis systems.
 
 ### Where
-Natural fibres, manufactured fibres, staple fibre systems, filaments, yarn inputs, fabrics, and textile products.
+Fibres may originate from natural or manufactured sources and occur individually, in blends, in yarns, and in finished textile structures.
 
 ### When
-Fibre identity and condition may change through processing, blending, finishing, degradation, or environmental exposure.
+Fibre characteristics may be stable or may change through processing, finishing, degradation, environmental exposure, or mechanical damage. The relevant temporal state must be distinguished from intrinsic composition.
 
 ### How
-Fibre is characterized by morphology, composition, dimensions, mechanical/optical properties, and intended textile use.
+Fibres are characterized through morphology, dimensions, composition, surface characteristics, mechanical or thermal behavior, and other measurements. Exact measurement semantics belong to Quantity and Property layers.
 
 ## Semantic Definition
-**Textile Fibre** is a fibre or filament constituent used or intended for forming textile structures, yarns, or textile articles.
+Fibre is a textile-relevant elongated structural element that can serve as a constituent of yarns or textile assemblies and is characterized by physical or material properties.
 
 ## Scope / Boundary
-Generic Material and generic Quantity/Property semantics remain authoritative for composition and measured characteristics. This entry gives those concepts textile-domain meaning.
+Fibre owns textile-domain fibre semantics. Generic Material owns material classification; Property/Quantity own characteristics and measurements; Yarn owns assembled fibre structures. Fibre morphology is not itself a generic ontology layer.
 
 ## Core Distinctions
-**Fibre vs Filament:** filament is continuous relative to the fibre form being considered.
-
-**Fibre vs Yarn:** fibre is a constituent; yarn is an assembled continuous strand structure.
-
-**Fibre vs Fabric:** fibre is a constituent; fabric is a constructed textile structure.
-
-## Evidence Basis
-ISO 8159:2025 provides current general vocabulary describing forms of textile fibres and yarns and includes a production-oriented morphological relationship. citeturn708541search1
+- Fibre ≠ Yarn.
+- Fibre ≠ generic Material, although a fibre has material composition.
+- Fibre composition ≠ fibre morphology.
+- Fibre property ≠ fibre identity.
 
 ## Cross-Domain Significance
-Connects Material, Quantity, Property, Process, Textile, and Representation.
+Fibre characteristics influence yarn construction, fabric behavior, garment appearance, durability, care, and microscopic or macroscopic representation.
+
+## Trust / Evidence
+Composition and morphology claims should be supported by appropriate analytical methods, representative samples, provenance, and measurement uncertainty where applicable.
+
+## Visitor Universe
+Novices need fibre-versus-yarn clarity. Experts need morphology, composition, natural/man-made classification, blends, measurement, and processing behavior. Machines need fibre type, composition, morphology, and links to constituent yarns.
 
 ## Lifecycle
-Candidate seed → validation → Gate-J → Active Canonical.
+Source/formation → fibre preparation → spinning or assembly → textile incorporation → use/aging → recovery or disposal. Fibre may undergo transformations without losing its semantic identity as a fibre constituent.
 
 ## Retrieval Anchors
-`TEXTILE FIBRE`, `TEXTILE FIBER`, `FIBRE`, `FIBER`, `FILAMENT`, `STAPLE FIBRE`
+fibre, textile fibre, fiber, textile fiber, fibrous element, fibre morphology
