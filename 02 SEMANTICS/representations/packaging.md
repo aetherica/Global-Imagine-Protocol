@@ -4,12 +4,12 @@
 **Preferred Name:** Packaging  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Aggregation and organization of one or more artifacts or representations into a package/container for a defined purpose  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from DCAT package-format distinctions, preservation practice, and GIOP representation analysis.  
-**Validation:** Packaging/container/representation boundary reviewed.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-COMPRESSION-001`
 
 > Packaging is the organization or aggregation of one or more information artifacts, files, metadata objects, or representations into a defined package or container structure.
 
@@ -55,8 +55,8 @@ Packaging claims should identify package specification/version, member structure
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate.
+**Current state:** Active. This generic Packaging concept is now canonical; specific package/container families remain subject to independent technical and preservation semantics.
 
 ## Retrieval Anchors
 
-`PACKAGING`, `PACKAGE`, `CONTAINER`, `ARCHIVE PACKAGE`, `PACKAGE FORMAT`, `DISTRIBUTION PACKAGE`, `AGGREGATION`
+`SEM-REPRESENTATION-PACKAGING-001`, `PACKAGING`, `PACKAGE`, `CONTAINER`, `ARCHIVE PACKAGE`, `PACKAGE FORMAT`, `DISTRIBUTION PACKAGE`, `AGGREGATION`
