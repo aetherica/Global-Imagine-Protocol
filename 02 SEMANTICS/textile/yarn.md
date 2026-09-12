@@ -1,70 +1,55 @@
 # Yarn
 
-**Semantic ID:** `SEM-TEXTILE-YARN-001`  
-**Preferred Name:** Yarn  
-**Semantic Class:** Textile Domain Concept  
-**Domain:** Textile  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.2.0
+## Identity / Metadata
+- GIOP ID: SEM-YARN-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Fibre, Material, Property, Quantity, Process, Fabric
 
 ## 5W1H Orientation
 
 ### What
-Yarn is a continuous or assembled textile strand structure formed from fibres, filaments, or related textile elements for textile formation or related use.
+Yarn is a textile linear assembly of fibres, filaments, or related elements arranged and consolidated to provide a usable textile-forming strand.
 
 ### Why
-Yarn provides a key semantic level between fibre/filament constituents and higher-order textile structures such as fabrics.
+Yarn is the principal intermediate structure between many fibres and fabric construction. Yarn structure strongly influences fabric appearance, handle, strength, drape, and processing behavior.
 
 ### Who
-Relevant to textile scientists, manufacturers, designers, engineers, inspectors, conservation specialists, imaging systems, and AI datasets.
+Yarn semantics are used by spinners, textile engineers, manufacturers, laboratories, designers, quality systems, and product-analysis systems.
 
 ### Where
-Yarns occur in spinning, weaving, knitting, braiding, embroidery, composite textile structures, and finished textile articles.
+Yarns occur in woven, knitted, braided, stitched, and other textile structures, and may also be used directly as cords or other textile linear elements.
 
 ### When
-Yarn structure and observable properties may change through spinning, plying, cabling, finishing, tension, moisture, wear, or damage.
+Yarn properties can change through spinning, twisting, winding, finishing, moisture exposure, tension, abrasion, and aging. Operational state must be distinguished from nominal construction.
 
 ### How
-Yarn is characterized by constituent basis, morphology, construction, ply/cable structure, linear-density or other quantitative properties, and relevant surface or finish conditions.
+Yarns are characterized by constituent fibres/filaments, linear density, twist, ply, construction, surface, and other measured properties. Measurement units and procedures remain owned by Quantity/Process semantics.
 
 ## Semantic Definition
-
-**Yarn** is a textile strand structure assembled from fibres, filaments, or related textile elements and intended for textile construction or related textile use.
+Yarn is a consolidated textile linear structure formed from fibres, filaments, or related elements and intended for textile construction or use.
 
 ## Scope / Boundary
-
-Yarn owns the textile-domain strand concept and its constructional distinctions. It does not own fibre semantics, generic Material/Property/Quantity semantics, manufacturing operations, or the representation of a yarn in an image, scan, or digital model.
+Yarn owns textile-domain yarn structure. Fibre owns constituents; Fabric owns two- or three-dimensional textile structures formed from yarns or other elements; Property/Quantity own characteristics and measurements; Process owns spinning and related operations.
 
 ## Core Distinctions
-
-### Yarn vs Fibre / Filament
-Yarn is an assembled strand structure; fibre or filament is a constituent textile element.
-
-### Yarn vs Fabric
-Yarn is strand-level; fabric is a higher-order constructed textile structure.
-
-### Single vs Plied vs Cabled Yarn
-These are construction distinctions within the Yarn domain, not separate generic semantic layers.
+- Yarn ≠ Fibre.
+- Yarn ≠ Fabric.
+- Yarn construction ≠ yarn property.
+- Ply/twist are structural descriptors and may also have measurable quantities.
 
 ## Cross-Domain Significance
-
-`Textile Fibre → Yarn → Fabric / Textile Structure → Garment / Technical Article → Observation / Measurement → Representation`
+Yarn structure propagates into fabric construction, garment appearance, mechanical behavior, tactile response, imaging texture, and manufacturing process control.
 
 ## Trust / Evidence
-
-Yarn classification should declare constituent basis, construction, morphology terminology, and observation/measurement context. ISO 8159:2025 provides current vocabulary concerning forms of textile fibres and yarns.
+Yarn characterization should identify sample context and method. Supplier specifications, microscopy, physical tests, and production records may provide complementary evidence.
 
 ## Visitor Universe
-
-**Novice:** yarn versus fibre and fabric.  
-**Intermediate:** single, plied, and cabled construction.  
-**Expert:** morphology, construction, quantitative characterization, finishing, and uncertainty.  
-**Machine:** stable ID, constituent links, construction attributes, measurements, evidence, provenance.
+Novices need fibre-to-yarn distinction. Experts need construction, twist, ply, linear density, filament/fibre distinctions, processing history, and performance implications. Machines need constituent and structural relations plus measured properties.
 
 ## Lifecycle
-
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Fibre selection → preparation → spinning/formation → winding/conditioning → fabric formation → use/aging/recovery.
 
 ## Retrieval Anchors
-
-`YARN`, `TEXTILE YARN`, `SINGLE YARN`, `PLIED YARN`, `CABLED YARN`, `YARN STRUCTURE`
+yarn, textile yarn, spun yarn, filament yarn, yarn structure, yarn construction
