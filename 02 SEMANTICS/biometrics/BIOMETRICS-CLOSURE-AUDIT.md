@@ -1,6 +1,7 @@
 # Biometrics Closure Audit
 
 **Status:** IMPLEMENTATION-COMPLETE — V3.1 SEED / CANDIDATE DOMAIN
+**Authoring standard:** `02 SEMANTICS/DOMAIN-AUTHORING-STANDARD.md`
 
 ## Implemented Core
 
@@ -8,24 +9,32 @@
 - Biometric Reference — `SEM-BIOMETRIC-REFERENCE-001`
 - Biometric Template — `SEM-BIOMETRIC-TEMPLATE-001`
 
-## Retained Domain Concepts in README Seed Register
+## Authoring Audit
 
-Biometric Modality, Biometric Sample, Biometric Verification, Biometric Identification.
+- [x] Identity / Metadata present
+- [x] Substantive 5W1H content present for all six dimensions
+- [x] Semantic Definition explicit
+- [x] Scope and boundary explicit
+- [x] Core distinctions explicit
+- [x] Cross-domain significance explicit
+- [x] Trust/evidence distinction explicit
+- [x] Visitor Universe routing present
+- [x] Lifecycle present
+- [x] Retrieval anchors present
+- [x] Generic Identity/Representation/Measurement ownership preserved
 
-## Routing
+## Retained Domain Scope
 
-Verification and identification are operational biometric tasks and should become Activity/Process/Workflow entries rather than parallel ontologies. Sample is an acquired representation and should remain cross-linked with Representation and Capture/Observation. Biometric Reference is a biometric role, while Template is a particular processed representation that may serve that role.
+Biometric Modality, Biometric Sample, Biometric Verification, and Biometric Identification remain controlled domain vocabulary. Verification and Identification are operational biometric tasks and should be routed to Activity/Process/Workflow rather than creating parallel ontologies. Sample is an acquired representation and should remain cross-linked with Representation and Capture/Observation.
 
 ## Boundary
 
-Biometrics does not own generic Identity, Representation, Measurement, Computational Method, Implementation, or BIL integrity semantics.
+Biometrics does not own generic Identity, Representation, Measurement, Computational Method, Implementation, or BIL integrity semantics. A biometric reference is a biometric-domain role; a template is a derived representation that may serve that role.
 
 ## Evidence Basis
 
-ISO/IEC 24745:2022 defines security/privacy requirements around biometric information and secure binding of biometric references to identity references. ISO/IEC DIS 19795-1 (2026) separates enrolment, verification, identification transactions, comparisons, decisions, and biometric performance testing. citeturn454778search3turn167886search0
+The dataset retains the standards-based distinction between biometric information, biometric references, identity binding, quality, performance evaluation, and operational biometric transactions. Standards inform the domain boundary but do not override GIOP semantic ownership.
 
 ## Completion Determination
 
-The BIL material has been semantically routed rather than copied. No BIL-native candidate was moved into Biometrics.
-
-Canonical promotion remains subject to Gate-J.
+All implemented Biometrics dataset entries now follow the shared Condition-grade authoring/depth protocol. The former BIL topic universe has been semantically routed rather than copied. Canonical promotion remains subject to cross-layer validation and Gate-J.
