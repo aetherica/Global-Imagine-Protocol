@@ -1,37 +1,55 @@
 # Textile Structure
 
-**Semantic ID:** `SEM-TEXTILE-STRUCTURE-001`  
-**Preferred Name:** Textile Structure  
-**Semantic Class:** Textile Domain Concept  
-**Domain:** Textile  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-TEXTILE-STRUCTURE-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Fibre, Yarn, Fabric, Relation, Property, Representation
 
 ## 5W1H Orientation
-Textile Structure describes the organization of textile constituents and layers that gives a textile material or article its constructional form.
+
+### What
+Textile Structure is the organized spatial arrangement and connectivity of textile constituents that defines how a textile assembly is constructed.
+
+### Why
+Structure explains how fibres, yarns, loops, bonds, layers, and other constituents form a coherent textile. It is necessary to distinguish construction from the properties produced by that construction.
+
+### Who
+Textile engineers, manufacturers, designers, laboratories, inspectors, conservators, and computer-vision systems use structural descriptions.
+
+### Where
+Structure exists at fibre, yarn, fabric, multilayer, and composite textile scales. The relevant scale must be stated because a textile can exhibit structure at multiple levels.
+
+### When
+Structure is established during formation and may be altered by finishing, deformation, wear, repair, or damage. Temporary configuration should not be confused with nominal construction.
+
+### How
+Structure is described through constituent relationships, topology, geometry, layering, orientation, density, and formation method. Quantitative descriptors remain Quantity/Property concepts.
 
 ## Semantic Definition
-**Textile Structure** is the domain-specific organization of fibres, yarns, loops, layers, bonds, or related constituents forming a textile construction.
+Textile Structure is the organized arrangement and relationship of constituents that defines the construction of a textile assembly.
 
 ## Scope / Boundary
-Structure covers organization and constructional arrangement. Fabric is a common textile structure; construction operations remain Process/Activity-owned; microscopic morphology and measured characteristics remain linked to the applicable Property/Quantity concepts.
+Structure owns organizational semantics, not generic relations or measurements. Fibre/Yarn/Fabric own constituent entities; Relation expresses relationships; Quantity measures structural parameters; Property describes resulting characteristics.
 
 ## Core Distinctions
-**Structure vs Material:** organization versus substance.  
-**Structure vs Fabric:** structure is the organizational concept; fabric is a constructed textile article/structure.  
-**Structure vs Finish:** constructional organization versus treatment/result affecting the textile surface or article.
+- Structure ≠ property.
+- Structure ≠ material composition.
+- Structure ≠ measurement value.
+- Nominal construction ≠ temporary deformation.
 
 ## Cross-Domain Significance
-Connects Textile, Fibre, Yarn, Fabric, Material, Property, Quantity, Representation, and Garment.
+Textile structure determines visual texture, mechanical behavior, drape, porosity, thickness, surface interaction, and garment performance, and is therefore important to imaging and integrity assessment.
 
 ## Trust / Evidence
-Structural claims should distinguish visible macroscopic construction from inferred or microscopic structure and should identify measurement or imaging scale when material.
+Structural claims may be supported by microscopy, imaging, physical inspection, production documentation, and dimensional measurements. Scale and observation conditions should be preserved.
 
 ## Visitor Universe
-Novice: structure versus material. Expert: constituent organization, construction mechanism, scale, deformation, and hidden structure. Machine: structural descriptors, constituent links, scale, evidence.
+Novices need arrangement-versus-property distinction. Experts need topology, geometry, hierarchy, scale, layering, deformation, and structural inspection. Machines need typed constituent relations and structural descriptors.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Formation → finishing → use → deformation/wear → repair or modification → recycling/disassembly.
 
 ## Retrieval Anchors
-`TEXTILE STRUCTURE`, `FABRIC STRUCTURE`, `TEXTILE CONSTRUCTION`, `STRUCTURAL ORGANIZATION`, `TEXTILE LAYER`
+textile structure, fabric structure, yarn structure, textile construction, textile organization
