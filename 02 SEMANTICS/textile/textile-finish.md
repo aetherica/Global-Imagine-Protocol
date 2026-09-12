@@ -1,37 +1,56 @@
 # Textile Finish
 
-**Semantic ID:** `SEM-TEXTILE-FINISH-001`  
-**Preferred Name:** Textile Finish  
-**Semantic Class:** Textile Domain Concept  
-**Domain:** Textile  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-TEXTILE-FINISH-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Textile, Material, Property, Process, State
 
 ## 5W1H Orientation
-Textile Finish describes a textile-domain treatment or resulting finish applied to a textile material, structure, or article to produce intended surface, functional, aesthetic, or performance effects.
+
+### What
+Textile Finish is a treatment, treatment state, or finishing outcome applied to a textile to modify its surface, appearance, handle, performance, protection, or other defined characteristics after or during textile formation.
+
+### Why
+Finishing can substantially alter how a textile looks, feels, behaves, and performs without necessarily changing its underlying fibre or base construction. It therefore needs semantic separation from composition and structure.
+
+### Who
+Finishing semantics are relevant to textile manufacturers, processors, laboratories, designers, quality systems, conservators, and product representation systems.
+
+### Where
+Finishes may be applied to fibres, yarns, fabrics, garments, or other textile products depending on the process and intended effect.
+
+### When
+Finishing occurs at defined production or treatment stages and may degrade, wash out, accumulate, or be reapplied during use and care.
+
+### How
+A finish is established through a defined process and produces an observable or measurable effect. Process records, material compatibility, treatment conditions, and resulting properties may be needed to interpret it.
 
 ## Semantic Definition
-**Textile Finish** is a domain-specific treatment/result concept associated with modifying a textile article or its surface after or during textile formation.
+Textile Finish is a textile-domain treatment or resulting treated condition intended to modify specified textile characteristics.
 
 ## Scope / Boundary
-The domain concept identifies the textile-specific finish role. The actual treatment operation is a Process/Activity; resulting characteristics are Properties/States; chemical/material semantics remain Material-owned; labels and symbols are Representations.
+Finish owns the textile-domain concept of treatment/outcome. Process owns the finishing operation; Property owns resulting characteristics; State owns current treated condition; Material owns composition. A finish is not synonymous with a surface property.
 
 ## Core Distinctions
-**Finish vs Process:** domain result/role versus treatment operation.  
-**Finish vs Property:** applied/resulting textile condition versus characteristic.  
-**Finish vs Structure:** surface/treatment effect versus constituent organization.
+- Finish ≠ finishing process.
+- Finish ≠ material composition.
+- Finish ≠ fabric structure.
+- Finish ≠ resulting property.
+- Applied finish ≠ permanent intrinsic characteristic.
 
 ## Cross-Domain Significance
-Connects Textile, Material, Property, State, Process, Activity, Representation, and BIL.
+Finishes influence optical appearance, surface reflectance, hand, water behavior, durability, care, garment performance, and imaging interpretation.
 
 ## Trust / Evidence
-Finish claims should distinguish declared treatment, observed surface/result, and inferred treatment. Care and treatment labelling should be represented separately from the semantic finish itself.
+Evidence may include treatment records, labels, laboratory analysis, microscopy, surface inspection, and provenance. Claims should distinguish confirmed treatment from inferred appearance.
 
 ## Visitor Universe
-Novice: finish versus fabric/structure. Expert: treatment history, resulting properties, care implications, and evidence. Machine: finish type, process/result links, properties, state, evidence.
+Novices need finish-versus-property distinction. Experts need treatment chemistry/process, durability, wash effects, surface behavior, and identification evidence. Machines need finish type, target textile, process references, state, and evidence.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Application → initial treated state → use/care → degradation or renewal → removal/transformation.
 
 ## Retrieval Anchors
-`TEXTILE FINISH`, `TEXTILE TREATMENT`, `FINISHING`, `SURFACE FINISH`, `TEXTILE SURFACE TREATMENT`
+textile finish, fabric finish, finishing treatment, textile surface finish, finishing outcome
