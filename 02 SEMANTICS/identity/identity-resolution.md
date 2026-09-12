@@ -1,74 +1,56 @@
 # Identity Resolution
 
-**Semantic ID:** `SEM-IDENTITY-RESOLUTION-001`
-**Preferred Name:** Identity Resolution
-**Semantic Class:** Identity Process Concept
-**Domain:** Identity
-**Status:** CANONICAL CANDIDATE — V3.1 SEED
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-IDENTITY-RESOLUTION-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Identity
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Identity, Relation, Representation, Evidence, Process, Activity, Temporal
 
 ## 5W1H Orientation
 
 ### What
-
-Identity Resolution is the process of determining whether available evidence refers to an existing identity, a new identity, or an unresolved/ambiguous referent within a declared scope.
+Identity Resolution is the determination of whether records, references, observations, representations, or claims correspond to the same intended identity, or to distinct identities, within a declared scope.
 
 ### Why
-
-Different records or observations may contain aliases, incomplete attributes, duplicate records, transformed representations, or conflicting evidence.
+Resolution is necessary when multiple records may describe the same referent, when identifiers differ across systems, or when an observed entity must be associated with an existing identity without assuming that lexical similarity proves correspondence.
 
 ### Who
-
-Identity systems, archivists, investigators, registries, AI systems, search systems, and human assessors may perform identity resolution.
+Resolution may be performed by human adjudicators, authoritative registries, analysts, software systems, biometric systems, or hybrid workflows. Responsibility and assurance depend on the application.
 
 ### Where
-
-Databases, image collections, digital identity systems, archives, scientific datasets, and machine perception pipelines.
+It operates within a defined population, registry, dataset, scene, institutional domain, or cross-system mapping. Scope determines which identities and evidence are eligible for comparison.
 
 ### When
-
-Resolution is performed relative to a specific time, population, task, and evidence set.
+Resolution occurs during enrollment, record linkage, deduplication, observation association, investigation, migration, synchronization, or other identity-management events. Results may be revised when new evidence appears.
 
 ### How
-
-Resolution compares candidate evidence against identity criteria and produces a result such as resolved, unresolved, ambiguous, or rejected according to the applicable process.
+Resolution combines identifiers, attributes, representations, relations, temporal context, biometric evidence where appropriate, provenance, and decision rules. The output is a correspondence decision or unresolved/indeterminate result, not merely a similarity score.
 
 ## Semantic Definition
-
-**Identity Resolution** is the scoped process of linking an observation, record, representation, or claim to an identity candidate or determining that available evidence is insufficient or conflicting.
+Identity Resolution is the semantic determination of correspondence between identity references and candidate referents within a specified scope, based on available evidence and an explicit decision context.
 
 ## Scope / Boundary
-
-This page defines the identity-domain responsibility, not a universal matching algorithm. Similarity metrics, biometric comparison algorithms, clustering, database retrieval, and authentication protocols belong to their respective computational, biometric, relation, activity, process, workflow, or implementation layers.
+Identity Resolution owns correspondence semantics. The computational method used to perform matching belongs to Computational Method/Implementation. Biometric Verification and Identification are operational biometric activities and processes. Authentication is a separate security decision. BIL may consume resolution results as evidence but does not own identity resolution.
 
 ## Core Distinctions
-
-**Resolution vs Verification:** verification tests a presented claim against a specified reference or identity context; resolution may search among multiple possible identities.
-
-**Resolution vs Identification:** identification is a task/result term used in specific systems; the generic identity process should not assume a particular modality or algorithm.
-
-**Resolved vs Certain:** a resolution result can be tentative or confidence-qualified.
-
-**Unresolved vs Wrong:** insufficient evidence is different from contradictory evidence.
+- Resolution ≠ Identification of every kind; terminology is context-dependent.
+- Resolution ≠ Authentication.
+- Resolution ≠ Similarity measurement.
+- Resolution ≠ Identity itself.
+- Unresolved ≠ false: insufficient evidence must remain distinguishable from contradiction.
 
 ## Cross-Domain Significance
-
-`Identity → Candidate Evidence → Comparison/Assessment → Result → Provenance`.
+Resolution connects identity, biometrics, records, observation, representation, temporal continuity, provenance, and decision semantics. It is a major bridge between raw evidence and identity-level assertions.
 
 ## Trust / Evidence
-
-Resolution should record scope, candidate population, evidence sources, decision criteria, uncertainty, and provenance. NIST's current digital identity guidance treats identity resolution as a distinct step in identity proofing; that digital use is a specialization rather than the generic GIOP meaning.
+Resolution requires evidence appropriate to the risk and scope. Evidence conflict, missing evidence, model uncertainty, and provenance should remain visible rather than being collapsed into an unexplained binary result.
 
 ## Visitor Universe
-
-Novice: linking records to the same referent.
-
-Expert: candidate generation, disambiguation, evidence conflict, temporal continuity, and uncertainty.
+Novices need the correspondence concept. Experts need candidate generation, evidence fusion, scope, thresholds, adjudication, uncertainty, and temporal identity continuity. Machines need candidate sets, evidence references, correspondence relations, decision state, and provenance.
 
 ## Lifecycle
-
-Candidate seed → validation → Gate-J → Active Canonical.
+A resolution decision can be proposed, evaluated, accepted, rejected, disputed, superseded, or revised. The lifecycle of the decision is distinct from the lifecycle of the identity.
 
 ## Retrieval Anchors
-
-`IDENTITY RESOLUTION`, `ENTITY RESOLUTION`, `RECORD LINKAGE`, `IDENTITY MATCHING`, `IDENTITY DISAMBIGUATION`
+identity resolution, record linkage, identity correspondence, entity resolution, identity matching, identity reconciliation
