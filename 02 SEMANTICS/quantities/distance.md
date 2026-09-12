@@ -5,8 +5,8 @@
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Quantity  
 **Domain:** Geometry / Imaging / Measurement  
-**Status:** Provisional  
-**Version:** 0.1.0  
+**Status:** Active  
+**Version:** 1.0.0  
 **Related IDs:** `SEM-RELATION-VIEWING-DISTANCE-001`
 
 > Distance is a measurable spatial quantity expressing the separation associated with two defined references under a specified geometric context.
@@ -51,7 +51,7 @@ Potential canonical relations include `has-value`, `has-unit`, `measures-separat
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
