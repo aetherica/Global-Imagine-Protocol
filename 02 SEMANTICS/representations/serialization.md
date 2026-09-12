@@ -62,7 +62,7 @@ Deserialization is not silently treated as serialization; it is the inverse or c
 
 ## Relations
 
-Relevant relations include `serializes`, `produces`, `derived-from`, `represented-by`, and activity/result relations through the authoritative semantic layers.
+Representation-related assertions must use the authoritative GIOP relation vocabulary. Existing canonical relations such as `derived-from`, `represents`, `part-of`, `participates-in`, and `has-result` may be used where semantically applicable. Serialization-specific terms such as `serializes` or `produces` are not introduced here as new canonical relation concepts.
 
 ## Trust and Validation
 
