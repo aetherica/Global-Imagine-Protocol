@@ -4,12 +4,12 @@
 **Preferred Name:** Encoding  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Coding or transformation scheme used to express information/data  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from HTTP content-coding semantics, character/data encoding practice, format specifications, and GIOP representation analysis.  
-**Validation:** Boundary review completed; specific encoding families remain separately classified where needed.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-FORMAT-001`, `SEM-REPRESENTATION-COMPRESSION-001`
 
 > An Encoding is a defined coding scheme or transformation by which information or representation data is expressed in a specified code or coded form.
 
@@ -59,8 +59,8 @@ Encoding claims should identify the applicable specification, version, input/out
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate. Specific encoding families should be admitted only after independent semantic and evidence review.
+**Current state:** Active. This generic Encoding concept is now canonical; specific encoding families remain subject to independent semantic and evidence review.
 
 ## Retrieval Anchors
 
-`ENCODING`, `DATA ENCODING`, `CHARACTER ENCODING`, `CONTENT CODING`, `CODED FORM`, `ENCODED DATA`, `ENCODING SCHEME`
+`SEM-REPRESENTATION-ENCODING-001`, `ENCODING`, `DATA ENCODING`, `CHARACTER ENCODING`, `CONTENT CODING`, `CODED FORM`, `ENCODED DATA`, `ENCODING SCHEME`
