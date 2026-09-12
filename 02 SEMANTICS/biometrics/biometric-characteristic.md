@@ -1,84 +1,56 @@
 # Biometric Characteristic
 
-**Semantic ID:** `SEM-BIOMETRIC-CHARACTERISTIC-001`  
-**Preferred Name:** Biometric Characteristic  
-**Semantic Class:** Biometrics Concept  
-**Domain:** Biometrics  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.2.0
+## Identity / Metadata
+- GIOP ID: SEM-BIOMETRIC-CHARACTERISTIC-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Biometrics
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Class, Property, Quantity, State, Representation, Identity
 
 ## 5W1H Orientation
 
 ### What
-A Biometric Characteristic is a biological or behavioural characteristic whose measurable manifestation is used as a basis for biometric recognition or comparison within a declared application.
+A Biometric Characteristic is a measurable or observable biological or behavioral characteristic that can be used as a biometric signal for recognition, verification, identification, or related purposes.
 
 ### Why
-Biometric systems require a defined characteristic whose manifestations can be observed, acquired, represented, and compared. The characteristic must remain distinct from the sample, template, identity, and recognition decision derived from it.
+Biometric characteristics provide evidence that can support distinguishing or relating subjects. Their usefulness depends on distinctiveness, measurability, persistence, capture conditions, population variability, and the intended biometric task.
 
 ### Who
-Applicable to biometric-system designers, biometric researchers, sensor specialists, recognition systems, forensic and authentication applications, evaluation systems, and machine-readable biometric datasets.
+Characteristics may be obtained from humans or, in domain-specific systems, other biological subjects. Sensors, observers, biometric systems, and analysts may capture or evaluate them.
 
 ### Where
-It applies across physical observation, sensor acquisition, biometric datasets, recognition systems, evaluation environments, forensic applications, and declared identity-related workflows.
+They occur in the biological subject and become observable through a capture modality such as image, audio, physiological sensing, behavioral observation, or another measurement channel.
 
 ### When
-A characteristic may vary with time, subject condition, behaviour, environment, acquisition conditions, sensor properties, and application context. Such variability does not by itself invalidate the characteristic.
+A characteristic may vary over time because of pose, expression, aging, injury, health, environment, behavior, or capture conditions. Its temporal behavior must therefore be distinguished from identity persistence.
 
 ### How
-A characteristic becomes relevant to a biometric application through acquisition, measurement or observation, representation, comparison, and an application-specific recognition process. Those operations belong to their respective GIOP layers.
+A characteristic is captured or measured, represented as data, subjected to quality assessment, and potentially converted into a biometric reference or template. The method and modality determine what portion of the characteristic is observable.
 
 ## Semantic Definition
-
-**Biometric Characteristic** is a biological or behavioural characteristic whose measurable manifestation is used for biometric recognition, comparison, or related biometric processing within a specified application scope.
+A Biometric Characteristic is a biological or behavioral characteristic used as a biometric signal because it can be observed or measured for subject-related comparison or recognition.
 
 ## Scope / Boundary
-
-Biometric Characteristic owns the domain meaning of the characteristic used as the biometric basis. It does not own:
-
-- Identity or identity resolution;
-- a particular acquired Sample;
-- a Biometric Template representation;
-- generic Property or Quantity semantics;
-- Observation or Measurement activities;
-- recognition/verification/identification workflows;
-- BIL integrity evaluation;
-- a particular sensor, algorithm, model, or implementation.
+Biometric Characteristic owns biometric-domain characteristic semantics. Generic Property and Quantity own general properties and measurements. Identity owns the referent. Biometric Reference and Template own derived representations. BIL evaluates relevant biometric integrity but does not redefine the characteristic.
 
 ## Core Distinctions
-
-### Characteristic vs Sample
-The characteristic is the underlying biological/behavioural phenomenon; a sample is an acquired instance or representation produced from an observation/acquisition event.
-
-### Characteristic vs Template
-A template is a system-purpose representation derived from biometric information; it is not the characteristic itself.
-
-### Characteristic vs Identity
-A characteristic may provide evidence for an identity-related determination but does not constitute identity.
-
-### Characteristic vs Modality
-A modality is a declared classification of biometric acquisition/recognition based on a characteristic or technique; the characteristic is the underlying domain phenomenon.
+- Characteristic ≠ biometric sample.
+- Characteristic ≠ biometric template.
+- Characteristic ≠ identity.
+- Observable characteristic ≠ invariant characteristic.
+- Measurement error ≠ biological change.
 
 ## Cross-Domain Significance
-
-`Biological / Behavioural Phenomenon → Observation / Measurement → Biometric Characteristic → Sample / Representation → Template → Identity-related Process / Decision`
-
-The Biometrics domain consumes generic GIOP semantics rather than redefining them.
+Biometric characteristics connect biology, measurement, representation, identity, machine learning, and evaluation. They can serve as evidence in identity resolution or integrity assessment without becoming proof by themselves.
 
 ## Trust / Evidence
-
-A biometric characteristic assertion should declare the application scope, subject population, acquisition context, expected variability, and intended task. Measurability or observability must not be confused with identity certainty. Evidence quality is handled by the applicable acquisition, measurement, assessment, and provenance semantics.
+Interpretation depends on capture quality, sensor characteristics, population context, measurement uncertainty, provenance, and method. A characteristic observation is evidence, not automatically an identity decision.
 
 ## Visitor Universe
-
-**Novice:** characteristic versus identity, sample, and template.  
-**Intermediate:** physiological versus behavioural characteristics and acquisition variability.  
-**Expert:** characteristic scope, observability, population variability, quality, comparison context, and cross-representation consistency.  
-**Machine:** stable semantic ID, characteristic class, modality references, acquisition context, evidence, provenance, and uncertainty.
+Novices need characteristic-versus-template clarity. Experts need modality, persistence, discriminability, quality, variability, uncertainty, and performance implications. Machines need typed characteristic, modality, sample, and measurement references.
 
 ## Lifecycle
-
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+The characteristic itself is part of the subject; its observations and representations have capture, processing, validation, retention, and retirement lifecycles.
 
 ## Retrieval Anchors
-
-`BIOMETRIC CHARACTERISTIC`, `BIOLOGICAL CHARACTERISTIC`, `BEHAVIOURAL BIOMETRIC`, `PHYSIOLOGICAL BIOMETRIC`, `BIOMETRIC BASIS`
+biometric characteristic, biometric trait, biometric signal, biological characteristic, behavioral biometric characteristic
