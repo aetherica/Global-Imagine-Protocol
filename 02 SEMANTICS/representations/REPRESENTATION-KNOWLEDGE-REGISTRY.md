@@ -1,7 +1,7 @@
 # Representation Knowledge Registry
 
 **Status:** Active Semantic Knowledge Registry  
-**Version:** 1.3.0  
+**Version:** 1.4.0  
 **Purpose:** Retain representation-related concepts, decisions, evidence status, and routing without becoming a parallel canonical knowledge base.
 
 ## Registry Rules
@@ -26,6 +26,7 @@ A registry record is not automatically canonical. Canonical semantic content is 
 | Packaging | Aggregation/containerization | Distinct from Representation and File | `packaging.md` | Active |
 | Profile | Specification specialization | Distinct from Format and Conformance | `profile.md` | Active |
 | Belief Representation | Agent-relative belief, uncertainty, or epistemic-state representation | Distinct reusable specialized Representation concept | `belief-representation.md` | Active |
+| Object-Centric Representation | Object-organized information-bearing form | Distinct reusable specialized Representation concept | `object-centric-representation.md` | Active |
 
 ## Advanced Extension Intake
 
@@ -33,7 +34,6 @@ The following concepts remain controlled candidates pending independent promotio
 
 | Candidate ID | Preferred Name | Primary responsibility | Decision |
 |---|---|---|---|
-| `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Representation organized around distinct objects/entities | Candidate — high priority |
 | `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Representation organized around typed relations | Candidate — high priority |
 | `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Representation of action possibilities/opportunities | Candidate — high priority |
 | `SEM-REPRESENTATION-ACTION-001` | Action Representation | Information-bearing form encoding actions and their structure/parameters | Candidate — high priority |
@@ -51,7 +51,7 @@ The following concepts remain controlled candidates pending independent promotio
 | `SEM-REPRESENTATION-WORLD-001` | World Representation | Representation of broader environment/world state, structure, or dynamics | Candidate — Model boundary review |
 | `SEM-REPRESENTATION-MAP-001` | Map Representation | Representation of spatial organization for mapping/navigation | Candidate — high priority |
 
-`SEM-REPRESENTATION-BELIEF-001` has been removed from this controlled-candidate table because it passed independent promotion review and is now Active canonical.
+`SEM-REPRESENTATION-BELIEF-001` and `SEM-REPRESENTATION-OBJECT-CENTRIC-001` have been removed from this controlled-candidate table because they passed independent promotion review and are now Active canonical.
 
 ## Routed / Dimensional Terms
 
@@ -63,6 +63,7 @@ Feature, Embedding, Latent, Tensor, and Neural Representation remain routed cand
 
 - State is not replaced by State Representation.
 - Belief Representation expresses an agent-relative epistemic state; it does not replace `SEM-STATE-GENERIC-001`.
+- Object-Centric Representation organizes information around object/entity units; it does not replace Class, Property, State, Relation, Perception, or Scene semantics.
 - Action execution remains an Activity; Action Representation is its information-bearing form.
 - Process/Activity remain occurrences or temporal courses; process descriptions are Representations.
 - Model remains a formal explanatory/predictive construct; representation of a model is not automatically the Model.
@@ -75,11 +76,13 @@ The intake was informed by multiple source traditions: HTTP and Web standards, R
 
 Belief Representation promotion was specifically supported by formal treatments of qualitative and graded belief representation, POMDP belief-state formulations in which beliefs represent probability distributions over possible world states, and robotics/AI work using learned or approximate belief representations for decision-making under partial observability.
 
+Object-Centric Representation promotion was supported by contemporary object-centric visual representation-learning research and peer-reviewed embodied-robotics surveys in which representations are organized around distinct objects, object slots/object files, object properties, pose, and object-level manipulation or scene information.
+
 ## Promotion Rule
 
 Every candidate must independently pass identity, primary responsibility, existing-entry check, boundary, evidence, relation authority, cross-layer validation, lifecycle, and retrieval gates before canonical promotion.
 
-Belief Representation passed these gates without creating a new relation authority or collapsing belief, state, observation, measurement, model, or action semantics.
+Belief Representation and Object-Centric Representation passed these gates without creating new relation authority or collapsing belief, state, observation, measurement, model, action, class, or scene semantics.
 
 ## Visitor Universe Note
 
