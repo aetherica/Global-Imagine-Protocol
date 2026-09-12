@@ -1,37 +1,55 @@
 # Garment Size Designation
 
-**Semantic ID:** `SEM-GARMENT-SIZE-DESIGNATION-001`  
-**Preferred Name:** Garment Size Designation  
-**Semantic Class:** Garment Domain Concept  
-**Domain:** Garment  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-GARMENT-SIZE-DESIGNATION-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Garment
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Garment, Quantity, Anthropometry, Property, Representation
 
 ## 5W1H Orientation
-A Garment Size Designation identifies a position or category within a declared garment sizing system, normally associated with intended body dimensions or a defined size range.
+
+### What
+Garment Size Designation is a standardized or product-specific designation used to classify a garment size, normally associated with defined body measurements, intervals, or sizing conventions.
+
+### Why
+Size designations provide a compact way to communicate intended sizing and organize garment products without requiring every body or garment dimension to be encoded in the designation itself.
+
+### Who
+Manufacturers, designers, retailers, standards systems, fit professionals, and consumers use size designations.
+
+### Where
+They occur on labels, product records, catalogues, packaging, digital commerce systems, and sizing tables.
+
+### When
+A designation is assigned within a sizing system and remains meaningful according to that system's version, market, population, and product context. It may change when the sizing system or product classification changes.
+
+### How
+A designation maps to defined sizing rules or tables, which may be based on body measurements, intervals, and other conventions. The designation must not be interpreted as a direct measurement value unless explicitly defined.
 
 ## Semantic Definition
-**Garment Size Designation** is a standardized or system-defined designation used to communicate the intended sizing position of a garment within a declared sizing scheme.
+Garment Size Designation is a label or coded classification representing a garment size within a specified sizing system and associated dimensional convention.
 
 ## Scope / Boundary
-It is not itself a body measurement, garment measurement, or fit assessment. Anthropometric quantities remain Quantity/Measurement-owned; sizing tables and intervals are sizing-system artifacts.
+Size Designation owns garment sizing-label semantics. Quantity owns measurements; Anthropometry/body measurement semantics remain external; Fit owns garment-body correspondence; Garment owns the article. A size label does not guarantee fit.
 
 ## Core Distinctions
-**Size Designation vs Body Measurement:** classification versus measured body dimension.  
-**Size Designation vs Garment Measurement:** designation versus product dimension.  
-**Size vs Fit:** assigned sizing position versus body–garment relationship.
+- Size designation ≠ body measurement.
+- Size designation ≠ garment measurement.
+- Size designation ≠ fit.
+- Size designation ≠ universal size across systems.
 
 ## Cross-Domain Significance
-Connects Garment with Quantity, Measurement, Anthropometry, Representation, and Fit.
+Sizing connects garment design with anthropometry, measurement, pattern grading, fit, retail representation, and international sizing conventions.
 
 ## Trust / Evidence
-The sizing system, market/population scope, measurement basis, and edition/version should be declared before interpreting a size designation.
+Interpretation requires the relevant sizing system, market, population, product category, and version. Label evidence without the governing sizing context can be ambiguous.
 
 ## Visitor Universe
-Novice: size label versus measurement. Expert: sizing systems, intervals, population scope, and cross-system non-equivalence. Machine: designation, system, measurement references, and evidence.
+Novices need label-versus-measurement distinction. Experts need sizing systems, intervals, population assumptions, grading, market conventions, and versioning. Machines need designation, system, size table, and dimensional references.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Sizing-system definition → designation assignment → product release → revision or system migration → archival.
 
 ## Retrieval Anchors
-`GARMENT SIZE`, `SIZE DESIGNATION`, `CLOTHING SIZE`, `APPAREL SIZE`, `SIZING SYSTEM`
+garment size designation, clothing size, apparel size, size label, garment sizing designation
