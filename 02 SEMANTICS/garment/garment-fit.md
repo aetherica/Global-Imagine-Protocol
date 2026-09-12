@@ -1,37 +1,56 @@
 # Garment Fit
 
-**Semantic ID:** `SEM-GARMENT-FIT-001`  
-**Preferred Name:** Garment Fit  
-**Semantic Class:** Garment Domain Concept  
-**Domain:** Garment  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-GARMENT-FIT-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Garment
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Garment, Observer, Body/Anthropometry, Quantity, State, Context
 
 ## 5W1H Orientation
-Garment Fit describes the relationship between a garment's geometry and the intended body dimensions, shape, posture, and wear context.
+
+### What
+Garment Fit is the relationship between a garment's dimensions, shape, construction, and configuration and the body or wearer context for which the garment is worn.
+
+### Why
+Fit explains how a garment sits, conforms, drapes, restricts, or provides allowance around a wearer. It is not equivalent to size designation or a single body measurement.
+
+### Who
+Fit is relevant to designers, pattern makers, wearers, retailers, fit assessors, manufacturers, virtual fitting systems, and imaging-based analysis.
+
+### Where
+Fit is evaluated at the interface between garment and wearer and can vary across body regions, posture, movement, garment configuration, and wearing conditions.
+
+### When
+Fit changes with posture, movement, fastening, layering, body changes, garment deformation, and wear. A nominal size can remain unchanged while actual fit changes.
+
+### How
+Fit is assessed through dimensional correspondence, ease, contact, tension, drape, alignment, and wearer context using measurements, observation, physical fitting, or simulation.
 
 ## Semantic Definition
-**Garment Fit** is the context-dependent relationship between a garment and its intended body or body region with respect to dimensional, geometric, functional, and wear requirements.
+Garment Fit is the context-dependent correspondence between a garment configuration and the body or wearer geometry and conditions under which it is worn.
 
 ## Scope / Boundary
-Fit is not size designation and is not a generic Property. It depends on body and garment geometry plus declared wear conditions. Fit assessment methods and measurements remain in their applicable assessment, quantity, measurement, activity, or process layers.
+Fit owns garment-specific relational/assessment semantics. Quantity owns body and garment measurements; Context owns circumstances; State owns configuration; Garment Size Designation owns sizing labels or designations. Fit is not a universal scalar.
 
 ## Core Distinctions
-**Fit vs Size:** relationship versus designation.  
-**Fit vs Garment Measurement:** relational assessment versus dimensional data.  
-**Fit vs Wearing State:** compatibility relationship versus current state/activity.
+- Fit ≠ size designation.
+- Fit ≠ body measurement.
+- Fit ≠ garment dimension.
+- Fit ≠ garment identity.
+- Fit depends on context and configuration.
 
 ## Cross-Domain Significance
-Connects Garment, Anthropometry, Quantity, State, Activity, Assessment, Representation, and BIL.
+Fit connects garment construction, anthropometry, textiles, body state, motion, perception, and user interaction. It is important for physical and virtual try-on and for BIL integrity evaluation when fit is part of the reference.
 
 ## Trust / Evidence
-Fit claims require declared body/garment reference, posture or wear condition, measurement basis, and assessment method. Visual appearance alone may be insufficient.
+Fit evidence may be physical fitting, 3D body/garment measurement, observation, motion capture, simulation, or expert assessment. Observation conditions and wearer posture should be retained.
 
 ## Visitor Universe
-Novice: size versus fit. Expert: ease, posture, geometry, intended use, and uncertainty. Machine: body/garment references, context, measurements, assessment evidence.
+Novices need size-versus-fit distinction. Experts need ease, contact, tension, posture, motion, layering, and evaluation criteria. Machines need garment/body geometry, context, measurements, and fit observations.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Design target → fitting → adjustment → use → body/garment change → reassessment or alteration.
 
 ## Retrieval Anchors
-`GARMENT FIT`, `CLOTHING FIT`, `APPAREL FIT`, `FIT RELATIONSHIP`, `GARMENT-BODY FIT`
+garment fit, apparel fit, clothing fit, fit assessment, garment-body fit
