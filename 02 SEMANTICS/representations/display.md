@@ -5,8 +5,8 @@
 **Artifact Type:** Display / Presentation Definition  
 **Primary Responsibility:** Presentation System / Mechanism  
 **Domain:** Display / Imaging / Visual Observation  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > A Display is a system or mechanism that presents information through an observable output under defined display and viewing conditions.
 
@@ -74,7 +74,7 @@ Technical claims about a display should identify display characteristics, config
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
