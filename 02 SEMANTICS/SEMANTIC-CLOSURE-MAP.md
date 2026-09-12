@@ -1,8 +1,8 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS
 **Branch:** `v3.1-tree-architecture`
-**Purpose:** Repository-wide closure map for the semantic layers audited and completed in the current implementation wave.
+**Purpose:** Repository-wide closure map for semantic layers and domain seeds audited and completed in the current implementation wave.
 
 ## Governing rule
 
@@ -10,7 +10,7 @@
 
 Visitor routing never creates alternate semantic identities. Repository placement is organizational; semantic responsibility is authoritative.
 
-## Current closure map
+## Current semantic-layer closure map
 
 | Layer | Current canonical nucleus | State | Closure treatment |
 |---|---|---|---|
@@ -28,6 +28,17 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 | Workflows | `SEM-WORKFLOW-MEASUREMENT-PROCEDURE-001` — Measurement Procedure | Active canonical | Current procedure nucleus closed |
 | Computational Methods | `SEM-COMPUTATIONAL-METHOD-ALGORITHM-001` — Algorithm | Active canonical | Current method nucleus closed |
 | Implementations | `SEM-IMPLEMENTATION-SOFTWARE-001` — Software | Active canonical | Current implementation nucleus closed |
+
+## V3.1 domain-seed closure extensions
+
+These are completed implementation seeds for previously empty semantic folders. They are **candidate domains**, not automatically Active Canonical nuclei. Their internal implementation is closed for this phase; promotion remains subject to semantic validation and Gate-J.
+
+| Domain folder | Seed scope | State | Closure treatment |
+|---|---|---|---|
+| `identity/` | Identity, Identity Attribute, Identifier, Identity Representation, Identity Resolution | Implementation-complete — candidate | Domain ownership established; digital identity/authentication and BIL boundaries explicit |
+| `biometrics/` | Biometric Characteristic, Biometric Reference, Biometric Template; modality/sample/verification/identification retained in controlled seed register | Implementation-complete — candidate | Biometric ownership established; operational decisions route to Activity/Process/Workflow |
+| `textile/` | Textile, Textile Fibre, Yarn, Fabric; Textile Structure and Textile Finish retained as controlled seed concepts | Implementation-complete — candidate | Textile/material boundary established; garment boundary explicit |
+| `garment/` | Garment; component, construction, pattern, size, fit, fastening retained as controlled seed concepts | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
 
 ## Cross-layer canonical chains
 
@@ -47,9 +58,17 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 
 `Phenomenon → Time context → Acquisition / Execution / Processing → Result time → Presentation`
 
-### Viewing geometry
+### Identity and biometric evidence
 
-`Reference A → Viewing Distance → Reference B`, with a Distance quantity/value used as qualification where applicable.
+`Identity → Identity Representation / Attribute / Identifier → Evidence → Identity Resolution`
+
+For biometric applications:
+
+`Biometric Characteristic → Biometric Sample → Biometric Reference / Template → Biometric Comparison → Identity-related Result`
+
+### Textile and garment composition
+
+`Textile Fibre → Yarn → Fabric / Textile Structure → Garment Component → Garment → Fit / Use Context`
 
 ## Explicit non-collapses
 
@@ -61,10 +80,13 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 - Quantity ≠ Quantity Value ≠ Unit ≠ Measurement.
 - Time ≠ timestamp value ≠ duration quantity.
 - Display ≠ Representation.
+- Identity ≠ Identifier ≠ Identity Representation ≠ Biometrics ≠ BIL integrity.
+- Textile ≠ Material ontology; Garment ≠ Textile; Fabric ≠ Garment.
+- Biometric Reference ≠ Biometric Identity; Biometric Template ≠ generic Representation.
 
 ## Candidate discipline
 
-Closure means the present canonical nucleus is internally integrated. It does not promote every useful or frequently used term. Controlled candidates and deferred concepts remain explicitly retained and require independent validation before promotion.
+Closure means the present implementation is internally integrated. It does not promote every useful or frequently used term. Controlled candidates and deferred concepts remain explicitly retained and require independent validation before promotion.
 
 ## Placeholder rule
 
@@ -72,4 +94,6 @@ Closure means the present canonical nucleus is internally integrated. It does no
 
 ## Final decision
 
-The audited semantic folders are mapped to their current responsibility and closure state. No existing canonical layer is redesigned merely to remove lexical or organizational irregularity. Future expansion proceeds by candidate-level validation and explicit promotion rather than by folder-name inference.
+The four newly populated domain folders are **not** treated as a relocation of BIL. Their domain concepts were extracted and re-scoped from the research surface, while BIL remains the integrity-evaluation framework that consumes identity, biometric, textile, garment, representation, property, state, relation, and observation evidence as applicable.
+
+Future expansion proceeds by candidate-level validation and explicit promotion rather than folder-name inference.
