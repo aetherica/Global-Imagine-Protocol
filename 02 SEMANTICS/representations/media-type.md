@@ -57,7 +57,7 @@ A Media Type registration does not by itself prove that an arbitrary byte sequen
 
 ## Relations
 
-Relevant relations include `has-media-type`, `identified-by`, `uses-format`, and `conforms-to`, subject to the authoritative GIOP relation vocabulary.
+Representation-related assertions must use the authoritative GIOP relation vocabulary. Existing canonical relations such as `represents`, `derived-from`, `part-of`, `participates-in`, and `has-result` may be used where semantically applicable. Terms such as `has-media-type`, `identified-by`, or `uses-format` are not introduced here as new canonical relation concepts.
 
 ## Trust and Validation
 
