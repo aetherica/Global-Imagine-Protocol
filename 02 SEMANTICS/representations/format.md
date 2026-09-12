@@ -4,12 +4,12 @@
 **Preferred Name:** Format  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Structural or syntactic specification of information representation  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from format specifications, HTTP Semantics, RDF concrete-syntax architecture, DCAT, and GIOP representation analysis.  
-**Validation:** Boundary and cross-layer review completed; independent format-family enumeration remains outside this entry.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-ENCODING-001`, `SEM-REPRESENTATION-MEDIA-TYPE-001`, `SEM-REPRESENTATION-PROFILE-001`
 
 > A Format is a defined structural, syntactic, or organizational specification that determines how information or representation data is arranged and interpreted.
 
@@ -63,8 +63,8 @@ Claims about a Format should identify its authoritative specification, version, 
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate. The concept is sufficiently bounded for GIOP use but remains subject to final semantic-folder promotion gates.
+**Current state:** Active. This generic Format concept is now canonical; specific format families remain subject to independent domain-level authoring and validation.
 
 ## Retrieval Anchors
 
-`FORMAT`, `DATA FORMAT`, `FILE FORMAT`, `STRUCTURAL FORMAT`, `SYNTAX`, `FORMAT SPECIFICATION`, `FORMAT VERSION`, `FORMAT PROFILE`
+`SEM-REPRESENTATION-FORMAT-001`, `FORMAT`, `DATA FORMAT`, `FILE FORMAT`, `STRUCTURAL FORMAT`, `SYNTAX`, `FORMAT SPECIFICATION`, `FORMAT VERSION`, `FORMAT PROFILE`
