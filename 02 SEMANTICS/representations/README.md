@@ -2,7 +2,7 @@
 
 **Semantic Area:** Representation and Information-Bearing Forms  
 **Status:** Active Canonical Scope + Controlled Extension Intake  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Primary Responsibility:** Information-bearing forms through which canonical information, results, resources, or other semantic content are expressed, exchanged, stored, presented, or made available for interpretation.
 
 ## Scope
@@ -13,7 +13,7 @@ The generic nucleus is:
 
 `SEM-REPRESENTATION-GENERIC-001 — Representation`
 
-The current canonical batch also includes Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, and Profile. Their distinct responsibilities are preserved; the folder does not treat them as a universal inheritance hierarchy.
+The current canonical batch also includes Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile, Belief Representation, and Object-Centric Representation. Their distinct responsibilities are preserved; the folder does not treat them as a universal inheritance hierarchy.
 
 ## Semantic Model
 
@@ -39,6 +39,10 @@ Canonical Information / Result / Resource
                  |
                  v
             File / Stream
+
+      Specialized Representation responsibilities
+          ├── Belief Representation
+          └── Object-Centric Representation
 ```
 
 This is a coordination model, not a universal subclass hierarchy.
@@ -62,6 +66,8 @@ A related concept must be routed through its own semantic responsibility or an a
 | `SEM-REPRESENTATION-COMPRESSION-001` | Compression | Representation-data transformation | Active |
 | `SEM-REPRESENTATION-PACKAGING-001` | Packaging | Aggregation/containerization | Active |
 | `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Active |
+| `SEM-REPRESENTATION-BELIEF-001` | Belief Representation | Agent-relative belief, uncertainty, or epistemic state representation | Active |
+| `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Object-organized information-bearing form | Active |
 
 ## Advanced Extension Intake
 
@@ -69,7 +75,9 @@ A first controlled extension dataset has been added for AI, robotics, computatio
 
 See `REPRESENTATION-ADVANCED-EXTENSION-CATALOG.md`.
 
-The intake currently prioritizes Belief, Object-Centric, Relation-Centric, Affordance, Action, Event, Spatiotemporal, Causal, Predictive, Neural Field, Program, Intermediate, Digital-Twin, Skill, Trajectory, Scene, World, and Map representations for independent promotion review.
+The intake continues to prioritize Relation-Centric, Affordance, Action, Event, Spatiotemporal, Causal, Predictive, Neural Field, Program, Intermediate, Digital-Twin, Skill, Trajectory, Scene, World, and Map representations for independent promotion review.
+
+Belief Representation and Object-Centric Representation have already passed independent promotion review. No remaining candidate is promoted by association.
 
 ## Multidimensional Organization Rule
 
@@ -95,7 +103,9 @@ Normative statements, explanations, examples, historical material, and implement
 
 Evidence is drawn across standards, information architecture, preservation, data/AI, robotics, computer vision, programming-language, and world-model traditions. External specifications remain evidence sources rather than GIOP authority.
 
-Important evidence families include RFC 9110; W3C RDF, DCAT, PROV, and Profiles; PREMIS; ISO 14721:2025; IANA media-type practice; robotics scene/world representation literature; representation-learning and world-model research; and compiler/intermediate-representation practice.
+Important evidence families include RFC 9110; W3C RDF, DCAT, PROV, and Profiles; PREMIS; ISO 14721:2025; IANA media-type practice; robotics scene/world representation literature; representation-learning and world-model research; compiler/intermediate-representation practice; formal epistemology; and POMDP/probabilistic decision systems.
+
+Object-Centric Representation promotion additionally draws on contemporary object-centric visual representation-learning research and peer-reviewed embodied-robotics surveys covering object-level representations, object slots/object files, pose, affordance, and manipulation.
 
 ## Cross-Layer Routing
 
