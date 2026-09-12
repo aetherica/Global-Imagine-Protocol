@@ -2,7 +2,7 @@
 
 **Artifact Type:** Knowledge Decision Registry  
 **Semantic Layer:** Observer  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Status:** Active  
 **Authority:** GIOP
 
@@ -21,11 +21,12 @@ The registry retains recovered and synthesized Observer knowledge and records pr
 ### R-OBS-002
 - **Recovered claim:** Observer Model is a reusable formal construct specifying observer response behavior for defined inputs, tasks, assumptions, parameters, and applicability conditions.
 - **Semantic type:** Model
-- **Epistemic status:** Supported by domain practice and standards-oriented observer modeling
-- **Canonical status:** Provisional
-- **Decision:** Retain `SEM-OBSERVER-MODEL-001` as Provisional pending explicit promotion gate.
-- **Evidence:** CIE standard colorimetric observer terminology and ISO/CIE 11664-1:2019 model/function specification.
-- **Boundary:** Model is distinct from observer, functions, datasets, standards, algorithms, implementations, and executions.
+- **Epistemic status:** Verified GIOP synthesis with strong external support
+- **Canonical status:** Active
+- **Destination:** `02 SEMANTICS/observers/observer-model.md`
+- **Decision:** Promote `SEM-OBSERVER-MODEL-001` to Active for the V3.1 Observer core scope under the explicit scoped promotion gate recorded by `OBSERVER-FOLDER-CLOSURE-AUDIT.md`.
+- **Evidence:** ISO 19156:2023; W3C/OGC SSN/SOSA; ISO/CIE 11664-1:2019; CIE standard colorimetric observer publications/datasets; ISO 18314-4:2024; observer-model research literature.
+- **Boundary:** Model is distinct from observer, functions, datasets, standards, algorithms, implementations, executions, results, representations, properties, quantities, contexts, conditions, states, and perception.
 
 ## Controlled Candidate Records
 
@@ -56,3 +57,7 @@ The registry retains recovered and synthesized Observer knowledge and records pr
 ## Reconsideration Triggers
 
 Reopen a candidate when authoritative terminology changes, a distinct interoperability identifier is required, a stable lifecycle independent of Observer Model is demonstrated, or cross-layer validation reveals a responsibility that cannot be represented without semantic loss under the current model.
+
+## Closure Linkage
+
+The Observer folder closure is recorded in `02 SEMANTICS/observers/OBSERVER-FOLDER-CLOSURE-AUDIT.md`. Closure activates the generic Observer Model nucleus only; it does not promote deferred specializations.
