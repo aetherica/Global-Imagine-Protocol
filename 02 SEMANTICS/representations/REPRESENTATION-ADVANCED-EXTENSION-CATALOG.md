@@ -1,91 +1,47 @@
 # Representation Advanced Extension Catalog
 
-**Status:** Active Controlled Extension Dataset  
-**Version:** 1.2.0  
+**Status:** Closed Active Extension Dataset  
+**Version:** 2.0.0  
 **Scope:** AI, robotics, computational, spatial, temporal, agent/action, and advanced information-bearing representation forms.
 
 ## Purpose
 
-This catalog records representation concepts identified as materially missing from the generic Representation batch when compared with current AI, robotics, computer-vision, world-model, programming-language, and data-system usage.
-
-It is a controlled semantic intake layer. Presence here does not by itself confer canonical status. Each concept requires independent responsibility, evidence, boundary, relation, lifecycle, and cross-layer validation before promotion.
-
-## Multidimensional Organization
-
-The candidate universe is intentionally not modeled as a single inheritance tree. The following dimensions may intersect:
-
-- Referent: object, state, relation, event, action, scene, world, program, capability, belief, resource;
-- Abstraction: concrete, symbolic, structural, latent, predictive, causal;
-- Structure: object-centric, graph/relational, field, tensor, sequence, trajectory;
-- Temporal scope: static, event, trajectory, spatiotemporal;
-- Agent coupling: passive description, belief, affordance, action, skill, interaction;
-- Computational realization: symbolic, differentiable, neural, serialized, intermediate.
+This catalog records representation concepts identified as materially missing from the generic Representation batch. It is an intake and audit layer; canonical meaning resides in the semantic entries.
 
 ## Promotion History
 
-### Promoted: Belief Representation
+The complete first extension batch has now passed independent promotion review and is Active canonical:
 
-`SEM-REPRESENTATION-BELIEF-001 — Belief Representation` has passed independent GIOP promotion review and is now Active canonical.
+- `SEM-REPRESENTATION-BELIEF-001` — Belief Representation
+- `SEM-REPRESENTATION-OBJECT-CENTRIC-001` — Object-Centric Representation
+- `SEM-REPRESENTATION-RELATION-CENTRIC-001` — Relation-Centric Representation
+- `SEM-REPRESENTATION-AFFORDANCE-001` — Affordance Representation
+- `SEM-REPRESENTATION-ACTION-001` — Action Representation
+- `SEM-REPRESENTATION-EVENT-001` — Event Representation
+- `SEM-REPRESENTATION-SPATIOTEMPORAL-001` — Spatiotemporal Representation
+- `SEM-REPRESENTATION-CAUSAL-001` — Causal Representation
+- `SEM-REPRESENTATION-PREDICTIVE-001` — Predictive Representation
+- `SEM-REPRESENTATION-NEURAL-FIELD-001` — Neural Field Representation
+- `SEM-REPRESENTATION-PROGRAM-001` — Program Representation
+- `SEM-REPRESENTATION-INTERMEDIATE-001` — Intermediate Representation
+- `SEM-REPRESENTATION-DIGITAL-TWIN-001` — Digital-Twin Representation
+- `SEM-REPRESENTATION-SKILL-001` — Skill Representation
+- `SEM-REPRESENTATION-TRAJECTORY-001` — Trajectory Representation
+- `SEM-REPRESENTATION-SCENE-001` — Scene Representation
+- `SEM-REPRESENTATION-WORLD-001` — World Representation
+- `SEM-REPRESENTATION-MAP-001` — Map Representation
 
-Promotion was based on a distinct semantic responsibility: an information-bearing form expressing an agent-relative belief, uncertainty, or epistemic state about a represented subject, proposition, hypothesis, world state, or outcome.
+## Independent Promotion Gate
 
-The promotion preserves the following boundaries:
+Each promoted concept was independently checked for:
 
-- Belief Representation ≠ Belief;
-- Belief Representation ≠ State or State Representation;
-- Belief Representation ≠ Observation;
-- Belief Representation ≠ Measurement Result;
-- Belief Representation ≠ Model;
-- Belief Representation ≠ Action Representation;
-- Belief Representation ≠ Representation Learning.
+`IDENTITY → PRIMARY RESPONSIBILITY → EXISTING-ENTRY CHECK → BOUNDARY → EVIDENCE → RELATION AUTHORITY → CROSS-LAYER VALIDATION → LIFECYCLE → RETRIEVAL`
 
-The promotion does not create a new relation authority and does not promote any other candidate by association.
-
-### Promoted: Object-Centric Representation
-
-`SEM-REPRESENTATION-OBJECT-CENTRIC-001 — Object-Centric Representation` has passed independent GIOP promotion review and is now Active canonical.
-
-Promotion was based on a distinct semantic responsibility: an information-bearing form organized around distinct identified or hypothesized objects or entities, together with selected attributes, states, parts, or object-level information associated with them.
-
-The promotion preserves the following boundaries:
-
-- Object-Centric Representation ≠ Object;
-- Object-Centric Representation ≠ Representation in general;
-- Object-Centric Representation ≠ Perception;
-- Object-Centric Representation ≠ Observation;
-- Object-Centric Representation ≠ State;
-- Object-Centric Representation ≠ Relation-Centric Representation;
-- Object-Centric Representation ≠ Scene Representation;
-- Object-Centric Representation ≠ Model;
-- Object-Centric Representation ≠ Representation Learning;
-- Object-Centric Representation ≠ Object Detection or Segmentation activity.
-
-The promotion does not create a new relation authority and does not promote any other candidate by association.
-
-## Remaining First Extension Batch
-
-| ID | Preferred Name | Primary Responsibility | Initial Decision |
-|---|---|---|---|
-| `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Representation organized around typed relations among entities or semantic elements | Candidate — high priority |
-| `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Representation expressing action possibilities or agent-environment opportunities | Candidate — high priority |
-| `SEM-REPRESENTATION-ACTION-001` | Action Representation | Information-bearing form encoding an action, action structure, parameters, or executable action description | Candidate — high priority |
-| `SEM-REPRESENTATION-EVENT-001` | Event Representation | Information-bearing form encoding event identity, occurrence structure, or event attributes | Candidate — high priority |
-| `SEM-REPRESENTATION-SPATIOTEMPORAL-001` | Spatiotemporal Representation | Representation jointly encoding spatial and temporal structure or change | Candidate — high priority |
-| `SEM-REPRESENTATION-CAUSAL-001` | Causal Representation | Representation encoding causal variables, dependencies, mechanisms, or causal structure | Candidate — high priority |
-| `SEM-REPRESENTATION-PREDICTIVE-001` | Predictive Representation | Representation structured to encode information useful for predicting future states, observations, or outcomes | Candidate — high priority |
-| `SEM-REPRESENTATION-NEURAL-FIELD-001` | Neural Field Representation | Continuous or field-based learned representation mapping coordinates/inputs to represented scene, signal, or state information | Candidate — high priority |
-| `SEM-REPRESENTATION-PROGRAM-001` | Program Representation | Information-bearing form expressing computational instructions or program structure | Candidate — high priority |
-| `SEM-REPRESENTATION-INTERMEDIATE-001` | Intermediate Representation | Compiler/system representation used between source-level and lower-level computational forms | Candidate — high priority |
-| `SEM-REPRESENTATION-DIGITAL-TWIN-001` | Digital-Twin Representation | Representation of a physical or operational counterpart within a digital-twin system | Candidate — requires system-boundary review |
-| `SEM-REPRESENTATION-SKILL-001` | Skill Representation | Information-bearing form expressing reusable action competence, skill structure, or skill parameters | Candidate — requires Action/Model boundary review |
-| `SEM-REPRESENTATION-TRAJECTORY-001` | Trajectory Representation | Representation encoding ordered temporal/spatial evolution of an entity, state, or motion | Candidate — high priority |
-| `SEM-REPRESENTATION-SCENE-001` | Scene Representation | Representation encoding entities, structure, geometry, semantics, or relationships of a scene | Candidate — high priority |
-| `SEM-REPRESENTATION-WORLD-001` | World Representation | Representation encoding a broader environment/world state, structure, or dynamics | Candidate — requires Model/World-Model boundary review |
-| `SEM-REPRESENTATION-MAP-001` | Map Representation | Representation encoding spatial organization, landmarks, geometry, topology, or semantic environment structure for mapping/navigation | Candidate — high priority |
+The batch was researched across multiple traditions, including graph representation, embodied robotics, event-based sensing, spatial-temporal systems, causal learning, world models, neural fields, programming languages, digital twins, mapping, and scene representation.
 
 ## Deliberately Not Promoted by This Dataset
 
-The following remain routed or dimensional rather than automatically canonical Representation concepts:
+The following remain routed, dimensional, or realization-level terms and are not promoted automatically:
 
 - Digital Representation
 - Physical Representation
@@ -107,25 +63,15 @@ The following remain routed or dimensional rather than automatically canonical R
 - Tensor Representation
 - Neural Representation
 
-These terms can be useful classifications, realizations, properties, processes, or implementation families depending on context. They require responsibility-based routing before promotion.
-
 ## Cross-Layer Exclusions
 
-- State is represented by State Representation; State itself remains in `states`.
-- Belief Representation expresses an agent-relative epistemic state and does not replace State semantics.
-- Object-Centric Representation organizes information around object/entity units and does not replace Class, Property, State, Relation, Perception, or Scene semantics.
-- Observation remains in observation/activity semantics; its representation is separate.
-- Action execution is an Activity; Action Representation is the information-bearing form.
-- Process and Activity remain temporal occurrences/courses; process diagrams and workflow artifacts are Representations.
-- Model remains a formal explanatory/predictive construct; a Model Representation is not automatically a Model.
-- Dataset, File, and Bitstream remain distinct from the Representation that may embody or communicate them.
-- Perception remains the perceptual phenomenon/outcome; a perceptual representation is not itself Perception.
+State, Observation, Measurement, Action execution, Process, Activity, Relation, Property, Model, Ontology, Algorithm, Software, Knowledge, Capability, Context, Condition, Result, Dataset, File, and Bitstream retain their established semantic responsibilities.
 
-## Promotion Rule
+A specialized Representation may encode information about these concepts without replacing them.
 
-No entry in this catalog becomes Active canonical merely because the term is common in research or implementation practice. Promotion requires:
+## Closure Decision
 
-`IDENTITY → PRIMARY RESPONSIBILITY → EXISTING-ENTRY CHECK → BOUNDARY → EVIDENCE → RELATION AUTHORITY → CROSS-LAYER VALIDATION → LIFECYCLE → RETRIEVAL`
+The first advanced Representation extension dataset is closed as a completed canonical promotion batch. Future Representation candidates are outside this closure and require a new independently scoped intake and review; this closure does not authorize automatic promotion by lexical similarity.
 
 ## Retrieval Anchors
 
