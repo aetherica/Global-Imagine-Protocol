@@ -1,37 +1,55 @@
 # Textile Fibre
 
-**Semantic ID:** `SEM-TEXTILE-FIBRE-001`  
-**Preferred Name:** Textile Fibre  
-**Semantic Class:** Textile Domain Concept  
-**Domain:** Textile  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-TEXTILE-FIBRE-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Fibre, Material, Property, Quantity
 
 ## 5W1H Orientation
-A Textile Fibre is a textile-domain fibre or filament constituent capable of contributing to yarn, fabric, or textile article formation.
+
+### What
+Textile Fibre is a fibre considered specifically as a constituent used, intended, or characterized for textile formation. The term emphasizes textile application and domain classification rather than creating a second physical entity type.
+
+### Why
+The concept is useful when textile standards or workflows need to distinguish fibres entering textile manufacture from fibres considered in unrelated material or biological contexts.
+
+### Who
+Textile manufacturers, fibre producers, laboratories, standards systems, designers, and quality-control processes use textile-fibre semantics.
+
+### Where
+Textile fibres occur as individual fibres, blends, slivers, yarn constituents, and fabric constituents across textile production and products.
+
+### When
+The textile-fibre role is established by intended or actual textile use and can be tracked through processing, blending, spinning, and conversion.
+
+### How
+A textile fibre is characterized by its fibre identity, composition, morphology, dimensions, source, processing state, and relevant measured properties.
 
 ## Semantic Definition
-**Textile Fibre** is a fibre or filament constituent considered within textile manufacture, characterization, classification, or use.
+Textile Fibre is a fibre whose semantic role is participation in textile formation, characterization, or classification.
 
 ## Scope / Boundary
-Covers natural and manufactured fibre/filament concepts and their textile-domain classification. Generic material and biological-material semantics remain external. Fibre measurement, testing, and production operations remain Quantity/Measurement and Process-owned.
+This is a domain qualification of Fibre, not an independent generic physical ontology. Fibre owns the base concept; Textile owns textile-domain usage; Material, Property, and Quantity retain their respective semantics.
 
 ## Core Distinctions
-**Fibre vs Filament:** fibre is the broader constituent concept; filament denotes a continuous fibre form where the applicable terminology requires it.  
-**Fibre vs Yarn:** constituent versus assembled strand.  
-**Fibre vs Material:** textile-domain constituent versus generic material concept.
+- Textile Fibre ≠ all fibres in every domain.
+- Textile Fibre ≠ Yarn.
+- Textile Fibre ≠ Fabric.
+- Textile Fibre ≠ fibre property or measurement.
 
 ## Cross-Domain Significance
-Connects Material, Property, Quantity, Yarn, Process, Representation, and Textile Structure.
+Textile Fibre links fibre science to yarn formation, fabric construction, composition analysis, garment materials, and product representation.
 
 ## Trust / Evidence
-Fibre identity/classification should declare terminology, composition where known, morphology/measurement evidence, and source context. ISO 8159:2025 is a current vocabulary reference for fibre and yarn morphology.
+Evidence may include fibre identification, microscopy, chemical or physical analysis, supplier documentation, or traceable production records. Claims should preserve method and sample context.
 
 ## Visitor Universe
-Novice: fibre versus yarn. Expert: fibre form, morphology, composition, classification, and measurement context. Machine: fibre class, constituent links, properties, evidence, provenance.
+Novices need the distinction between a fibre and its textile role. Experts need fibre classification, blends, morphology, processing, and analytical evidence. Machines need explicit type qualification and constituent relations.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Selection/source → preparation → blending where applicable → yarn incorporation → fabric incorporation → use/degradation/recovery.
 
 ## Retrieval Anchors
-`TEXTILE FIBRE`, `FIBRE`, `FILAMENT`, `NATURAL FIBRE`, `MAN-MADE FIBRE`
+textile fibre, textile fiber, fibre for textiles, textile constituent fibre
