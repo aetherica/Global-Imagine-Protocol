@@ -1,37 +1,55 @@
 # Garment Construction
 
-**Semantic ID:** `SEM-GARMENT-CONSTRUCTION-001`  
-**Preferred Name:** Garment Construction  
-**Semantic Class:** Garment Domain Concept  
-**Domain:** Garment  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-GARMENT-CONSTRUCTION-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Garment
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Garment, Component, Pattern, Process, Relation, Textile
 
 ## 5W1H Orientation
-Garment Construction describes the structural organization and assembly of garment components into an intended wearable article.
+
+### What
+Garment Construction is the organization and assembly of garment components into the intended wearable article, including the structural methods and connections that make the garment coherent.
+
+### Why
+Construction distinguishes how a garment is assembled from what materials it contains or how it appears in a representation. It is essential for manufacturing, inspection, repair, simulation, and integrity assessment.
+
+### Who
+Pattern makers, sewing and manufacturing specialists, designers, inspectors, conservators, digital garment engineers, and simulation systems use construction semantics.
+
+### Where
+Construction exists in physical garment assemblies and can be represented in technical drawings, pattern systems, 3D models, images, and manufacturing records.
+
+### When
+Construction is established during assembly and can be modified by alteration, repair, restructuring, or damage during use.
+
+### How
+Construction is expressed through components, joins, seams, layers, closures, attachments, and assembly order or methods where relevant. Generic processes and relations remain owned by their respective layers.
 
 ## Semantic Definition
-**Garment Construction** is the domain-specific structural organization and assembly by which garment components form an assembled garment.
+Garment Construction is the garment-specific organization and assembly by which components are connected and configured into a wearable article.
 
 ## Scope / Boundary
-Construction concerns component organization, seams, joining, layering, closures, and related structural arrangement. Cutting, sewing, assembly operations, and manufacturing events remain Process/Activity-owned; generic structure remains cross-layer infrastructure.
+Construction owns garment assembly semantics. Process owns operations; Relation owns generic relationships; Pattern owns pattern artifacts; Textile/Material own constituents. Construction does not become a replacement for the generic Process or Relation layers.
 
 ## Core Distinctions
-**Construction vs Manufacturing:** structural result versus production activity.  
-**Construction vs Pattern:** assembled structural organization versus geometric/template representation.  
-**Construction vs Material:** organization versus constituent substance.
+- Construction ≠ construction process.
+- Construction ≠ pattern.
+- Construction ≠ material composition.
+- Construction ≠ garment appearance.
 
 ## Cross-Domain Significance
-Connects Garment Component, Textile, Material, Relation, Representation, Process, and BIL.
+Construction affects strength, fit, drape, appearance, repairability, durability, and the visibility of garment components. It also determines hidden structure that may not be recoverable from a single image.
 
 ## Trust / Evidence
-Construction inferred from images or scans should distinguish visible evidence from hidden seams, internal layers, and inferred assembly.
+Construction claims should use physical inspection, technical documentation, pattern records, manufacturing records, or multimodal evidence. Visual evidence must be qualified when seams or internal layers are occluded.
 
 ## Visitor Universe
-Novice: what makes components a garment. Expert: construction topology, hidden structure, reconstruction uncertainty. Machine: component relations, structural descriptors, evidence, uncertainty.
+Novices need assembly-versus-material distinction. Experts need seams, joins, layers, closures, assembly order, construction methods, and hidden structure. Machines need component relations and construction descriptors.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Pattern/design → cutting → assembly → finishing → inspection → use → alteration/repair → disassembly.
 
 ## Retrieval Anchors
-`GARMENT CONSTRUCTION`, `CLOTHING CONSTRUCTION`, `SEAM`, `ASSEMBLY`, `GARMENT STRUCTURE`
+garment construction, apparel construction, garment assembly, garment structure, clothing construction
