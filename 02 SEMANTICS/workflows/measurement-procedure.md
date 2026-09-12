@@ -5,8 +5,8 @@
 **Artifact Type:** Workflow Specification  
 **Primary Responsibility:** Procedure Specification  
 **Domain:** Measurement / Metrology / Imaging  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > A Measurement Procedure is a detailed specification of how a measurement is to be carried out, including the relevant measurement principle or method, measurement model, operations, calculations, and conditions required to obtain a measurement result.
 
@@ -81,7 +81,7 @@ A measurement procedure should not be presented as validated merely because it i
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
