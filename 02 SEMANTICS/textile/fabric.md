@@ -1,73 +1,56 @@
 # Fabric
 
-**Semantic ID:** `SEM-TEXTILE-FABRIC-001`  
-**Preferred Name:** Fabric  
-**Semantic Class:** Textile Domain Concept  
-**Domain:** Textile  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.2.0
+## Identity / Metadata
+- GIOP ID: SEM-FABRIC-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Textile
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Yarn, Fibre, Textile Structure, Material, Property, Quantity, Process
 
 ## 5W1H Orientation
 
 ### What
-Fabric is a constructed textile structure formed from fibres, yarns, filaments, loops, layers, or related constituents through a defined construction mechanism.
+Fabric is a textile sheet, web, or other formed structure produced by interlacing, interlooping, bonding, felting, or otherwise assembling textile elements into a coherent textile surface or body.
 
 ### Why
-Fabric provides a major structural level for textile articles and is often the material substrate or component from which garments and technical textile articles are assembled.
+Fabric is a primary textile form used in garments, technical products, furnishings, and other applications. Its construction governs many visible, tactile, mechanical, and functional characteristics.
 
 ### Who
-Relevant to textile scientists, designers, manufacturers, engineers, inspectors, conservation specialists, imaging systems, and AI datasets.
+Fabric semantics are relevant to textile engineers, manufacturers, designers, laboratories, garment technologists, quality systems, and imaging or inspection systems.
 
 ### Where
-It applies to woven, knitted, nonwoven, felted, bonded, layered, and other recognized textile constructions.
+Fabric occurs as woven, knitted, nonwoven, bonded, felted, or other textile structures. It can be a component of a garment or a standalone textile product.
 
 ### When
-Fabric structure and observable properties may change through finishing, cutting, sewing, laundering, deformation, wear, ageing, or damage.
+Fabric structure and condition can change through finishing, laundering, tension, compression, abrasion, stretching, deformation, damage, and aging.
 
 ### How
-Fabric is characterized through constituent arrangement, construction mechanism, structure, surface, dimensions, composition, and relevant measured properties.
+Fabric is characterized by construction method, constituent fibres/yarns, structural parameters, surface, finishing, dimensions, and measured properties. Exact measurements belong to Quantity and Property layers.
 
 ## Semantic Definition
-
-**Fabric** is a constructed textile structure whose organization of fibres, yarns, filaments, loops, layers, or related elements forms a coherent textile material or article component.
+Fabric is a coherent textile structure formed into a sheet, web, or comparable textile body through an established textile-forming mechanism.
 
 ## Scope / Boundary
-
-Fabric owns the textile-domain concept of the constructed textile structure. It does not replace Textile, Fibre, Yarn, Material, Property, Quantity, Process, Activity, or Representation. Woven, knitted, nonwoven, felted, bonded, and layered forms are construction categories within the domain unless a separate semantic responsibility is independently justified.
+Fabric owns textile structural semantics. Yarn/Fibre own constituents; Textile Structure captures structural organization; Textile Finish captures post-formation treatments; Garment owns assembled wearable articles; Property/Quantity own characteristics and measurements.
 
 ## Core Distinctions
-
-### Fabric vs Textile
-Fabric is a specific constructed textile structure; Textile is the broader domain concept.
-
-### Fabric vs Yarn
-Fabric is a higher-order structure formed using yarns, fibres, filaments, loops, layers, or related constituents; yarn is strand-level.
-
-### Woven vs Knit vs Nonwoven
-These identify construction categories rather than separate top-level GIOP semantic layers.
-
-### Fabric vs Garment
-Fabric is a textile structure/material or garment component; Garment is an assembled wearable article.
+- Fabric ≠ Yarn.
+- Fabric ≠ Fibre.
+- Fabric structure ≠ fabric property.
+- Fabric ≠ Garment.
+- Finish ≠ base fabric construction.
 
 ## Cross-Domain Significance
-
-`Textile Fibre → Yarn / Constituent → Fabric → Textile Structure / Finish → Garment / Technical Article → Observation / Measurement → Representation → BIL`
+Fabric structure affects garment construction, fit, drape, surface appearance, texture, optical behavior, durability, and tactile response. It also provides a major target for textile imaging and integrity assessment.
 
 ## Trust / Evidence
-
-Construction claims should state the observation or measurement basis when visually similar structures are ambiguous. Hidden layers and microscopic structure should not be inferred as observed facts without evidence.
+Evidence can include construction inspection, microscopy, physical testing, production specifications, labels, and provenance. Measurements require method and sample context.
 
 ## Visitor Universe
-
-**Novice:** fabric versus textile, yarn, and garment.  
-**Intermediate:** woven, knit, nonwoven, layered, and bonded construction.  
-**Expert:** structural organization, morphology, finishing, deformation, measurement, and reconstruction uncertainty.  
-**Machine:** stable ID, construction class, constituent links, properties, measurements, evidence, provenance.
+Novices need construction-level distinctions. Experts need weave/knit/nonwoven structure, density, surface, finishing, deformation, and performance. Machines need structural descriptors, constituent relations, representations, and measurements.
 
 ## Lifecycle
-
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Formation → finishing → conversion/use → care → wear/deformation → repair/reuse/recycling.
 
 ## Retrieval Anchors
-
-`FABRIC`, `TEXTILE FABRIC`, `WOVEN FABRIC`, `KNIT FABRIC`, `NONWOVEN FABRIC`, `FABRIC STRUCTURE`
+fabric, textile fabric, woven fabric, knitted fabric, nonwoven fabric, fabric structure
