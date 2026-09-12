@@ -1,7 +1,7 @@
 # Representation Advanced Extension Catalog
 
 **Status:** Active Controlled Extension Dataset  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Scope:** AI, robotics, computational, spatial, temporal, agent/action, and advanced information-bearing representation forms.
 
 ## Purpose
@@ -21,11 +21,30 @@ The candidate universe is intentionally not modeled as a single inheritance tree
 - Agent coupling: passive description, belief, affordance, action, skill, interaction;
 - Computational realization: symbolic, differentiable, neural, serialized, intermediate.
 
-## First Extension Batch
+## Promotion History
+
+### Promoted: Belief Representation
+
+`SEM-REPRESENTATION-BELIEF-001 — Belief Representation` has passed independent GIOP promotion review and is now Active canonical.
+
+Promotion was based on a distinct semantic responsibility: an information-bearing form expressing an agent-relative belief, uncertainty, or epistemic state about a represented subject, proposition, hypothesis, world state, or outcome.
+
+The promotion preserves the following boundaries:
+
+- Belief Representation ≠ Belief;
+- Belief Representation ≠ State or State Representation;
+- Belief Representation ≠ Observation;
+- Belief Representation ≠ Measurement Result;
+- Belief Representation ≠ Model;
+- Belief Representation ≠ Action Representation;
+- Belief Representation ≠ Representation Learning.
+
+The promotion does not create a new relation authority and does not promote any other candidate by association.
+
+## Remaining First Extension Batch
 
 | ID | Preferred Name | Primary Responsibility | Initial Decision |
 |---|---|---|---|
-| `SEM-REPRESENTATION-BELIEF-001` | Belief Representation | Information-bearing form expressing an agent's uncertain or probabilistic state of belief | Candidate — high priority |
 | `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Representation organized around distinct entities/objects and their attributes or states | Candidate — high priority |
 | `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Representation organized around typed relations among entities or semantic elements | Candidate — high priority |
 | `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Representation expressing action possibilities or agent-environment opportunities | Candidate — high priority |
@@ -73,6 +92,7 @@ These terms can be useful classifications, realizations, properties, processes, 
 ## Cross-Layer Exclusions
 
 - State is represented by State Representation; State itself remains in `states`.
+- Belief Representation expresses an agent-relative epistemic state and does not replace State semantics.
 - Observation remains in observation/activity semantics; its representation is separate.
 - Action execution is an Activity; Action Representation is the information-bearing form.
 - Process and Activity remain temporal occurrences/courses; process diagrams and workflow artifacts are Representations.
