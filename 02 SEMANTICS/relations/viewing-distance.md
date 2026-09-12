@@ -1,77 +1,59 @@
 # Viewing Distance
 
-**Semantic ID:** `SEM-RELATION-VIEWING-DISTANCE-001`  
-**Preferred Name:** Viewing Distance  
-**Artifact Type:** Semantic Definition  
-**Primary Responsibility:** Relation  
-**Domain:** Imaging / Display / Visual Observation  
-**Status:** Active  
-**Version:** 1.0.0
+## Identity / Metadata
+- **GIOP ID:** `SEM-RELATION-VIEWING-DISTANCE-001`
+- **Preferred Term:** `viewing-distance`
+- **Artifact Type:** Specialized Semantic Relation Candidate
+- **Primary Responsibility:** Spatial relation specifying separation between a defined viewing reference and a viewed target.
+- **Semantic Family:** Spatial / Viewing Relation
+- **Status:** ROUTED — SPECIALIZED RELATION CANDIDATE
+- **Version:** 1.0.0
+- **Canonical Seed Status:** Not part of the six-relation V3.1 seed vocabulary.
+- **Destination:** Future spatial/measurement-oriented relation treatment.
 
-> Viewing Distance is a typed spatial relation specifying the distance between a defined observer viewing point and the object, surface, display, or other target being viewed.
+## 5W1H Orientation
+**What:** A typed spatial relation between a viewing reference and a viewed target.
+**Why:** To preserve visual setup geometry without conflating it with focal length, object distance, field of view, or angular size.
+**Who/What:** Subject is the defined observer/viewing point; object is the viewed object, surface, display, scene, or other target.
+**Where:** Display viewing, photography, cinematography, visual inspection, human factors, laboratory observation, metrology, and related visual contexts.
+**When:** Context-dependent; may vary with observer, target, or configuration.
+**How:** Identify both endpoints, the spatial frame, and the associated Distance quantity/value and unit where available.
 
-## What
+## Semantic Definition
+**Viewing Distance specifies a spatial separation between a defined viewing reference and a defined viewed target.**
 
-Viewing Distance specifies a spatial separation between two defined references, normally an observer's eye or viewing point and a viewed target.
+The relation may be associated with a Distance quantity, but a bare distance value without defined endpoints does not establish this relation.
 
-## Why
+## Relation Contract
+- **Domain:** Defined observer/viewing reference.
+- **Range:** Defined viewed target.
+- **Direction:** `VIEWING REFERENCE → VIEWED TARGET`.
+- **Inverse:** Reverse traversal is possible; no separate canonical inverse is established.
+- **Characteristics:** Spatial and context-dependent. No global transitivity, symmetry, or cardinality rule is established here.
 
-Viewing distance affects visual geometry and interpretation of displays, objects, scenes, and measurement or observation setups. It must remain distinct from focal length, object distance in an optical imaging equation, display size, field of view, and angular size.
-
-## Structure
-
-Canonical form:
-
-`Reference A ↔ viewing-distance ↔ Reference B`
-
-The relation may carry or resolve to a distance quantity value. The references must be explicitly identified.
-
-## How
-
-A viewing-distance statement is established by identifying the observer/viewing reference, the viewed target, the applicable spatial frame, and the distance quantity and unit.
-
-## Where
-
-The concept applies to display viewing, photography, cinematography, visual inspection, human factors, laboratory observation, metrology, simulation, and other visual contexts.
-
-## Who
-
-It is relevant to observers, photographers, cinematographers, display engineers, human-factors specialists, metrologists, imaging scientists, and machine-readable systems.
-
-## When
-
-Viewing Distance is context-dependent and may vary over time as the observer, target, or configuration changes.
+## Qualification / Context
+Spatial reference frame, observer/viewing point, target endpoint, time, configuration, measurement method, and Distance quantity/value may qualify an assertion.
 
 ## Core Distinctions
+`viewing-distance` ≠ `focal-length`, `object-distance`, `field-of-view`, `angular-size`, or generic `distance`. Optical object distance belongs to a defined optical geometry; viewing distance belongs to a viewing relation.
 
-### Viewing Distance vs Focal Length
+## Inference Boundary
+Do not infer focal length, field of view, angular size, object distance, or visual perception from this relation alone. The relation does not determine a Distance value unless one is separately established.
 
-Focal length is an optical-system parameter. Viewing distance is a spatial relation between a viewing reference and a viewed target.
+## Cross-Layer Significance
+This relation connects spatial setup with Observer, Scene/Object, Display, and Distance semantics. Its specialized nature is why it is routed rather than admitted to the current conservative six-relation seed.
 
-### Viewing Distance vs Object Distance
+## Trust / Validation
+Require identified endpoints and a defined spatial reference. Evidence may include experimental setup, display specifications, observation records, measurement records, or equivalent documentation.
 
-Object distance in a camera or optical model is defined by a particular optical geometry. Viewing distance is defined by the viewing relationship and should not be silently substituted for object distance.
-
-### Viewing Distance vs Field of View
-
-Field of view is an angular or geometric optical quantity. Viewing distance is a spatial relation.
-
-### Viewing Distance vs Angular Size
-
-Angular size depends on spatial geometry and object dimensions. It is not identical to viewing distance.
-
-## Relations
-
-Potential canonical relations include `observes`, `views`, `has-viewing-distance`, `targets`, and `has-distance-value`.
-
-## Trust
-
-A technical statement should identify both endpoints of the relation and the spatial reference used. A bare distance value without endpoints does not by itself establish viewing distance.
+## Machine / AI Interpretation
+Treat as a specialized directed spatial predicate. Preserve endpoint identity, reference frame, qualification, and any associated Distance quantity/value. Do not promote the term to a general distance relation.
 
 ## Lifecycle
-
-**Current state:** Active canonical semantic entry.
+ROUTED — retained for future specialized semantic treatment; not deleted and not silently promoted to the current canonical seed.
 
 ## Retrieval Anchors
+`viewing distance`, `viewing-distance`, `observation distance`, `viewing point`, `display viewing distance`, `distance`, `visual setup`
 
-`VIEWING DISTANCE`, `VIEWING DISTANCE RELATION`, `OBSERVATION DISTANCE`, `VIEWING POINT`, `DISPLAY VIEWING DISTANCE`, `DISTANCE`, `ANGULAR SIZE`, `FIELD OF VIEW`
+## Semantic Boundary
+**Viewing Distance is a specialized spatial relation for separation between a viewing reference and viewed target. Its current routed status preserves the concept without expanding the conservative V3.1 canonical relation seed.**
