@@ -4,132 +4,65 @@
 **Preferred Name:** Calibration  
 **Semantic Class:** Activity  
 **Domain:** Metrology and instrument characterization  
-**Status:** Provisional  
-**Version:** 0.1.0  
+**Status:** Active  
+**Version:** 1.0.0  
 **Primary Responsibility:** An Activity that establishes a relationship between quantity values provided by measurement standards and corresponding indications of a measuring system under specified conditions.
 
 ## 5W1H Orientation
-
 ### What
-
-Calibration is an operation that establishes a relationship between quantity values provided by measurement standards and the corresponding indications of a measuring system.
-
+Calibration is an operation establishing a relationship between quantity values provided by measurement standards and corresponding measuring-system indications.
 ### Why
-
-Calibration provides a controlled basis for understanding or using the indications of a measuring system in relation to reference quantity values. It supports measurement reliability, comparability, and traceability where applicable.
-
+It provides a controlled basis for interpreting indications against reference quantity values and supports reliability, comparability, and traceability where applicable.
 ### Who
-
-Calibration may be performed by qualified personnel, calibration laboratories, instrument specialists, automated systems, or other authorized actors using suitable standards and procedures.
-
+Qualified personnel, calibration laboratories, instrument specialists, automated systems, or authorized actors may perform it.
 ### Where
-
-Calibration may occur in laboratories, manufacturing environments, field settings, optical and imaging systems, sensor systems, measurement facilities, or controlled calibration environments.
-
+Laboratories, manufacturing, field settings, optical/imaging systems, sensor systems, measurement facilities, and controlled calibration environments.
 ### When
-
-Calibration occurs at a defined time and under stated conditions. Calibration status may change over time and therefore requires lifecycle and validity management.
-
+Calibration is temporally situated; calibration status and validity change over time and require lifecycle management.
 ### How
-
-Calibration uses measurement standards, a measuring system, a defined procedure, and specified conditions to establish a relationship between reference values and indications. The resulting calibration information may be used in subsequent measurements.
+Calibration uses standards, a measuring system, a procedure, and specified conditions to establish the relevant relationship. Generated calibration information may support later measurements.
 
 ## Semantic Definition
-
-**Calibration** is an Activity that establishes a relationship between quantity values provided by measurement standards and corresponding indications of a measuring system under specified conditions.
-
-Calibration is an operation. It is not synonymous with adjustment, verification, maintenance, or a calibration result/document.
+**Calibration** is an Activity that establishes a relationship between quantity values provided by measurement standards and corresponding indications of a measuring system under specified conditions. It is distinct from adjustment, verification, maintenance, and calibration information/result.
 
 ## Semantic Responsibility
-
 Calibration owns the occurrence-level operation of establishing or determining the relevant relationship between reference quantity values and measuring-system indications.
 
 ## Core Distinctions
-
-### Calibration vs Adjustment
-
-Calibration establishes or determines the relationship between reference values and indications. Adjustment changes or configures a measuring system so that its indications behave as intended. They are distinct operations.
-
-### Calibration vs Verification
-
-Verification provides evidence that specified requirements are fulfilled. Calibration establishes the relevant relationship to measurement standards. A verification may use calibration information, but verification is not calibration.
-
-### Calibration vs Maintenance
-
-Maintenance preserves or restores functional condition. Calibration concerns metrological relationship to reference quantity values. Maintenance and calibration may be performed together operationally but remain distinct semantic activities.
-
-### Calibration vs Measurement
-
-Calibration is a specialized activity concerned with establishing the relationship between standards and indications. A subsequent Measurement uses a measuring system to obtain quantity value(s). Calibration may support measurement but is not identical to every measurement.
-
-### Calibration vs Calibration Result
-
-Calibration is the operation. Calibration information, relation, certificate, curve, or other output is generated information and is not the Activity itself.
+`Calibration ≠ Adjustment`: adjustment changes/configures a system; calibration establishes/determines the relationship.  
+`Calibration ≠ Verification`: verification provides evidence that requirements are fulfilled.  
+`Calibration ≠ Maintenance`: maintenance preserves/restores functional condition.  
+`Calibration ≠ Measurement`: calibration establishes a standards-to-indication relationship; measurement obtains quantity value(s).  
+`Calibration ≠ Calibration Result`: information, curves, certificates, or records are outputs.
 
 ## Calibration Context
-
-Relevant context may include:
-
-- measurement standards;
-- reference quantity values;
-- measuring system;
-- indications;
-- calibration procedure;
-- environmental and optical Conditions;
-- instrument State;
-- uncertainty and associated information where applicable;
-- traceability information;
-- calibration date and validity context.
-
-These remain semantically distinct GIOP concepts.
+Relevant context may include measurement standards, reference values, measuring system, indications, calibration procedure, environmental/optical Conditions, instrument State, uncertainty information, traceability, date, and validity context.
 
 ## Imaging and Sensor Context
-
-Calibration may apply to Cameras, Sensors, optical systems, displays, measuring systems, and other instrumentation. The calibrated system remains a Class/entity; calibration is the activity performed on or with that system.
+Calibration may apply to Cameras, Sensors, optical systems, displays, measuring systems, and other instrumentation. The calibrated system remains an entity; calibration is the activity performed on or with it.
 
 ## Temporal Semantics
-
-Calibration is temporally situated. The calibration activity time, standard reference conditions, generated calibration information, and later measurement time may be different temporal events.
-
-Calibration status and validity must therefore be managed through lifecycle information rather than inferred solely from the existence of a calibration record.
+Distinguish calibration activity time, reference conditions, generated calibration information, and later measurement time. Validity must be managed through lifecycle information.
 
 ## Inputs and Outputs
-
-Inputs may include measurement standards, reference values, measuring system, indications, calibration procedure, conditions, configurations, and prior calibration information.
-
-Outputs may include calibration relation, calibration data, coefficients, curves, records, certificates, or other Results/Representations, subject to the specific calibration method.
+Inputs may include standards, reference values, measuring system, indications, procedure, conditions, configurations, and prior calibration information. Outputs may include calibration data, coefficients, curves, records, certificates, or other Results/Representations.
 
 ## Trust / Provenance
+Preserve standards used, procedure, measuring-system identity/configuration, conditions, dates, generated calibration information, authority, validation state, and traceability where applicable. Do not imply validity beyond established scope/evidence.
 
-Calibration evidence is highly provenance-sensitive. Records should preserve the standards used, procedure, measuring system identity/configuration, relevant conditions, dates, generated calibration information, authority, validation state, and traceability information where applicable.
-
-A calibration statement must not imply validity beyond the conditions, scope, or evidence actually established.
-
-## Validation Notes
-
-The entry preserves the metrological distinction among Calibration, Measurement, Adjustment, Verification, and Maintenance. Calibration information is treated as generated information/result rather than the calibration occurrence itself.
+## Validation
+Cross-layer validation preserves the metrological distinctions among Calibration, Measurement, Adjustment, Verification, Maintenance, Measuring System, Condition, Procedure, and Result. The entry is approved for active canonical use within the scoped Activity batch.
 
 ## Lifecycle
-
-**Current state:** Provisional semantic entry.  
-**Next intended state:** Review → Validated → Active, subject to scoped validation and promotion.
+**Current state:** Active canonical semantic entry.  
+**Version:** 1.0.0  
+**Promotion path:** Authored → Integrated → Validated → Approved → Active Canonical.
 
 ## Relations
-
-```text
-Calibration Procedure → specifies → Calibration
-Calibration → uses → Measurement Standard
-Calibration → uses → Measuring System
-Calibration → occurs-under → Condition / State
-Agent / System → performs / participates-in → Calibration
-Calibration → produces → Calibration Information / Result
-Calibration → supports → Measurement
-```
+Canonical `participates-in`, `has-result`, `part-of`, and `derived-from` may be used where applicable. Other calibration dependencies remain explicit but are not silently promoted as relation vocabulary.
 
 ## Retrieval Anchors
-
 `CALIBRATION`, `CALIBRATE`, `CALIBRATION ACTIVITY`, `CALIBRATION OPERATION`, `MEASUREMENT STANDARD`, `MEASURING SYSTEM`, `INDICATION`, `TRACEABILITY`, `ADJUSTMENT`, `VERIFICATION`, `MAINTENANCE`
 
 ## Evidence / Source Basis
-
-Semantic synthesis informed principally by the International Vocabulary of Metrology (VIM), W3C provenance/activity semantics, and GIOP's existing Measuring System, Condition, Procedure, Quantity, Activity, and Result boundaries.
+Semantic synthesis is informed principally by the International Vocabulary of Metrology (VIM), W3C provenance/activity semantics, and GIOP's Measuring System, Condition, Procedure, Quantity, Activity, and Result boundaries.
