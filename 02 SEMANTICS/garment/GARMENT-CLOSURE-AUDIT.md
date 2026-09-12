@@ -1,7 +1,8 @@
 # Garment Closure Audit
 
-**Status:** IMPLEMENTATION-COMPLETE — V3.1 SEED / CANDIDATE DOMAIN  
-**Version:** 0.2.0
+**Status:** IMPLEMENTATION-COMPLETE — V3.1 SEED / CANDIDATE DOMAIN
+**Version:** 0.3.0
+**Authoring standard:** `02 SEMANTICS/DOMAIN-AUTHORING-STANDARD.md`
 
 ## Implemented Core
 
@@ -13,39 +14,28 @@
 - Garment Fit — `SEM-GARMENT-FIT-001`
 - Garment Fastening — `SEM-GARMENT-FASTENING-001`
 
+## Authoring Audit
+
+- [x] Identity / Metadata present
+- [x] Substantive What / Why / Who / Where / When / How content present
+- [x] Semantic Definition explicit
+- [x] Scope and boundary explicit
+- [x] Core distinctions explicit
+- [x] Cross-domain significance explicit
+- [x] Trust/evidence distinction explicit
+- [x] Visitor Universe routing present
+- [x] Lifecycle present
+- [x] Retrieval anchors present
+- [x] Textile/Material/Quantity/Process ownership preserved
+
 ## Retained / Deferred Scope
 
 Sleeve, collar, cuff, pocket, panel, lining, zipper, button, snap, hook, tie, and other article-specific forms remain domain subtypes/examples unless independent semantic responsibility requires promotion. Manufacturing and wearing operations remain external Process/Activity semantics.
 
 ## Boundary Validation
 
-1. Textile owns fibre/yarn/fabric and textile-structure semantics.
-2. Material owns generic material semantics.
-3. Quantity/Measurement owns body and garment dimensions.
-4. Representation owns patterns, images, drawings, scans, meshes, and other encodings.
-5. State owns worn, folded, wet, damaged, and related states.
-6. Activity/Process owns wearing, cutting, sewing, manufacturing, laundering, and alteration operations.
-7. BIL evaluates garment integrity against declared references; it does not own garment semantics.
-
-## Evidence Basis
-
-ISO 8559-1 provides anthropometric measurement definitions for clothing applications; ISO 8559-2 defines primary and secondary garment dimensions and distinguishes body measurements from garment measurements; ISO 8559-3 addresses body measurement tables and intervals used for ready-to-wear sizing.
-
-## Implementation Checks
-
-- [x] Stable IDs assigned
-- [x] Core dataset entries present
-- [x] GIOP authoring pattern applied
-- [x] Scope and boundaries explicit
-- [x] Cross-layer routing explicit
-- [x] Evidence/trust distinction explicit
-- [x] Visitor Universe routing present
-- [x] Lifecycle and retrieval anchors present
-- [x] Textile/BIL boundaries preserved
-- [x] Deferred expansion retained as controlled scope
+Textile owns fibre/yarn/fabric and textile-structure semantics. Material owns generic material semantics. Quantity/Measurement owns body and garment dimensions. Representation owns patterns, images, drawings, scans, meshes, and other encodings. State owns worn, folded, wet, damaged, and related states. Activity/Process owns wearing, cutting, sewing, manufacturing, laundering, and alteration operations. BIL evaluates garment integrity against declared references but does not own garment semantics.
 
 ## Completion Determination
 
-The Garment V3.1 seed implementation is closed for this phase. No additional top-level Garment semantic entry is required merely to absorb the former BIL topic universe.
-
-**Canonical promotion:** remains subject to semantic validation and Gate-J.
+All implemented Garment entries have been normalized to the shared Condition-grade authoring/depth protocol. No additional top-level Garment semantic entry is required merely to absorb the former BIL topic universe. Canonical promotion remains subject to semantic validation and Gate-J.
