@@ -1,7 +1,7 @@
 # Representation Advanced Extension Catalog
 
 **Status:** Active Controlled Extension Dataset  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Scope:** AI, robotics, computational, spatial, temporal, agent/action, and advanced information-bearing representation forms.
 
 ## Purpose
@@ -41,11 +41,31 @@ The promotion preserves the following boundaries:
 
 The promotion does not create a new relation authority and does not promote any other candidate by association.
 
+### Promoted: Object-Centric Representation
+
+`SEM-REPRESENTATION-OBJECT-CENTRIC-001 — Object-Centric Representation` has passed independent GIOP promotion review and is now Active canonical.
+
+Promotion was based on a distinct semantic responsibility: an information-bearing form organized around distinct identified or hypothesized objects or entities, together with selected attributes, states, parts, or object-level information associated with them.
+
+The promotion preserves the following boundaries:
+
+- Object-Centric Representation ≠ Object;
+- Object-Centric Representation ≠ Representation in general;
+- Object-Centric Representation ≠ Perception;
+- Object-Centric Representation ≠ Observation;
+- Object-Centric Representation ≠ State;
+- Object-Centric Representation ≠ Relation-Centric Representation;
+- Object-Centric Representation ≠ Scene Representation;
+- Object-Centric Representation ≠ Model;
+- Object-Centric Representation ≠ Representation Learning;
+- Object-Centric Representation ≠ Object Detection or Segmentation activity.
+
+The promotion does not create a new relation authority and does not promote any other candidate by association.
+
 ## Remaining First Extension Batch
 
 | ID | Preferred Name | Primary Responsibility | Initial Decision |
 |---|---|---|---|
-| `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Representation organized around distinct entities/objects and their attributes or states | Candidate — high priority |
 | `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Representation organized around typed relations among entities or semantic elements | Candidate — high priority |
 | `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Representation expressing action possibilities or agent-environment opportunities | Candidate — high priority |
 | `SEM-REPRESENTATION-ACTION-001` | Action Representation | Information-bearing form encoding an action, action structure, parameters, or executable action description | Candidate — high priority |
@@ -93,6 +113,7 @@ These terms can be useful classifications, realizations, properties, processes, 
 
 - State is represented by State Representation; State itself remains in `states`.
 - Belief Representation expresses an agent-relative epistemic state and does not replace State semantics.
+- Object-Centric Representation organizes information around object/entity units and does not replace Class, Property, State, Relation, Perception, or Scene semantics.
 - Observation remains in observation/activity semantics; its representation is separate.
 - Action execution is an Activity; Action Representation is the information-bearing form.
 - Process and Activity remain temporal occurrences/courses; process diagrams and workflow artifacts are Representations.
