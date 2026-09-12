@@ -1,7 +1,7 @@
 # Representation Index
 
 **Status:** Active Canonical Index  
-**Version:** 1.0.0
+**Version:** 1.1.0
 
 ## Canonical / Active
 
@@ -9,18 +9,13 @@
 |---|---|---|---|
 | `SEM-REPRESENTATION-GENERIC-001` | Representation | Information-bearing form | Active |
 | `SEM-DISPLAY-001` | Display | Presentation system / mechanism | Active |
-
-## Canonical Candidates
-
-| ID | Name | Primary Responsibility | Status |
-|---|---|---|---|
-| `SEM-REPRESENTATION-FORMAT-001` | Format | Structural/syntactic specification | Canonical Candidate |
-| `SEM-REPRESENTATION-ENCODING-001` | Encoding | Coding/transformation scheme | Canonical Candidate |
-| `SEM-REPRESENTATION-SERIALIZATION-001` | Serialization | Abstract-to-concrete expression | Canonical Candidate |
-| `SEM-REPRESENTATION-MEDIA-TYPE-001` | Media Type | Interoperable representation-data identification | Canonical Candidate |
-| `SEM-REPRESENTATION-COMPRESSION-001` | Compression | Representation-data transformation | Canonical Candidate |
-| `SEM-REPRESENTATION-PACKAGING-001` | Packaging | Aggregation/containerization | Canonical Candidate |
-| `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Canonical Candidate |
+| `SEM-REPRESENTATION-FORMAT-001` | Format | Structural/syntactic specification | Active |
+| `SEM-REPRESENTATION-ENCODING-001` | Encoding | Coding/transformation scheme | Active |
+| `SEM-REPRESENTATION-SERIALIZATION-001` | Serialization | Abstract-to-concrete expression | Active |
+| `SEM-REPRESENTATION-MEDIA-TYPE-001` | Media Type | Interoperable representation-data identification | Active |
+| `SEM-REPRESENTATION-COMPRESSION-001` | Compression | Representation-data transformation | Active |
+| `SEM-REPRESENTATION-PACKAGING-001` | Packaging | Aggregation/containerization | Active |
+| `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Active |
 
 ## Routed Responsibility
 
@@ -41,6 +36,8 @@ Representation
 
 Conformance → relation/assertion semantics
 ```
+
+The entries above are distinct semantic responsibilities. The map is a coordination/routing map, not a universal inheritance hierarchy.
 
 ## Visitor Entry Depth
 
