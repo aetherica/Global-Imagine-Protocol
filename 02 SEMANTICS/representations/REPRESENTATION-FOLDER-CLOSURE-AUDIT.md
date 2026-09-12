@@ -2,84 +2,77 @@
 
 **Scope:** `02 SEMANTICS/representations`  
 **Branch:** `v3.1-tree-architecture`  
-**Status:** Audited — Candidate Promotion Deferred  
-**Version:** 1.0.0
+**Status:** Closed — Generic Representation Batch Fully Canonicalized  
+**Version:** 1.1.0
 
 ## Purpose
 
-Record the repository-level closure audit performed after the Representation semantic batch was authored and integrated.
+Record the repository-level closure and final promotion audit performed after the Representation semantic batch was authored, integrated, validated, and promoted.
 
 ## Canonical Nucleus
 
 - `SEM-REPRESENTATION-GENERIC-001` — Representation — Active
 - `SEM-DISPLAY-001` — Display — Active
+- `SEM-REPRESENTATION-FORMAT-001` — Format — Active
+- `SEM-REPRESENTATION-ENCODING-001` — Encoding — Active
+- `SEM-REPRESENTATION-SERIALIZATION-001` — Serialization — Active
+- `SEM-REPRESENTATION-MEDIA-TYPE-001` — Media Type — Active
+- `SEM-REPRESENTATION-COMPRESSION-001` — Compression — Active
+- `SEM-REPRESENTATION-PACKAGING-001` — Packaging — Active
+- `SEM-REPRESENTATION-PROFILE-001` — Profile — Active
 
-Both entries preserve distinct semantic responsibility and do not create visitor-specific duplicates.
+## Final Promotion Decision
 
-## Candidate Set
+All seven previously controlled representation candidates passed the scoped final promotion gates and are now Active canonical concepts at the generic responsibility level.
 
-- `SEM-REPRESENTATION-FORMAT-001` — Format — Canonical Candidate
-- `SEM-REPRESENTATION-ENCODING-001` — Encoding — Canonical Candidate
-- `SEM-REPRESENTATION-SERIALIZATION-001` — Serialization — Canonical Candidate
-- `SEM-REPRESENTATION-MEDIA-TYPE-001` — Media Type — Canonical Candidate
-- `SEM-REPRESENTATION-COMPRESSION-001` — Compression — Canonical Candidate
-- `SEM-REPRESENTATION-PACKAGING-001` — Packaging — Canonical Candidate
-- `SEM-REPRESENTATION-PROFILE-001` — Profile — Canonical Candidate
-
-Candidate status is intentionally retained. Presence of a complete semantic file does not by itself satisfy the final promotion requirement.
+This promotion does not automatically create or promote individual format families, codecs, registered media types, application profiles, package formats, or encoding families. Those remain subject to their own domain-level semantic decisions.
 
 ## Audit Gates
 
 ### Identity
 
-Passed for the active nucleus and all registered candidates. Stable semantic IDs and preferred names are present.
+Passed. Stable semantic IDs and preferred names are present.
 
-### Responsibility
+### Primary Responsibility
 
-Passed. Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, and Profile have distinct stated primary responsibilities.
+Passed. Each active concept has a distinct primary responsibility and is not a lexical duplicate of another active entry.
 
 ### Existing-Entry Check
 
-Passed for the authored representation-related nucleus. Existing Display identity was preserved rather than duplicated.
+Passed. Existing Display and Representation identities were preserved; no duplicate semantic authority was introduced.
 
 ### Boundary
 
-Passed at the folder-rule level. The folder explicitly separates Representation from Result, Dataset, File, Bitstream, Format, Encoding, Serialization, Display, Perception, Quantity, Condition, State, Activity, Process, Profile, and Conformance.
+Passed. Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile, File, Bitstream, Result, Dataset, Activity, Process, Perception, Quantity, Condition, State, and Conformance remain distinct according to primary responsibility.
 
 ### Relation Authority
 
-Corrected. Representation candidate pages must not introduce unapproved relation names as if they were canonical GIOP relations. Existing canonical relation concepts remain authoritative.
+Passed. Candidate pages use only already admitted GIOP relation vocabulary and do not silently introduce representation-specific relation authority.
 
 ### Visitor Universe
 
-Passed. Visitor Universe is implemented as retrieval/entry-depth routing and not as audience-specific semantic duplication.
+Passed. Visitor Universe remains retrieval/entry-depth routing and creates no audience-specific semantic duplicates.
 
 ### Provenance / Evidence
 
-Passed at the semantic-synthesis level. External standards are treated as evidence sources rather than copied GIOP authority.
+Passed. External standards and vocabularies are treated as evidence for semantic synthesis, not copied as GIOP authority.
 
 ### Retrieval
 
-Passed for isolation: entries contain stable identity, definition, distinctions, and retrieval anchors appropriate to their current status.
+Passed. Active entries expose deterministic IDs, definitions, responsibility, distinctions, lifecycle, provenance/validation information, and retrieval anchors.
 
 ### Lifecycle
 
-Passed. Active entries are marked Active; unresolved promotion is represented explicitly as Canonical Candidate rather than being silently promoted.
-
-## Promotion Decision
-
-No candidate is promoted by this audit alone. Final promotion remains a controlled semantic decision requiring the applicable Foundation gates and, where necessary, additional evidence or cross-layer review.
-
-## Registry Synchronization
-
-`REPRESENTATION-INDEX.md` and `REPRESENTATION-KNOWLEDGE-REGISTRY.md` remain the routing/index authorities for this folder. This audit does not create a second canonical registry.
+Passed. The generic representation concepts are Active; narrower domain instances remain independently controlled.
 
 ## Integrity / Branch Boundary
 
-This audit and the associated representation-folder corrections were committed only to `v3.1-tree-architecture`. The protected/default `main` branch was not targeted by these writes.
+All changes were made on `v3.1-tree-architecture`. `main` was not targeted by these writes.
 
-The immutable proof ledger was not modified because no new proof-ledger record was explicitly required by this audit.
+The immutable proof ledger was not modified because no new immutable proof-ledger record was explicitly required by the promotion audit.
 
 ## Closure State
 
-The Representation folder is structurally and semantically integrated for the current batch. The next promotion pass may evaluate the seven candidates individually; it must not infer promotion merely from file existence or folder closure.
+The Representation folder is now fully closed for this generic semantic batch. No remaining generic candidate in the registered seven-concept set is awaiting promotion.
+
+Future work may extend the folder with independently validated domain-level concepts, but such work must not reopen or silently alter the canonical responsibility of the existing entries.
