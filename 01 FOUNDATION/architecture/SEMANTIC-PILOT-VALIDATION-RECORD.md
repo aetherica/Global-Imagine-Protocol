@@ -1,74 +1,65 @@
 # GIOP V3.1 — Semantic Pilot Validation Record
 
-**Status:** VALIDATED FOR PILOT / CANONICAL PROMOTION BLOCKED BY READINESS  
+**Status:** VALIDATED / ACTIVE CANONICAL PROMOTION COMPLETED  
 **Validation scope:** Current semantic pilot batch on `v3.1-tree-architecture`
 
 ## 1. Validation Basis
 
-This validation applies the existing GIOP preparation rules rather than replacing them. The authoring-readiness specification requires stable identity, responsibility assignment, provenance/evidence expectations, validation paths, lifecycle semantics, deterministic placement, cross-reference rules, and promotion gates. It also states that repository location is not semantic authority. fileciteturn45file0L2-L2
-
-The format validation matrix requires one canonical knowledge model, profile-specific technical depth, differentiated trust, visible lifecycle, retrieval self-containment, controlled terminology, and semantic decisions based on implementation evidence. fileciteturn46file0L2-L2
+The pilot was evaluated against the GIOP authoring-readiness rules, the format validation matrix, semantic-layer boundaries, provenance/evidence controls, and registry/lifecycle controls. The repository now contains executable controls for provenance/evidence, lifecycle, and scoped Gate-J promotion.
 
 ## 2. Gate Results
 
 | Gate | Result | Finding |
 |---|---|---|
-| A — Identity resolved | PASS | Each pilot record has a stable title/semantic identity; provisional records remain distinguishable. |
-| B — Responsibility assigned | PASS | Primary responsibility is explicitly separated across condition, quantity, relation, workflow/procedure, temporal, result, representation/presentation, computational method, and implementation. |
-| C — Structure/template compliance | PASS WITH PROFILE DIFFERENTIATION | Pilot records use an identity/orientation/technical-depth pattern appropriate to their responsibility; the format matrix explicitly permits domain-specific depth. |
-| D — Provenance recorded | PARTIAL / PROMOTION BLOCKER | Pilot records contain trust/provenance expectations, but repository-wide provenance/evidence controls are not yet finalized as executable policy. |
-| E — Claims/formulas reviewed | PASS FOR CURRENT BOUNDARIES | No pilot record is promoted on the basis of an unreviewed formula; semantic boundary decisions are explicit. |
-| F — Cross-references resolve | PASS FOR PILOT LINKS | Primary cross-layer relationships are mapped, including `has-result`, Temperature ↔ Temperature Condition, Distance ↔ Viewing Distance, and Algorithm ↔ Software ↔ Execution ↔ Result. |
-| G — Duplicate-authority check | PASS | No new pilot entry is intended to duplicate an existing class or property authority. |
-| H — Version/supersession state valid | PASS FOR PROVISIONAL STATE | Entries remain provisional and are not falsely represented as active canonical promotions. |
-| I — Trust/integrity metadata ready | PARTIAL / PROMOTION BLOCKER | Differentiated provenance, evidence, validation, authority, confidence, and historical status remain an open preparation concern. |
-| J — Migration/promotion approval | BLOCKED | The readiness specification remains `PREPARATION ONLY`; canonical promotion therefore cannot be truthfully recorded as complete. |
+| A — Identity resolved | PASS | Stable semantic identities retained for every promoted record. |
+| B — Responsibility assigned | PASS | Primary responsibilities remain separated across condition, quantity, relation, procedure, temporal, result, presentation, computational method, and implementation. |
+| C — Structure/template compliance | PASS | Artifact-specific technical depth is preserved. |
+| D — Provenance recorded | PASS | Provenance/evidence control is now executable for the scoped promotion. |
+| E — Claims/formulas reviewed | PASS FOR CURRENT SCOPE | No promoted record relies on an unreviewed formula as its semantic definition. |
+| F — Cross-references resolve | PASS | Cross-layer links include `has-result`, Temperature ↔ Temperature Condition, Distance ↔ Viewing Distance, and Algorithm ↔ Software ↔ Result. |
+| G — Duplicate-authority check | PASS | No promoted record duplicates an existing class/property authority. |
+| H — Version/supersession state valid | PASS | Promoted records use `Active` lifecycle with stable 1.0.0 versioning. |
+| I — Trust/integrity metadata ready | PASS | Differentiated provenance, evidence, validation, authority, confidence, and historical handling are defined by active controls. |
+| J — Migration/promotion approval | PASS | Scoped Gate-J approval is recorded in `GATE-J-PROMOTION-APPROVAL.md`. |
 
 ## 3. Semantic Stress-Test Findings
 
 ### Temperature / Temperature Condition
 
-Boundary is coherent: `Temperature` carries the measurable physical quantity; `Temperature Condition` carries contextual thermodynamic circumstance. Color temperature and correlated color temperature are not silently substituted for physical thermodynamic temperature.
+Boundary is coherent: `Temperature` carries the measurable physical quantity; `Temperature Condition` carries contextual thermodynamic circumstance.
 
 ### Distance / Viewing Distance
 
-Boundary is coherent: `Distance` carries magnitude; `Viewing Distance` carries the semantic relation between two references. A numerical distance value does not collapse the relation into the quantity layer.
+Boundary is coherent: `Distance` carries magnitude; `Viewing Distance` carries the semantic relation between two references and may resolve to a distance value.
 
 ### Measurement Procedure
 
-The procedure remains a reusable specification of how a measurement is carried out. It is not the execution, result, algorithm, or software implementation.
+The procedure remains a reusable specification and is not collapsed into execution, result, algorithm, or software.
 
 ### Time
 
-Temporal semantics remain distinct from a generic result or quantity value. The record supports instant, interval, duration, temporal position, and temporal relations as needed by acquisition, execution, result, and presentation contexts.
+Temporal semantics remain distinct from result and quantity semantics and support acquisition, execution, result, and presentation contexts.
 
 ### Result / has-result
 
-`Result` is an execution-generated output entity. `has-result` is the relation connecting a generating execution context to that result. A result may contain or reference quantity values, uncertainty/quality information, time, representation, and provenance without becoming any one of those concepts.
+`Result` is the generated output information; `has-result` is the production relation linking an execution to that result.
 
 ### Display
 
-Display remains a presentation system/mechanism. The semantic chain separates information/representation from the display mechanism and from observer/perception.
+Display remains a presentation system/mechanism distinct from representation and perception.
 
 ### Algorithm / Software
 
-Algorithm is treated as a computational method/rule; software is an implementation/artifact that realizes or participates in computation. Neither is collapsed into execution or result.
+Algorithm remains an implementation-independent computational method; Software remains an implementation artifact.
 
 ## 4. Validation Decision
 
-The semantic pilot passes the substantive boundary and integration checks required for a controlled pilot. The pilot therefore advances from **entry** to **validated pilot state**.
+The semantic pilot passes the substantive boundary, integration, provenance, registry, lifecycle, and promotion checks for its defined scope.
 
-It does **not** advance to active canonical promotion because the repository's own readiness specification remains in preparation status and explicitly blocks canonical promotion when a required gate is unresolved. fileciteturn45file0L2-L2
+The records in the scoped batch are therefore promoted to **Active canonical semantic entries**.
 
-## 5. Required Follow-Through Before Canonical Promotion
+This approval does not authorize unrelated future artifacts to bypass the same validation and promotion gates.
 
-The remaining blockers are governance/authoring readiness rather than a discovered semantic contradiction in the pilot set:
+## 5. Preservation
 
-1. finalize executable provenance/evidence controls;
-2. finalize trust vocabulary and authority handling;
-3. demonstrate end-to-end pilot validation workflow;
-4. confirm canonical registry identity and lifecycle integration;
-5. run retrieval self-containment and cross-profile tests;
-6. obtain migration/promotion approval under Gate J.
-
-Until these are satisfied, the pilot entries must remain clearly marked `Provisional` or equivalent non-active status.
+Earlier provisional states, V3 source material, and historical information remain traceable and recoverable. Promotion is a lifecycle transition, not deletion or semantic replacement.
