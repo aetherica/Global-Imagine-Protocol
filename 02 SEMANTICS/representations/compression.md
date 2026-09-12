@@ -49,6 +49,10 @@ Lossless compression aims to permit exact reconstruction of the relevant input d
 
 A container that both packages and compresses data has at least two semantic responsibilities. A codec that combines prediction, quantization, entropy coding, and packaging must be decomposed conceptually by primary responsibility rather than product naming.
 
+## Relations
+
+Representation-related assertions must use the authoritative GIOP relation vocabulary. Existing canonical relations such as `derived-from`, `represents`, `part-of`, `participates-in`, and `has-result` may be used where semantically applicable. No new compression-specific relation authority is introduced here.
+
 ## Trust and Validation
 
 Claims of losslessness must be tied to a defined input/output scope and reconstruction criterion. Claims of quality preservation require the relevant metric, task, viewing context, or perceptual criterion rather than compression ratio alone.
