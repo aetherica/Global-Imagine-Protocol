@@ -4,138 +4,70 @@
 **Preferred Name:** Execution  
 **Semantic Class:** Activity  
 **Domain:** Cross-domain operational semantics  
-**Status:** Provisional  
-**Version:** 0.1.0  
+**Status:** Active  
+**Version:** 1.0.0  
 **Primary Responsibility:** A concrete occurrence in which a defined Procedure is carried out.
 
 ## 5W1H Orientation
-
 ### What
-
 Execution is the occurrence of carrying out a defined Procedure or operational specification.
-
 ### Why
-
-Execution distinguishes the actual carrying-out of a prescribed method from the Procedure itself. This makes reproducibility, provenance, timing, participation, inputs, and outputs representable at occurrence level.
-
+It distinguishes actual enactment from the Procedure itself and enables reproducibility, provenance, timing, participation, inputs, and outputs to be represented at occurrence level.
 ### Who
-
-Execution may be performed by a human Agent, instrument, System, software environment, or coordinated set of participants, depending on the Procedure.
-
+A human Agent, instrument, System, software environment, or coordinated participants may perform an Execution.
 ### Where
-
-Execution may occur in physical, laboratory, imaging, measurement, computational, simulated, or virtual environments.
-
+Physical, laboratory, imaging, measurement, computational, simulated, and virtual environments.
 ### When
-
-Execution is time-bounded or otherwise temporally situated. The execution interval may differ from phenomenon time and result time.
-
+Execution is temporally situated; execution time may differ from phenomenon time and result time.
 ### How
-
 An Execution carries out a Procedure and may use inputs, involve participants, operate under Conditions or States, and generate Results or other entities.
 
 ## Semantic Definition
-
 **Execution** is an Activity occurrence in which a specified Procedure is actually carried out. It represents the performed instance of a method rather than the method specification itself.
 
 ## Semantic Responsibility
-
-Execution is used when the important semantic fact is that a Procedure was actually enacted. It therefore provides an occurrence-level bridge between procedural specification and observed, measured, sampled, actuated, acquired, or otherwise produced outcomes.
+Execution is used when the important semantic fact is that a Procedure was actually enacted. It is a procedure-driven Activity pattern, not a universal parent for all Activity concepts.
 
 ## Core Distinctions
-
-### Execution vs Activity
-
-Execution is a specialized procedure-driven Activity pattern. Activity is the broader occurrence concept. Not every Activity must be represented as an Execution.
-
-### Execution vs Procedure
-
-Procedure describes how an operation should be performed. Execution records that the operation was actually carried out. `Execution ≠ Procedure`.
-
-### Execution vs Process
-
-A Process describes transformation, development, progression, or an organized course. Execution denotes a concrete carrying-out occurrence. `Execution ≠ Process`.
-
-### Execution vs Result
-
-Execution is the occurrence; Result is an output of that occurrence.
+`Execution ≠ Activity`: Execution is narrower and procedure-driven.  
+`Execution ≠ Procedure`: Procedure specifies; Execution enacts.  
+`Execution ≠ Process`: Process denotes transformation, development, progression, or an organized course.  
+`Execution ≠ Result`: Execution is the occurrence; Result is an output.
 
 ## Relation to Procedure
-
-The primary relation is:
-
-```text
-Procedure → specifies → Execution
-```
-
-A Procedure may be executed repeatedly under different conditions and with different inputs.
+The semantic dependency is `Procedure → specifies → Execution`; the relation label remains conceptual unless separately admitted to canonical relation vocabulary.
 
 ## Relation to Specialized Activities
-
-Observation and Measurement are important procedure-driven Activity patterns and may be represented as Executions where their procedural character is relevant.
-
-```text
-Activity
-   └── Execution pattern
-         ├── Observation
-         └── Measurement
-```
-
-Sampling is a validated staged candidate for this pattern. Actuation is deferred from the current GIOP canonical batch.
-
-Acquisition, Processing, and Calibration remain independent Activity concepts because their primary semantic responsibilities should not be reduced to the generic idea of execution.
+Observation and Measurement may be represented as procedure-driven Executions where their procedural character is relevant. Sampling is staged for later work. Acquisition, Processing, and Calibration remain independent Activity concepts.
 
 ## Temporal Semantics
-
-Relevant execution information may include start time, end time, duration, phenomenon time, and result time. These values should remain distinct when they refer to different temporal events.
+Relevant information may include start time, end time, duration, phenomenon time, and result time. Distinct temporal events must remain distinct.
 
 ## Inputs and Outputs
-
-An Execution may use entities required by its Procedure and may generate one or more Results or other entities. Inputs and outputs are Procedure- and execution-specific.
+An Execution may use entities required by its Procedure and generate one or more Results or other entities. Inputs and outputs are Procedure- and occurrence-specific.
 
 ## Actors and Systems
-
-The performing or participating entity may be:
-
-- human Agent;
-- organization or service;
-- instrument or System;
-- software or computational infrastructure;
-- coordinated participants.
+Performers or participants may include humans, organizations/services, instruments, systems, software, or coordinated participants.
 
 ## Cross-Domain Significance
-
-Execution is useful wherever GIOP must distinguish a reusable method from an occurrence of that method: measurement, observation, sampling, testing, laboratory work, computational workflows, and instrument operation.
+Execution is useful wherever GIOP must distinguish a reusable method from an occurrence of that method, including measurement, observation, testing, laboratory work, computational workflows, and instrument operation.
 
 ## Trust / Provenance
+Execution assertions should retain occurrence provenance, Procedure identity, participating Agent/System, temporal information, inputs, outputs, evidence, validation state, and authority context where available.
 
-Execution assertions should retain occurrence provenance, participating agent/system, relevant procedure identity, temporal information, inputs, outputs, evidence, validation state, and authority context where available.
-
-External ontology or standards terminology supports this semantic synthesis but does not itself define GIOP authority.
-
-## Validation Notes
-
-The entry preserves the boundary that Execution is a procedure-driven Activity pattern rather than a universal parent of all Activity concepts.
+## Validation
+Cross-layer validation confirms the boundary between Activity, Execution, Procedure, Process, Result, Observation, and Measurement. The entry is approved for active canonical use within the scoped Activity batch.
 
 ## Lifecycle
-
-**Current state:** Provisional semantic entry.  
-**Next intended state:** Review → Validated → Active, subject to scoped validation and promotion.
+**Current state:** Active canonical semantic entry.  
+**Version:** 1.0.0  
+**Promotion path:** Authored → Integrated → Validated → Approved → Active Canonical.
 
 ## Relations
-
-```text
-Procedure → specifies → Execution
-Agent / System → participates-in / performs → Execution
-Execution → uses → Entity
-Execution → produces → Result
-Execution → may be informed by → Activity
-```
+Use canonical `participates-in`, `has-result`, `part-of`, `derived-from`, and `observes` where their established semantics apply. Procedure specification and other dependencies remain conceptual until separately promoted.
 
 ## Retrieval Anchors
-
 `EXECUTION`, `ACTUAL EXECUTION`, `PROCEDURE EXECUTION`, `PERFORMED PROCEDURE`, `ACTIVITY`, `OBSERVATION`, `MEASUREMENT`, `PROCEDURE`, `RESULT`
 
 ## Evidence / Source Basis
-
-Semantic synthesis informed principally by W3C SOSA/SSN execution and observation modelling, W3C PROV activity semantics, and GIOP's established Procedure–Activity–Result separation.
+Semantic synthesis is informed principally by W3C SOSA/SSN execution and observation modelling, W3C PROV activity semantics, and GIOP's Procedure–Activity–Result separation.
