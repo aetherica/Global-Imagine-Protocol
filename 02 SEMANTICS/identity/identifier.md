@@ -1,74 +1,56 @@
 # Identifier
 
-**Semantic ID:** `SEM-IDENTIFIER-GENERIC-001`
-**Preferred Name:** Identifier
-**Semantic Class:** Identity Concept
-**Domain:** Identity
-**Status:** CANONICAL CANDIDATE — V3.1 SEED
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-IDENTIFIER-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Identity
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Identity, Representation, Relation, Provenance
 
 ## 5W1H Orientation
 
 ### What
-
-An Identifier is a value, label, token, code, or other denoting mechanism used to refer to an identity or entity within a declared system or scope.
+An Identifier is a value, token, label, code, or other designated reference used to denote or distinguish an identity within a declared scope. It is a reference mechanism, not the identity itself.
 
 ### Why
-
-Systems need stable or controlled ways to refer to entities even when descriptive attributes change or multiple representations exist.
+Identifiers allow systems and people to refer to an identity consistently, exchange records, establish relations, and retrieve information without requiring the full identity semantics to be embedded in every reference.
 
 ### Who
-
-Used by people, organizations, databases, documents, devices, machine-learning datasets, registries, archives, and digital identity systems.
+Identifiers may be assigned, generated, maintained, or interpreted by people, organizations, registries, software systems, devices, or other authorities. Their authority depends on the scope that recognizes them.
 
 ### Where
-
-IDs may appear in records, filenames, registries, metadata, URLs, credentials, labels, and machine-readable assertions.
+An identifier is meaningful within its namespace or identification system. The same lexical value can identify different referents in different namespaces, while one identity can possess multiple identifiers across systems.
 
 ### When
-
-An identifier has validity and scope. Reuse, reassignment, expiration, and collision must be considered.
+Identifiers may be issued, activated, changed, revoked, retired, reused under explicit policy, or superseded. Temporal validity therefore belongs to the identifier's relation to an identity and namespace rather than to the lexical token alone.
 
 ### How
-
-An identifier denotes through a declared namespace, assignment rule, or identification scheme.
+An identifier denotes an identity through an explicit or governed mapping, normally expressed with namespace, issuer, scope, and validity information. Resolution of that mapping is an identity operation, not an inherent property of the token.
 
 ## Semantic Definition
-
-**Identifier** is a denoting value or mechanism assigned or used to refer to an identity or entity within a declared scope.
+An Identifier is a scoped reference value intended to denote or distinguish an identity. Its semantic meaning is determined by the identification scheme, namespace, issuer or authority, scope, and applicable validity conditions.
 
 ## Scope / Boundary
-
-An identifier is not proof that the referenced identity is correctly asserted. An identifier may be unique only within a namespace, dataset, organization, or time interval. Authentication credentials and cryptographic keys are specialized implementation artifacts and should not redefine generic Identifier.
+Identifier owns reference-token semantics. Identity owns the referent. Identity Attribute owns descriptive characteristics. Identity Resolution owns determination of correspondence. A biometric template is not automatically an identifier, although it may participate in identification or verification workflows.
 
 ## Core Distinctions
-
-**Identifier vs Identity:** reference mechanism versus the identity being referenced.
-
-**Identifier vs Name:** a name can function as an identifier but not every name is a controlled identifier.
-
-**Identifier vs Credential:** a credential contains or supports authentication evidence; an identifier merely denotes.
-
-**Local vs Global Identifier:** scope and namespace determine collision risk.
+- Identifier ≠ Identity.
+- Identifier ≠ Attribute.
+- Identifier ≠ Representation.
+- Identifier ≠ Biometric Template.
+- Identifier equality does not imply referent equality without namespace and scope.
 
 ## Cross-Domain Significance
-
-Identifiers connect Identity with Registry, Provenance, Representation, Dataset, and Digital Identity systems.
+Identifiers support registry lookup, object tracking, dataset linkage, provenance, access control, and cross-system interoperability. They are especially important where the same referent appears in multiple representations or systems.
 
 ## Trust / Evidence
-
-Namespace, issuer, assignment event, validity interval, and collision handling are relevant when identifier integrity matters.
+Trust in an identifier concerns its issuer, namespace, binding, lifecycle, and provenance. A validly formatted identifier does not prove that its binding to a referent is correct.
 
 ## Visitor Universe
-
-Novice: identifier as a reference label.
-
-Expert: namespace, persistence, reassignment, aliasing, collision, and issuer semantics.
+Novices need the identity-versus-identifier distinction. Experts need namespace, issuer, binding, temporal validity, collision, reuse, and resolution semantics. Machines need namespace-qualified identifier values and explicit identity relations.
 
 ## Lifecycle
-
-Candidate seed → validation → Gate-J → Active Canonical.
+Identifier lifecycle may include issuance, activation, suspension, reassignment where permitted, revocation, retirement, and archival. Lifecycle status must be represented separately from the identifier value.
 
 ## Retrieval Anchors
-
-`IDENTIFIER`, `ID`, `IDENTIFICATION TOKEN`, `IDENTITY IDENTIFIER`, `IDENTIFIER NAMESPACE`, `REFERENCE ID`
+identifier, identity identifier, identifier token, namespace identifier, reference code, identity reference
