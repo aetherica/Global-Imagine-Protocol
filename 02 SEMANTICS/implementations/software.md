@@ -5,8 +5,8 @@
 **Artifact Type:** Implementation Definition  
 **Primary Responsibility:** Computational Implementation  
 **Domain:** Computing / Imaging  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > Software is an implementation artifact consisting of programs, associated data, configuration, and related executable or supporting material used to perform defined computational functions.
 
@@ -62,7 +62,7 @@ Software claims should identify version, implementation scope, dependencies, app
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
