@@ -2,13 +2,13 @@
 
 **Artifact Type:** Cross-Layer Validation  
 **Semantic Layer:** Observer  
-**Version:** 1.0.0  
-**Status:** Active
+**Version:** 1.1.0  
+**Status:** Active / Passed for V3.1 Core Scope
 
 | Concept | Primary Layer | Observer Relationship | Decision |
 |---|---|---|---|
 | Observer | Class | Owns observing entity identity | Existing Class responsibility |
-| Observer Model | Model | Reusable response model | Provisional canonical candidate |
+| Observer Model | Model | Reusable response model | Active canonical responsibility |
 | Observation | Activity / Observation semantics | Uses an observer or observer model | Do not collapse |
 | Measurement | Activity | May use observer response or model | Separate activity |
 | Perception | Perception | May be modeled by an observer model | Separate perceptual semantics |
@@ -23,4 +23,10 @@
 
 ## Validation Outcome
 
-The Observer layer remains semantically separable from the adjacent layers. The existing Observer Model entry is retained as Provisional because canonical promotion requires an explicit promotion decision and complete lifecycle evidence rather than inference from terminology alone.
+The Observer layer is semantically separable from the adjacent layers. `SEM-OBSERVER-MODEL-001` has passed the V3.1 core validation and promotion gate and is Active within that scoped responsibility.
+
+Promotion does not promote any specialized observer model family. Standard Observer and the other controlled candidates remain independently gated.
+
+## Closure Reference
+
+Final V3.1 core closure is recorded in `OBSERVER-FOLDER-CLOSURE-AUDIT.md`.
