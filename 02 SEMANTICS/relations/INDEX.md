@@ -8,23 +8,25 @@ This index enumerates the current V3.1 canonical Relation concepts published und
 
 ## Canonical Relations
 
-| Preferred Term | GIOP ID | Family | Direction | Inverse | Status |
-|---|---|---|---|---|---|
-| `part-of` | `SEM-RELATION-PART-OF-001` | Structural / Partitive | Part → Whole | `has-part` | CANONICAL / ACTIVE |
-| `participates-in` | `SEM-RELATION-PARTICIPATES-IN-001` | Participation | Participant → Occurrence | `has-participant` | CANONICAL / ACTIVE |
-| `observes` | `SEM-RELATION-OBSERVES-001` | Observation | Observer → Target | `is-observed-by` | CANONICAL / ACTIVE |
-| `represents` | `SEM-RELATION-REPRESENTS-001` | Representation | Representation → Referent | `is-represented-by` | CANONICAL / ACTIVE |
-| `derived-from` | `SEM-RELATION-DERIVED-FROM-001` | Provenance / Lineage | Derived → Source | provenance inverse | CANONICAL / ACTIVE |
+| Preferred Term | GIOP ID | Family | Domain → Range | Direction | Inverse | Status |
+|---|---|---|---|---|---|---|
+| `part-of` | `SEM-RELATION-PART-OF-001` | Structural / Partitive | Part → Whole | Part → Whole | `has-part` | CANONICAL / ACTIVE |
+| `participates-in` | `SEM-RELATION-PARTICIPATES-IN-001` | Participation | Participant → Occurrence | Participant → Occurrence | `has-participant` | CANONICAL / ACTIVE |
+| `observes` | `SEM-RELATION-OBSERVES-001` | Observation | Observer → Target | Observer → Target | `is-observed-by` | CANONICAL / ACTIVE |
+| `represents` | `SEM-RELATION-REPRESENTS-001` | Representation | Representation → Referent | Representation → Referent | `is-represented-by` | CANONICAL / ACTIVE |
+| `derived-from` | `SEM-RELATION-DERIVED-FROM-001` | Provenance / Lineage | Derived → Source | Derived → Source | provenance inverse | CANONICAL / ACTIVE |
+| `has-result` | `SEM-RELATION-HAS-RESULT-001` | Result / Output | Activity / Execution → Result | Activity / Execution → Result | `is-result-of` | CANONICAL / ACTIVE |
 
 ## Semantic Coverage
 
-The five canonical relations establish a high-confidence V3.1 seed covering:
+The six canonical relations establish a conservative V3.1 seed covering:
 
 - structural constitution;
 - participation in occurrences;
 - observation;
 - semantic representation;
-- derivational provenance.
+- derivational provenance;
+- result/output linkage.
 
 The seed is intentionally conservative. It does not imply that the broader recovered relation corpus is unimportant or excluded.
 
