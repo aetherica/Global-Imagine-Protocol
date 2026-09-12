@@ -4,12 +4,12 @@
 **Preferred Name:** Serialization  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Production or specification of a concrete expression from an abstract or structured information form  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from RDF abstract/concrete syntax architecture and general information-system serialization practice.  
-**Validation:** Activity/Representation boundary explicitly reviewed.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-ACTIVITY-GENERIC-001`, `SEM-REPRESENTATION-FORMAT-001`, `SEM-REPRESENTATION-ENCODING-001`
 
 > Serialization is the semantic operation or mechanism by which an abstract or structured information model is expressed as a concrete, storable, transferable, or interpretable form.
 
@@ -70,8 +70,8 @@ Serialization claims should identify the abstract model, concrete syntax, applic
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate.
+**Current state:** Active. This generic Serialization concept is now canonical; concrete serialization formats and operations remain subject to their applicable semantic layers.
 
 ## Retrieval Anchors
 
-`SERIALIZATION`, `SERIALIZE`, `SERIALIZED FORM`, `CONCRETE SYNTAX`, `DESERIALIZATION`, `ABSTRACT MODEL`, `CONCRETE EXPRESSION`
+`SEM-REPRESENTATION-SERIALIZATION-001`, `SERIALIZATION`, `SERIALIZE`, `SERIALIZED FORM`, `CONCRETE SYNTAX`, `DESERIALIZATION`, `ABSTRACT MODEL`, `CONCRETE EXPRESSION`
