@@ -1,7 +1,7 @@
 # Representation Knowledge Registry
 
 **Status:** Active Semantic Knowledge Registry  
-**Version:** 1.2.0  
+**Version:** 1.3.0  
 **Purpose:** Retain representation-related concepts, decisions, evidence status, and routing without becoming a parallel canonical knowledge base.
 
 ## Registry Rules
@@ -25,14 +25,14 @@ A registry record is not automatically canonical. Canonical semantic content is 
 | Compression | Representation-data transformation | Distinct from Encoding, Representation, and Fidelity | `compression.md` | Active |
 | Packaging | Aggregation/containerization | Distinct from Representation and File | `packaging.md` | Active |
 | Profile | Specification specialization | Distinct from Format and Conformance | `profile.md` | Active |
+| Belief Representation | Agent-relative belief, uncertainty, or epistemic-state representation | Distinct reusable specialized Representation concept | `belief-representation.md` | Active |
 
 ## Advanced Extension Intake
 
-The following concepts were identified as meaningful coverage gaps in AI, robotics, computational representation, scene/world modeling, agent interaction, and programming-language practice. They are retained as controlled candidates pending independent promotion rather than being promoted merely from lexical prevalence.
+The following concepts remain controlled candidates pending independent promotion:
 
 | Candidate ID | Preferred Name | Primary responsibility | Decision |
 |---|---|---|---|
-| `SEM-REPRESENTATION-BELIEF-001` | Belief Representation | Representation of an agent's uncertain/probabilistic beliefs | Candidate — high priority |
 | `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Representation organized around distinct objects/entities | Candidate — high priority |
 | `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Representation organized around typed relations | Candidate — high priority |
 | `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Representation of action possibilities/opportunities | Candidate — high priority |
@@ -51,6 +51,8 @@ The following concepts were identified as meaningful coverage gaps in AI, roboti
 | `SEM-REPRESENTATION-WORLD-001` | World Representation | Representation of broader environment/world state, structure, or dynamics | Candidate — Model boundary review |
 | `SEM-REPRESENTATION-MAP-001` | Map Representation | Representation of spatial organization for mapping/navigation | Candidate — high priority |
 
+`SEM-REPRESENTATION-BELIEF-001` has been removed from this controlled-candidate table because it passed independent promotion review and is now Active canonical.
+
 ## Routed / Dimensional Terms
 
 Digital/Physical, Visual/Textual/Audio/Video, Multimodal, Structured/Unstructured, Machine-Readable/Interpretable/Actionable/Executable, Representation Granularity, Representation Abstraction, Representation Quality, and Representation Learning are not automatically independent canonical Representation concepts. Their primary responsibility may be modality, structural classification, property/evaluation, capability, or process.
@@ -60,6 +62,7 @@ Feature, Embedding, Latent, Tensor, and Neural Representation remain routed cand
 ## Cross-Layer Controls
 
 - State is not replaced by State Representation.
+- Belief Representation expresses an agent-relative epistemic state; it does not replace `SEM-STATE-GENERIC-001`.
 - Action execution remains an Activity; Action Representation is its information-bearing form.
 - Process/Activity remain occurrences or temporal courses; process descriptions are Representations.
 - Model remains a formal explanatory/predictive construct; representation of a model is not automatically the Model.
@@ -68,11 +71,15 @@ Feature, Embedding, Latent, Tensor, and Neural Representation remain routed cand
 
 ## Evidence Notes
 
-The intake was informed by multiple source traditions: HTTP and Web standards, RDF/DCAT/PROV, preservation models, media-type practice, robotics scene/world representation, representation learning, world models, embodied AI, event-based sensing, and compiler/intermediate-representation practice. Source traditions are evidence for semantic synthesis, not GIOP authority.
+The intake was informed by multiple source traditions: HTTP and Web standards, RDF/DCAT/PROV, preservation models, media-type practice, robotics scene/world representation, representation learning, world models, embodied AI, event-based sensing, compiler/intermediate-representation practice, formal epistemology, and POMDP/probabilistic decision systems. Source traditions are evidence for semantic synthesis, not GIOP authority.
+
+Belief Representation promotion was specifically supported by formal treatments of qualitative and graded belief representation, POMDP belief-state formulations in which beliefs represent probability distributions over possible world states, and robotics/AI work using learned or approximate belief representations for decision-making under partial observability.
 
 ## Promotion Rule
 
 Every candidate must independently pass identity, primary responsibility, existing-entry check, boundary, evidence, relation authority, cross-layer validation, lifecycle, and retrieval gates before canonical promotion.
+
+Belief Representation passed these gates without creating a new relation authority or collapsing belief, state, observation, measurement, model, or action semantics.
 
 ## Visitor Universe Note
 
