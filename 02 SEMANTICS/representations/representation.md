@@ -10,7 +10,7 @@
 **Authority:** GIOP Canonical Semantic Layer  
 **Provenance:** Synthesized from GIOP architecture and verified external semantic models; see Provenance and Evidence.  
 **Validation:** Foundation authoring, boundary, cross-layer, and retrieval requirements applied.  
-**Related IDs:** `SEM-DISPLAY-001`, `SEM-CLASS-REPRESENTATION-RELATED-001`, `SEM-ACTIVITY-OBSERVATION-001`, `SEM-ACTIVITY-MEASUREMENT-001`
+**Related IDs:** `SEM-DISPLAY-001`, `SEM-ACTIVITY-OBSERVATION-001`, `SEM-ACTIVITY-MEASUREMENT-001`
 
 > A Representation is an information-bearing form through which information, a result, a resource, or other semantic content is expressed, made available, exchanged, stored, presented, or otherwise made interpretable within a defined context.
 
@@ -38,19 +38,7 @@ Visitor category does not change the identity of Representation. It changes the 
 
 ## Where
 
-Representations occur in:
-
-- data exchange;
-- storage and archival systems;
-- imaging pipelines;
-- acquisition and processing outputs;
-- scientific datasets;
-- APIs and machine interfaces;
-- document systems;
-- display and presentation systems;
-- computational workflows;
-- preservation and migration systems;
-- human and machine communication.
+Representations occur in data exchange, storage and archival systems, imaging pipelines, acquisition and processing outputs, scientific datasets, APIs and machine interfaces, document systems, display and presentation systems, computational workflows, preservation and migration systems, and human/machine communication.
 
 ## When
 
@@ -60,18 +48,7 @@ A Representation may also be selected dynamically when multiple valid forms are 
 
 ## How
 
-A Representation is understood by relating it to:
-
-1. the underlying represented content;
-2. the representation's structural or syntactic form;
-3. any applicable format or media-type identification;
-4. any encoding or transformation applied to its data;
-5. any serialization activity or concrete syntax;
-6. any storage, transport, or packaging carrier;
-7. its provenance and derivation;
-8. its intended interpretation or use context;
-9. any presentation mechanism such as a Display;
-10. any applicable Profile or conformance assertion.
+A Representation is understood by relating it to the underlying represented content, structural/form specification, media-type identification, encoding or transformation, serialization, storage/transport or packaging, provenance and derivation, intended use context, presentation mechanism, and applicable Profile or conformance assertion.
 
 These are related semantic dimensions, not universal subclasses of Representation.
 
@@ -84,8 +61,6 @@ The represented content may be information, a result, a resource, a dataset, a d
 A Representation may be concrete and machine- or human-consumable, but concreteness alone does not make a file, stream, display, or encoding operation a Representation.
 
 ## Structure
-
-A useful abstract structure is:
 
 ```text
 Represented Content
@@ -104,7 +79,7 @@ Representation
        +-- provenance → source / activity / agent relations
 ```
 
-The diagram expresses semantic coordination, not an inheritance hierarchy.
+This is a coordination model, not an inheritance hierarchy.
 
 ## Core Distinctions
 
@@ -164,8 +139,6 @@ Conformance is an assertion that an entity or artifact satisfies specified requi
 
 The same underlying content may have multiple representations.
 
-For example:
-
 ```text
 Underlying image information
         |
@@ -181,11 +154,9 @@ Semantic equivalence must not be assumed merely because two representations refe
 
 ## Representation and Transformation
 
-A representation can be derived from another representation.
+A representation can be derived from another representation:
 
-```text
-R1 → transformation → R2
-```
+`R1 → transformation → R2`
 
 The transformation may be lossless, lossy, reversible, irreversible, format-changing, encoding-changing, resolution-changing, or otherwise qualified.
 
@@ -205,17 +176,7 @@ when that chain applies.
 
 ## Representation and Context
 
-Interpretation of a Representation can depend on Context, including:
-
-- application context;
-- capture context;
-- processing context;
-- operational context;
-- measurement context;
-- viewing context;
-- preservation context;
-- intended consumer;
-- profile or specification context.
+Interpretation of a Representation can depend on Context, including application, capture, processing, operational, measurement, viewing, preservation, intended-consumer, profile, and specification contexts.
 
 Context qualifies interpretation or use; it does not become part of the Representation's semantic identity unless explicitly represented as content or metadata.
 
@@ -251,46 +212,19 @@ It is therefore central to imaging, data engineering, APIs, computational system
 
 ## Relations
 
-Existing canonical relation concepts should be used where applicable, including:
-
-- `represents`;
-- `derived-from`;
-- `part-of`;
-- `participates-in`;
-- `observed-by` / `observes` where semantically justified;
-- `conforms-to` when represented as a conformance assertion;
-- presentation/display relations through the Display semantic layer.
+Existing canonical relation concepts should be used where applicable, including `represents`, `derived-from`, `part-of`, `participates-in`, and observation/presentation relations where semantically justified. `conforms-to` is treated as a qualified conformance assertion rather than a representation subtype.
 
 No new relation authority is silently introduced by this entry.
 
 ## Provenance and Evidence
 
-The semantic synthesis is informed by:
-
-- RFC 9110, HTTP Semantics, especially representation data, representation metadata, media type, and content coding distinctions;
-- W3C RDF 1.2 Concepts and Abstract Data Model, especially the distinction between an abstract information model and concrete syntaxes/serializations;
-- W3C DCAT, especially distribution, format, media type, compression format, and packaging distinctions;
-- PREMIS Data Dictionary 3.0, especially Representation, File, and Bitstream relationships in preservation;
-- W3C PROV / PROV-O for provenance relationships;
-- W3C Profiles Vocabulary for profile and conformance concepts;
-- ISO 14721:2025 (OAIS) for preservation and representation-information context.
+The semantic synthesis is informed by RFC 9110 (HTTP Semantics), W3C RDF 1.2 Concepts and Abstract Data Model, W3C DCAT, PREMIS Data Dictionary 3.0, W3C PROV / PROV-O, W3C Profiles Vocabulary, and ISO 14721:2025 (OAIS).
 
 These sources are evidence for semantic synthesis and are not copied as GIOP definitions.
 
 ## Trust and Validation
 
-A Representation claim should identify, where relevant:
-
-- what content is represented;
-- source or derivation;
-- format and media type;
-- encoding and compression;
-- serialization method;
-- packaging or carrier;
-- transformation history;
-- profile and conformance information;
-- validation method;
-- limitations and uncertainty.
+A Representation claim should identify, where relevant, what content is represented; source or derivation; format and media type; encoding and compression; serialization method; packaging or carrier; transformation history; profile and conformance information; validation method; and limitations or uncertainty.
 
 A representation should not be declared equivalent, lossless, conformant, authentic, or complete without the corresponding evidence or validation basis.
 
