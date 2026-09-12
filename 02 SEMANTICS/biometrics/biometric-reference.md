@@ -1,85 +1,56 @@
 # Biometric Reference
 
-**Semantic ID:** `SEM-BIOMETRIC-REFERENCE-001`  
-**Preferred Name:** Biometric Reference  
-**Semantic Class:** Biometrics Concept  
-**Domain:** Biometrics  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.2.0
+## Identity / Metadata
+- GIOP ID: SEM-BIOMETRIC-REFERENCE-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Biometrics
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Identity, Representation, Measurement, Provenance, Temporal
 
 ## 5W1H Orientation
 
 ### What
-A Biometric Reference is biometric information designated as a comparison reference for a specified biometric application, subject, or identity-related context.
+A Biometric Reference is a stored or designated representation of biometric information associated with a subject or identity reference for later biometric comparison, verification, identification, or related operations.
 
 ### Why
-A biometric system needs a defined comparison target. The reference role must remain distinct from the biological characteristic, the acquired sample, the template representation, and the identity determination supported by the reference.
+A reference provides a stable comparison target derived from biometric evidence while separating stored biometric information from the live sample captured during a later operation.
 
 ### Who
-Applicable to biometric-system designers, enrollment and recognition systems, forensic applications, authentication systems, protected repositories, evaluation datasets, and governance processes.
+References may be created and managed by biometric systems, identity authorities, service providers, institutions, or other authorized operators. Governance depends on the application and sensitivity of the biometric data.
 
 ### Where
-It may exist in enrollment systems, protected repositories, devices, controlled datasets, identity systems, and other declared biometric infrastructures.
+A reference may reside in a controlled biometric repository, identity system, device, credential, or other storage environment. Storage location and access policy are distinct from reference semantics.
 
 ### When
-A reference is associated with a designation or enrollment context and may have validity, version, renewal, revocation, replacement, or retention semantics.
+A reference is enrolled, updated, re-enrolled, suspended, revoked, archived, or deleted according to policy. Biological change and reference lifecycle must not be conflated.
 
 ### How
-The reference role may be fulfilled by a sample, template, or another defined biometric representation depending on system design. The representation format and generation process are implementation concerns.
+A reference is generated from one or more biometric samples through a defined acquisition and processing workflow, with metadata and provenance sufficient to interpret its origin and intended use.
 
 ## Semantic Definition
-
-**Biometric Reference** is biometric information designated as the comparison reference for a specified biometric application or identity-related context.
+A Biometric Reference is a persistent or designated representation of biometric information intended to serve as a comparison reference in a biometric system.
 
 ## Scope / Boundary
-
-Biometric Reference owns the semantic role of designated comparison information. It does not own:
-
-- Identity itself or identity resolution;
-- Biometric Characteristic semantics;
-- a particular Sample or Template format;
-- authentication protocols;
-- generic Representation semantics;
-- provenance or security mechanisms;
-- BIL integrity decisions.
-
-The same reference role may be represented differently across systems; role and representation must not be conflated.
+Reference owns the biometric-domain role of a stored comparison representation. Generic Representation owns representation semantics. Template is a particular derived representation when the system defines it as such. Identity owns the subject referent. Provenance owns lineage. BIL may use a biometric reference as integrity evidence.
 
 ## Core Distinctions
-
-### Reference vs Identity
-A reference supports an identity-related operation; it is not the identity.
-
-### Reference vs Sample
-A sample is an acquired instance; a reference is information assigned the comparison-reference role.
-
-### Reference vs Template
-Template describes a representation form. Reference describes the comparison role. A template can serve as a biometric reference.
-
-### Reference vs Evidence
-A reference can be evidence in an assessment, but the reference role itself does not establish truth or decision validity.
+- Reference ≠ live biometric sample.
+- Reference ≠ identity.
+- Reference ≠ identifier.
+- Reference ≠ arbitrary image of a subject.
+- Reference validity ≠ biometric truth.
 
 ## Cross-Domain Significance
-
-`Biometric Characteristic → Acquisition / Sample → Representation / Template → Biometric Reference → Comparison / Assessment → Identity-related Decision`
-
-Reference binding, lifecycle, protection, and provenance connect Biometrics with Identity and Foundation governance without duplicating those authorities.
+Biometric references connect enrollment, identity management, representation, security, provenance, and later comparison. They can support identity resolution while remaining distinct from the decision produced by a biometric operation.
 
 ## Trust / Evidence
-
-Reference assertions should declare source/designation context, subject or identity scope where applicable, representation form, generation history, validity status, protection requirements, and provenance. ISO/IEC 24745 is particularly relevant to binding biometric references to identity references and protecting biometric information.
+Trust depends on source, binding to the intended subject, acquisition conditions, processing history, integrity protection, lifecycle status, and applicable governance. Reference authenticity does not guarantee current biological correspondence.
 
 ## Visitor Universe
-
-**Novice:** reference versus sample, template, and identity.  
-**Intermediate:** enrollment, designation, validity, renewal, and reference lifecycle.  
-**Expert:** reference binding, protection, revocation/renewal, cross-system representation, provenance, and privacy.  
-**Machine:** stable ID, reference role, representation links, lifecycle state, provenance, protection metadata, and uncertainty.
+Novices need sample-versus-reference distinction. Experts need binding, quality, lifecycle, revocation, renewability, provenance, and privacy/security controls. Machines need reference IDs, subject bindings, modality metadata, provenance, and lifecycle state.
 
 ## Lifecycle
-
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Creation → enrollment → active use → update/re-enrollment → suspension or revocation → archival/deletion. Exact lifecycle is governed by the application.
 
 ## Retrieval Anchors
-
-`BIOMETRIC REFERENCE`, `REFERENCE BIOMETRIC`, `BIOMETRIC REFERENCE DATA`, `BIOMETRIC REFERENCE RECORD`, `ENROLMENT REFERENCE`
+biometric reference, biometric reference data, enrolled biometric reference, biometric enrollment reference
