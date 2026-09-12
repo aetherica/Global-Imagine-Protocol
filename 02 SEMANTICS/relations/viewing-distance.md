@@ -5,8 +5,8 @@
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Relation  
 **Domain:** Imaging / Display / Visual Observation  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > Viewing Distance is a typed spatial relation specifying the distance between a defined observer viewing point and the object, surface, display, or other target being viewed.
 
@@ -70,7 +70,7 @@ A technical statement should identify both endpoints of the relation and the spa
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
