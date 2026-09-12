@@ -4,156 +4,70 @@
 **Preferred Name:** Measurement  
 **Semantic Class:** Activity  
 **Domain:** Measurement science  
-**Status:** Provisional  
-**Version:** 0.1.0  
+**Status:** Active  
+**Version:** 1.0.0  
 **Primary Responsibility:** An Activity in which one or more quantity values attributable to a quantity are experimentally obtained.
 
 ## 5W1H Orientation
-
 ### What
-
 Measurement is the activity of experimentally obtaining one or more quantity values attributable to a quantity.
-
 ### Why
-
-Measurement separates the act of obtaining quantitative information from the quantity being measured and from the resulting value or result record.
-
+It separates quantitative obtaining from the quantity, measurand, procedure, measuring system, and resulting information.
 ### Who
-
-Measurement may be performed by a human operator, Measuring System, instrument, automated system, or coordinated measurement setup.
-
+A human operator, Measuring System, instrument, automated system, or coordinated setup may perform it.
 ### Where
-
-Measurement may occur in laboratories, physical scenes, imaging systems, industrial environments, field systems, calibration environments, simulations, or other defined measurement contexts.
-
+Laboratories, physical scenes, imaging systems, industrial environments, field systems, calibration environments, simulations, or other defined contexts.
 ### When
-
-Measurement occurs over a defined temporal context. The measurement activity time may differ from the phenomenon time and from the time at which the result is reported.
-
+Measurement occurs over a defined temporal context; activity time may differ from phenomenon and result time.
 ### How
-
 Measurement follows or is governed by a Measurement Procedure or method, uses a Measuring System and relevant inputs, occurs under Conditions, concerns a Measurand, and produces a Measurement Result.
 
 ## Semantic Definition
-
-**Measurement** is an Activity consisting of experimentally obtaining one or more quantity values attributable to a quantity.
-
-Measurement is a quantitative obtaining activity. It does not denote the quantity itself, the quantity intended to be measured, the procedure used, the measuring system, or the resulting value/result record.
+**Measurement** is an Activity consisting of experimentally obtaining one or more quantity values attributable to a quantity. It does not denote the quantity, measurand, procedure, measuring system, or result.
 
 ## Semantic Responsibility
-
-Measurement owns the occurrence-level act of experimentally obtaining quantity value(s). It therefore belongs in the Activity layer rather than the Quantity or Result layer.
+Measurement owns the occurrence-level act of experimentally obtaining quantity value(s), placing it in the Activity layer rather than Quantity or Result.
 
 ## Core Distinctions
-
-### Measurement vs Quantity
-
-Quantity is the measurable concept or kind. Measurement is the activity of obtaining value(s) attributable to that quantity.
-
-`Measurement ≠ Quantity`.
-
-### Measurement vs Measurand
-
-A Measurand is the quantity intended to be measured in a particular measurement context. Measurement is the activity that obtains value(s) for it.
-
-`Measurement ≠ Measurand`.
-
-### Measurement vs Measurement Procedure
-
-Measurement Procedure describes how a measurement is to be performed. Measurement is the actual occurrence of obtaining the values.
-
-### Measurement vs Measurement Result
-
-Measurement is the activity. Measurement Result is the output information containing the obtained quantity values and relevant information.
-
-### Measurement vs Observation
-
-Measurement and Observation are adjacent Activity concepts. Observation may obtain information without producing a quantity value. Measurement is specifically quantitative. `Observation ≠ Measurement` as a canonical identity rule.
+`Measurement ≠ Quantity`: Quantity is the measurable concept/kind.  
+`Measurement ≠ Measurand`: Measurand is the quantity intended to be measured in a context.  
+`Measurement ≠ Measurement Procedure`: the latter specifies how.  
+`Measurement ≠ Measurement Result`: the latter is generated output information.  
+`Measurement ≠ Observation`: Observation is broader and need not produce quantity values.
 
 ## Measurement Context
-
-A complete measurement interpretation may depend on:
-
-- Measurand;
-- Quantity;
-- measurement procedure;
-- measuring system;
-- Conditions;
-- relevant States;
-- measurement standards or references;
-- uncertainty and other result information where applicable;
-- temporal context;
-- traceability requirements.
-
-These concepts remain semantically separate in GIOP.
+Relevant context may include Measurand, Quantity, measurement procedure, Measuring System, Conditions, States, standards/references, uncertainty and result information, temporal context, and traceability requirements. These remain distinct GIOP concepts.
 
 ## Measurement Chain
-
 ```text
-Quantity
-   ↓
-Measurand specification
-   ↓
-Measurement Procedure
-   ↓
-Measurement Activity
-   ↓
-Measurement Result
+Quantity → Measurand specification → Measurement Procedure → Measurement Activity → Measurement Result
 ```
-
-The Measurement Activity may use a Measuring System and occur under specified Conditions.
 
 ## Imaging and Optical Context
-
-In imaging, measurement may concern quantities derived from radiometric, geometric, photometric, sensor, material, or system observations. An image may be an input, intermediate representation, or result depending on the measurement procedure. The existence of an image does not by itself make an activity a Measurement.
+Measurement may concern radiometric, geometric, photometric, sensor, material, or system quantities derived from observations or images. An image may be input, intermediate representation, or result depending on the procedure; its existence does not make an activity a Measurement.
 
 ## Temporal Semantics
-
-Measurement records should distinguish, when applicable:
-
-- activity start/end;
-- phenomenon time;
-- acquisition time;
-- result time.
-
-The values must not be conflated when they describe different temporal events.
+Distinguish activity start/end, phenomenon time, acquisition time, and result time when applicable.
 
 ## Inputs and Outputs
-
-Typical inputs include the measurand context, Scene/Object/Material, Conditions, Measuring System, measurement standards, Procedure, acquired data, and relevant prior information.
-
-The primary output is a Measurement Result. Intermediate representations or data may also be generated.
+Inputs may include measurand context, Scene/Object/Material, Conditions, Measuring System, standards, Procedure, acquired data, and prior information. Primary output is Measurement Result; intermediate representations may also be generated.
 
 ## Trust / Provenance
+Quantitative claims require provenance for procedure, measuring system, conditions, standards/references, result information, validation state, authority, confidence/review state, and version/date as applicable. Individual numerical records require their own evidence.
 
-Measurement claims are evidence-sensitive. Where quantitative claims are recorded, provenance should preserve the measurement procedure, measuring system, conditions, relevant standards or references, result information, validation state, authority, confidence/review state, and version/date as applicable.
-
-A canonical GIOP definition is a semantic synthesis; numerical values in individual measurement records require their own provenance and evidence.
-
-## Validation Notes
-
-This entry preserves the VIM distinction among Measurement, Measurand, Measurement Procedure, and Measurement Result. It also preserves GIOP's distinction between Quantity as measurable concept and Measurement as obtaining activity.
+## Validation
+Cross-layer validation preserves the VIM distinction among Measurement, Measurand, Measurement Procedure, and Measurement Result and the GIOP Quantity/Activity/Result boundaries. The entry is approved for active canonical use within the scoped Activity batch.
 
 ## Lifecycle
-
-**Current state:** Provisional semantic entry.  
-**Next intended state:** Review → Validated → Active, subject to scoped validation and promotion.
+**Current state:** Active canonical semantic entry.  
+**Version:** 1.0.0  
+**Promotion path:** Authored → Integrated → Validated → Approved → Active Canonical.
 
 ## Relations
-
-```text
-Measurement Procedure → specifies → Measurement
-Measurement → concerns → Measurand / Quantity
-Measurement → uses → Measuring System
-Measurement → occurs-under → Condition / State
-Measurement → produces → Measurement Result
-Agent / System → performs / participates-in → Measurement
-```
+Canonical `participates-in`, `has-result`, `part-of`, and `derived-from` may be used where applicable. Procedure, Measurand, Quantity, and standards dependencies remain semantically explicit but are not silently introduced as new relation vocabulary.
 
 ## Retrieval Anchors
-
 `MEASUREMENT`, `MEASUREMENT ACTIVITY`, `MEASURE`, `QUANTITY VALUE`, `MEASURAND`, `MEASUREMENT PROCEDURE`, `MEASURING SYSTEM`, `MEASUREMENT RESULT`, `OBSERVATION`, `CALIBRATION`
 
 ## Evidence / Source Basis
-
-Semantic synthesis informed principally by the International Vocabulary of Metrology (VIM), W3C SOSA/SSN execution and observation modelling, CIDOC CRM measurement modelling, and GIOP's existing Quantity, Procedure, Measuring System, Condition, Result, and Relation semantics.
+Semantic synthesis is informed principally by the International Vocabulary of Metrology (VIM), W3C SOSA/SSN execution and observation modelling, CIDOC CRM measurement modelling, and GIOP's Quantity, Procedure, Measuring System, Condition, Result, and Relation semantics.
