@@ -1,7 +1,7 @@
 # Representation Index
 
 **Status:** Active Canonical Index  
-**Version:** 1.2.0
+**Version:** 1.3.0
 
 ## Canonical / Active
 
@@ -17,6 +17,7 @@
 | `SEM-REPRESENTATION-PACKAGING-001` | Packaging | Aggregation/containerization | Active |
 | `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Active |
 | `SEM-REPRESENTATION-BELIEF-001` | Belief Representation | Agent-relative belief, uncertainty, or epistemic state representation | Active |
+| `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Object-organized information-bearing form | Active |
 
 ## Routed Responsibility
 
@@ -26,7 +27,6 @@ Conformance is not registered here as a representation concept. Its authoritativ
 
 The following concepts remain controlled candidates and require independent promotion review:
 
-- Object-Centric Representation
 - Relation-Centric Representation
 - Affordance Representation
 - Action Representation
@@ -44,7 +44,7 @@ The following concepts remain controlled candidates and require independent prom
 - World Representation
 - Map Representation
 
-Belief Representation has been promoted independently after passing the GIOP canonicalization gates. No other candidate is promoted by association.
+Belief Representation and Object-Centric Representation have been promoted independently after passing the GIOP canonicalization gates. No other candidate is promoted by association.
 
 ## Retrieval Map
 
@@ -58,7 +58,8 @@ Representation
 ├── Packaging
 ├── Display
 ├── Profile
-└── Belief Representation
+├── Belief Representation
+└── Object-Centric Representation
 
 Conformance → relation/assertion semantics
 
@@ -73,7 +74,7 @@ The map is a coordination/routing map, not a universal inheritance hierarchy.
 - Student/Learner: structure, examples, boundaries.
 - Creative/Imaging: display, file, format, compression, fidelity implications.
 - Engineering/Science: formal distinctions, transformations, provenance, validation.
-- AI/Data/API: serialization, media type, profile, belief representation, constraints, machine retrieval.
+- AI/Data/API: serialization, media type, profile, belief representation, object-centric representation, constraints, machine retrieval.
 - Standards/Preservation: specification, conformance, provenance, package/file boundaries.
 
 These are retrieval/entry-depth cues, not separate semantic records.
