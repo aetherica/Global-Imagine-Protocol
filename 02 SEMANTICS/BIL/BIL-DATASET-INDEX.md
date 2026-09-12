@@ -1,12 +1,14 @@
 # BIL Dataset Index
 
-Status: INTEGRATED — CANDIDATE DATASET
+Status: IMPLEMENTATION-COMPLETE — INTEGRATED CANDIDATE DATASET
+Branch: `v3.1-tree-architecture`
 
 ## Control artifacts
 - `README.md`
 - `BIL-TOPIC-REGISTRY.md`
 - `BIL-CANDIDATE-REGISTRY.md`
 - `BIL-IMPLEMENTATION-DATA-SCHEMA.md`
+- `BIL-AUTHORING-SPECIFICATION.md`
 - `BIL-CROSS-LAYER-ROUTING-MAP.md`
 - `BIL-VISITOR-UNIVERSE-MAP.md`
 - `BIL-CLOSURE-AUDIT.md`
@@ -41,5 +43,8 @@ Status: INTEGRATED — CANDIDATE DATASET
 - `integrity-deviation.md`
 - `integrity-preservation.md`
 
+## Structural conformance
+All thirteen substantive candidate entries are required to follow `BIL-AUTHORING-SPECIFICATION.md` and the established GIOP semantic-folder authoring envelope.
+
 ## Authority
-This index is an inventory, not a promotion record. Foundation Gate-J remains authoritative for canonical promotion.
+This index is an implementation inventory, not a canonical promotion record. Foundation semantic validation and Gate-J remain authoritative for canonical promotion.
