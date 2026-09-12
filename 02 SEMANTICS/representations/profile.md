@@ -4,12 +4,12 @@
 **Preferred Name:** Profile  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Application-specific constraint, extension, combination, or guidance layer over a specification  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis informed by the W3C Profiles Vocabulary and GIOP representation/conformance analysis.  
-**Validation:** Specification/profile/conformance boundaries reviewed.  
-**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
+**Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-FORMAT-001`
 
 > A Profile is a defined set of constraints, extensions, combinations, or usage guidance applied to an underlying specification or vocabulary for a particular purpose or context.
 
@@ -67,8 +67,8 @@ A Profile should identify the underlying specification, scope, version, constrai
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate.
+**Current state:** Active. This generic Profile concept is now canonical; individual application profiles remain controlled specification-level instances.
 
 ## Retrieval Anchors
 
-`PROFILE`, `SPECIFICATION PROFILE`, `APPLICATION PROFILE`, `PROFILE OF`, `PROFILE CONSTRAINTS`, `PROFILE EXTENSION`, `PROFILE VALIDATION`
+`SEM-REPRESENTATION-PROFILE-001`, `PROFILE`, `SPECIFICATION PROFILE`, `APPLICATION PROFILE`, `PROFILE OF`, `PROFILE CONSTRAINTS`, `PROFILE EXTENSION`, `PROFILE VALIDATION`
