@@ -1,6 +1,6 @@
 # GIOP V3.1 — Biological Integrity Lock (BIL)
 
-**Status:** INTEGRATED CANDIDATE LAYER — NOT CANONICAL PROMOTION
+**Status:** INTEGRATED CANDIDATE LAYER — STRUCTURALLY COMPLETE, NOT CANONICAL PROMOTION  
 **Branch:** `v3.1-tree-architecture`
 
 ## Purpose
@@ -13,7 +13,9 @@ The governing Foundation sequence remains:
 ## Dataset implementation
 The BIL topic universe is retained in `BIL-TOPIC-REGISTRY.md`. Candidate semantics are indexed in `BIL-CANDIDATE-REGISTRY.md` and must be interpreted through `BIL-IMPLEMENTATION-DATA-SCHEMA.md`.
 
-The current integrated candidate set contains thirteen BIL-native candidates: Integrity Reference, Integrity Claim, Integrity Constraint, Permitted Variation, Integrity Evidence, Evidence Sufficiency, Integrity Validation, Integrity Decision, Integrity Adjudication, Integrity Profile, Integrity Drift, Integrity Deviation, and Integrity Preservation.
+The integrated candidate set contains thirteen BIL-native candidates: Integrity Reference, Integrity Claim, Integrity Constraint, Permitted Variation, Integrity Evidence, Evidence Sufficiency, Integrity Validation, Integrity Decision, Integrity Adjudication, Integrity Profile, Integrity Drift, Integrity Deviation, and Integrity Preservation.
+
+`BIL-AUTHORING-SPECIFICATION.md` is the controlling structural authoring standard. All thirteen substantive candidate entries are required to conform to its GIOP-native semantic envelope.
 
 Presence in the registry does not confer canonical authority.
 
@@ -48,7 +50,9 @@ One canonical BIL knowledge body serves multiple visitors:
 Depth 0 provides orientation; Depth 1 conceptual structure; Depth 2 applied profile behavior; Depth 3 technical validation; Depth 4 formal/machine representation. Profile selection may change relevance and examples but never duplicates or changes canonical meaning, identity, provenance, lifecycle or evidence identity.
 
 ## Completion state
-This pass completes the **structured BIL candidate dataset implementation** and its routing/index architecture. It does not perform universal canonical promotion. Candidate-level semantic validation and Foundation Gate-J remain the authority for promotion.
+This pass completes the **structured BIL candidate dataset implementation and its authoring/routing/index controls**. The folder is implementation-complete.
+
+Canonical semantic validation, stress-testing and Foundation Gate-J promotion remain deliberately separate authority-controlled stages. No candidate is represented as Active Canonical merely because its implementation page is complete.
 
 See `BIL-CLOSURE-AUDIT.md` for the current implementation audit.
 
