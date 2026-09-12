@@ -5,8 +5,8 @@
 **Artifact Type:** Semantic Relation  
 **Primary Responsibility:** Relation  
 **Domain:** Observation / Measurement / Computation  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > `has-result` relates an execution or result-producing activity to the result information produced by that execution.
 
@@ -44,7 +44,7 @@ Use of `has-result` should preserve enough execution identity and provenance to 
 
 ## Lifecycle
 
-**Current state:** Provisional semantic relation.
+**Current state:** Active canonical semantic relation.
 
 ## Retrieval Anchors
 
