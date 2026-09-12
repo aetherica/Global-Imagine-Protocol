@@ -1,19 +1,64 @@
 # BIL Integrity Evidence
 
-Status: CANDIDATE — BIL V3.1
-Semantic ID: SEM-BIL-INTEGRITY-EVIDENCE-001
+**Semantic ID:** `SEM-BIL-INTEGRITY-EVIDENCE-001`  
+**Preferred Name:** Integrity Evidence  
+**Semantic Class:** BIL Control Concept  
+**Domain:** Biological / Configurational Integrity  
+**Status:** Candidate  
+**Version:** 0.2.0
 
-## Definition
-Integrity Evidence is information used to support, qualify, challenge, or leave unresolved an Integrity Claim.
+> **Integrity Evidence** is information used to support, qualify, challenge, or leave unresolved an Integrity Claim.
 
-## Evidence families
-Geometric; morphometric; relational; photometric; optical; material; temporal; cross-view; cross-representation; multimodal; provenance; expert or adjudicated evidence.
+## 5W1H Orientation
 
-## Evidence status
-Observed; measured; inferred; reconstructed; externally sourced; unknown; conflicting.
+### What
+Evidence is the information pathway through which an integrity claim is supported or questioned.
 
-## Boundary
-Evidence ≠ Decision; Evidence ≠ Claim; Evidence ≠ validation metric; Evidence ≠ proof by default.
+### Why
+Different evidence types answer different integrity questions. Direct observation, measurement, inference and reconstruction must not be silently treated as equivalent.
 
-## Rule
-Evidence retains provenance and epistemic status. Independent evidence sources must not be silently collapsed into one confidence value.
+### Who
+Relevant to imaging scientists, validation engineers, photographers, VFX teams, wildlife researchers, auditors and machine evaluation systems.
+
+### Where
+Geometric, morphometric, relational, photometric, optical, material, temporal, cross-view, multimodal, representation and provenance contexts.
+
+### When
+Evidence is interpreted at the claim's temporal, version, representation and transformation scope.
+
+### How
+Evidence carries source, epistemic mode, scope, provenance, status and uncertainty.
+
+## Semantic Definition
+
+**Integrity Evidence** is the BIL control concept denoting information that materially supports, qualifies, challenges, or leaves unresolved an Integrity Claim.
+
+## Core Distinctions
+
+Evidence ≠ Claim; Evidence ≠ Decision; Evidence ≠ Validation; Evidence ≠ confidence; Evidence ≠ proof by default; Provenance evidence ≠ biological evidence.
+
+## Scope and Boundary
+
+Evidence modes may include direct observation, measurement/derivation, geometric or physical inference, reconstruction, external reference, multimodal/cross-view correspondence and expert adjudication.
+
+Unknown or unavailable evidence remains explicitly represented.
+
+## Cross-Domain Significance
+
+Evidence may originate in Representation, Quantity, Activity, Result, Relation, Condition, State, scientific models or provenance systems. BIL consumes these evidence forms without redefining their owners.
+
+## Trust and Evidence
+
+Every evidence record should preserve provenance, authority tier, validation state, confidence/uncertainty and historical status independently.
+
+## Visitor Universe
+
+D0 explains evidence conceptually; D1 introduces evidence modes; D2 maps profile-specific evidence; D3 exposes models and uncertainty; D4 exposes machine provenance and evidence identifiers.
+
+## Lifecycle
+
+`Candidate → Review → Validated → Approved → Active` or `Deferred / Superseded / Archived`.
+
+## Retrieval Anchors
+
+`INTEGRITY EVIDENCE`, `EVIDENCE MODE`, `OBSERVED`, `INFERRED`, `RECONSTRUCTED`, `EVIDENCE PROVENANCE`, `BIL`
