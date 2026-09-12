@@ -5,8 +5,8 @@
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Result / Output  
 **Domain:** Measurement / Observation / Computation  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > A Result is information produced by an execution, observation, measurement, or computational operation and attributed to that producing activity with its relevant context, values, quality information, and provenance.
 
@@ -84,7 +84,7 @@ A result should never be presented without sufficient context to determine what 
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
