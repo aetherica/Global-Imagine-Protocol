@@ -4,11 +4,11 @@
 **Preferred Name:** Media Type  
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Interoperable identification and classification of representation data type  
-**Status:** Canonical Candidate  
+**Status:** Active  
 **Version:** 1.0.0  
 **Authority:** GIOP Semantic Layer — representation-related concept  
 **Provenance:** Semantic synthesis from RFC 9110 and IANA media-type registration practice.  
-**Validation:** Format/media-type boundary reviewed; registry-specific details remain external to the GIOP concept.  
+**Validation:** Final promotion gates passed: identity, responsibility, boundary, existing-entry, provenance/evidence, relation authority, retrieval, lifecycle, and cross-layer validation.  
 **Related IDs:** `SEM-REPRESENTATION-GENERIC-001`, `SEM-REPRESENTATION-FORMAT-001`
 
 > A Media Type is a standardized identifier that classifies the nature of representation data for interoperable communication and processing.
@@ -65,8 +65,8 @@ Registry status, specification authority, version, parameters, and actual byte-l
 
 ## Lifecycle
 
-**Current state:** Canonical Candidate.
+**Current state:** Active. This generic Media Type concept is now canonical; individual registered media types remain external controlled vocabulary instances.
 
 ## Retrieval Anchors
 
-`MEDIA TYPE`, `MIME TYPE`, `CONTENT-TYPE`, `TYPE/SUBTYPE`, `MEDIA-TYPE PARAMETER`, `REGISTERED MEDIA TYPE`
+`SEM-REPRESENTATION-MEDIA-TYPE-001`, `MEDIA TYPE`, `MIME TYPE`, `CONTENT-TYPE`, `TYPE/SUBTYPE`, `MEDIA-TYPE PARAMETER`, `REGISTERED MEDIA TYPE`
