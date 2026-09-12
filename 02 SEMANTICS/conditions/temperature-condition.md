@@ -4,8 +4,8 @@
 **Preferred Name:** Temperature Condition  
 **Semantic Class:** Condition  
 **Domain:** Optical Imaging  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > Temperature Condition describes the thermodynamic temperature context relevant to a defined imaging, observation, measurement, or environmental situation; it is not itself a camera setting, color appearance, or measurement result.
 
@@ -121,7 +121,7 @@ Color temperature or CCT terminology must not be silently interpreted as physica
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
