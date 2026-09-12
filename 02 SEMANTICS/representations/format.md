@@ -55,7 +55,7 @@ A filename extension is not itself a Format. A vendor product name is not automa
 
 ## Relations
 
-Relevant relations include `conforms-to`, `uses-format`, `has-format`, `profile-of`, and `derived-from`, subject to the authoritative GIOP relation vocabulary.
+Representation-related assertions must use the authoritative GIOP relation vocabulary. Where applicable, existing canonical relations such as `represents`, `derived-from`, `part-of`, `participates-in`, and `has-result` may connect a Format to other semantic elements. Terms such as `uses-format`, `has-format`, `profile-of`, or `conforms-to` are not introduced here as new canonical relation concepts.
 
 ## Trust and Validation
 
