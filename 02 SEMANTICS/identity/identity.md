@@ -1,80 +1,57 @@
 # Identity
 
-**Semantic ID:** `SEM-IDENTITY-GENERIC-001`
-**Preferred Name:** Identity
-**Semantic Class:** Identity Concept
-**Domain:** Cross-domain identity
-**Status:** CANONICAL CANDIDATE — V3.1 SEED
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-IDENTITY-GENERIC-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Identity
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Owner: Identity domain
+- Cross-layer dependencies: Class, Property, Representation, Relation, Temporal, Provenance
 
 ## 5W1H Orientation
 
 ### What
-
-Identity is the scoped semantic association that distinguishes a referent as the same entity for a declared purpose, population, context, and temporal frame.
+Identity is the semantic condition of being a particular, distinguishable entity or subject as established within a declared identity scope. It concerns the referent and the continuity of that referent, not merely a name, identifier, image, biometric measurement, or record.
 
 ### Why
-
-The same entity can have many names, representations, observations, and identifiers, while different entities can share similar attributes or appearances. Identity therefore cannot be reduced to any single observable feature.
+Identity is required when a system must distinguish one referent from another, associate observations or records with the same referent, or reason about continuity across observations and representations. Identity provides the semantic target to which identifiers, attributes, representations, and evidence may be related.
 
 ### Who
-
-The concept applies to people, animals, plants, objects, devices, organizations, locations, digital entities, and other identifiable referents.
+Identity may apply to a person, animal, organism, object, device, account, document, digital entity, or other entity for which identity distinctions are meaningful. The applicable identity authority and assurance depend on domain and context.
 
 ### Where
-
-Identity can be considered in physical, digital, observational, archival, representational, and application contexts.
+Identity exists within an explicitly declared scope such as a physical population, institutional registry, digital system, dataset, scene, or application. The same referent may have different identifiers or identity claims across scopes without implying different underlying entities.
 
 ### When
-
-Identity is always interpreted over a declared temporal and contextual scope. Persistence across change must be justified rather than presumed.
+Identity is relevant whenever a referent is established, resolved, represented, observed, linked across time, or subject to an identity claim. Identity may persist while attributes, states, representations, or identifiers change.
 
 ### How
-
-Identity is resolved through criteria and evidence appropriate to the identity scope. Evidence may include identifiers, attributes, representations, relations, observations, biometrics, or provenance.
+Identity is established and maintained through identity attributes, identifiers, representations, contextual evidence, relations, temporal continuity, and applicable resolution or adjudication procedures. The strength of an identity claim depends on evidence and scope rather than on a single signal.
 
 ## Semantic Definition
-
-**Identity** is the scoped semantic determination that a referent is treated as a particular entity for a specified context, purpose, and temporal scope.
-
-Identity is not equivalent to a name, identifier, visual appearance, biometric measurement, credential, provenance record, or integrity judgment.
+Identity is the semantic referential construct by which an entity is distinguished as the same intended referent within a declared identity scope. It is separable from the mechanisms used to name, measure, authenticate, represent, or resolve that referent.
 
 ## Scope / Boundary
-
-Identity does not decide whether an identity assertion is true merely because evidence exists; confidence, sufficiency, and adjudication belong to the applicable assessment, result, provenance, or domain-specific process. Identity does not own authentication protocols or BIL evaluation.
+Identity owns the semantics of the referent and its identity distinctions. Identifier owns labels or tokens used to refer to an identity. Identity Attribute owns characteristics asserted about an identity. Identity Representation owns representations that stand for or describe an identity. Identity Resolution owns the process of determining correspondence among identity records or references. Biometrics owns biometric characteristics and representations; BIL evaluates integrity against identity-related references but does not own generic identity semantics.
 
 ## Core Distinctions
-
-### Identity vs Identifier
-An identifier is a denoting token or value used to reference an identity.
-
-### Identity vs Identity Attribute
-An attribute describes an entity and may change while the identity remains continuous under the declared scope.
-
-### Identity vs Representation
-A representation encodes or depicts an entity; identity is the referential semantic relationship across representations.
-
-### Identity vs Authentication
-Authentication evaluates whether a claimant is associated with an authenticator under a security protocol. That is an application of identity, not the generic identity concept.
+- Identity ≠ Identifier: the referent is not the token used to denote it.
+- Identity ≠ Identity Attribute: attributes describe an identity but do not by themselves constitute it.
+- Identity ≠ Representation: a representation can depict or encode an identity without being the identity itself.
+- Identity ≠ Authentication: authentication evaluates whether a presented claim is sufficiently bound to an identity under a protocol.
+- Identity ≠ Biometrics: biometric characteristics are evidence or mechanisms that may support identity-related operations.
 
 ## Cross-Domain Significance
-
-Identity connects `Entity → Attributes → Observations → Representations → Identifiers → Evidence → Resolution/Decision` across imaging, machine perception, digital systems, archival systems, and provenance.
+Identity links observational, representational, computational, governance, and temporal semantics. It can connect a subject across multiple representations and observations while preserving the distinction between the referent, evidence about it, and decisions made about it.
 
 ## Trust / Evidence
-
-Identity assertions should declare scope, evidence basis, temporal scope, and uncertainty. A similar appearance is not sufficient identity evidence by itself.
+Identity claims require evidence appropriate to their scope and assurance requirement. Evidence may include authoritative records, contextual relations, representations, biometric evidence, observation history, or provenance. Provenance establishes lineage and trust characteristics of evidence; it does not automatically establish identity truth.
 
 ## Visitor Universe
-
-Novice: identity versus name/identifier/appearance.
-
-Expert: identity scope, persistence, ambiguity, resolution criteria, evidence conflict, and cross-representation consistency.
+Novice visitors need the distinction between identity, identifier, and representation. Expert visitors need identity scope, resolution, evidence, temporal persistence, assurance, and cross-domain mappings. Machine agents need stable identifiers, typed relations, scope, temporal qualifiers, and evidence references.
 
 ## Lifecycle
-
-Candidate seed → validation → Gate-J → Active Canonical.
+Identity may be established, active, suspended, merged, separated, retired, or otherwise governed according to domain policy. Lifecycle state is owned by State/Status semantics where applicable; this entry defines the identity concept itself.
 
 ## Retrieval Anchors
-
-`IDENTITY`, `ENTITY IDENTITY`, `IDENTITY SEMANTICS`, `IDENTITY CONTINUITY`, `IDENTITY SCOPE`, `IDENTITY ASSERTION`
+identity, entity identity, referent, identity scope, identity claim, identity continuity, subject identity, object identity
