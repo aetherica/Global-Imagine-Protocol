@@ -2,7 +2,7 @@
 
 ## Status
 
-**ACTIVE CANONICAL — SCOPED PROCESS BATCH**
+**ACTIVE CANONICAL — GENERIC CORE CLOSED FOR V3.1**
 
 This directory is the canonical semantic home for process-level concepts admitted to the Process batch. The batch establishes the boundary between Process, Activity, Procedure, Result, State, and Representation without creating audience-specific semantic duplicates.
 
@@ -21,7 +21,7 @@ Representation = information-bearing form
 
 ## Active Canonical Batch
 
-1. `process.md` — Process
+1. `process.md` — Process — `SEM-PROCESS-GENERIC-001`
 
 The Process nucleus is intentionally small. A general Process concept is canonical; specialized process concepts remain candidates until their independent semantic responsibilities and cross-layer boundaries are validated.
 
@@ -103,10 +103,26 @@ The batch is informed by ISO 9000 process terminology, W3C PROV-O, CIDOC CRM, th
 
 ## Validation and Promotion
 
-The Process batch is evaluated through identity, responsibility, existing-entry, boundary, relation-authority, provenance/evidence, Visitor Universe, retrieval, lifecycle, and cross-layer validation gates.
+The Process batch has passed identity, responsibility, existing-entry, boundary, relation-authority, provenance/evidence, Visitor Universe, retrieval, lifecycle, example, and cross-layer validation gates.
 
 The canonical Process entry is promoted only for the generic process responsibility. Specialized candidates remain explicitly controlled candidates.
 
+## Closure
+
+`PROCESS-FOLDER-CLOSURE-AUDIT.md` records closure of the generic Process core for V3.1. Closure does not promote specialized candidates and does not prevent a future evidence-based reopening if a semantic failure, material boundary conflict, duplicate authority, or interoperability requirement is demonstrated.
+
+## Artifact Set
+
+- `README.md`
+- `process.md`
+- `PROCESS-ANALYSIS-SPECIFICATION.md`
+- `PROCESS-BOUNDARY-RULE.md`
+- `PROCESS-CROSS-LAYER-VALIDATION.md`
+- `PROCESS-INDEX.md`
+- `PROCESS-EXAMPLE-CATALOG.md`
+- `PROCESS-FOLDER-CLOSURE-AUDIT.md`
+- `../registry/PROCESS-KNOWLEDGE-REGISTRY.md`
+
 ## Retrieval Anchors
 
-`PROCESS`, `ACTIVITY`, `PROCEDURE`, `TRANSFORMATION`, `DEVELOPMENT`, `OPERATIONAL COURSE`, `WORKFLOW`, `RESULT`, `TEMPORAL COURSE`, `INPUT`, `OUTPUT`, `PROVENANCE`
+`PROCESS`, `ACTIVITY`, `PROCEDURE`, `TRANSFORMATION`, `DEVELOPMENT`, `OPERATIONAL COURSE`, `WORKFLOW`, `RESULT`, `TEMPORAL COURSE`, `INPUT`, `OUTPUT`, `PROVENANCE`, `SEM-PROCESS-GENERIC-001`
