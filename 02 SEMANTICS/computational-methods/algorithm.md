@@ -5,8 +5,8 @@
 **Artifact Type:** Computational Method  
 **Primary Responsibility:** Computational Method  
 **Domain:** Computation / Imaging / Measurement  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > An Algorithm is an implementation-independent, sufficiently specified computational method that defines how inputs are transformed into prescribed outputs under stated assumptions and constraints.
 
@@ -78,7 +78,7 @@ An algorithm should not be treated as validated merely because it is implemented
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
