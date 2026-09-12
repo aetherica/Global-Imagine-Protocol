@@ -5,8 +5,8 @@
 **Artifact Type:** Semantic Definition  
 **Primary Responsibility:** Temporal Semantics  
 **Domain:** General / Imaging / Measurement  
-**Status:** Provisional  
-**Version:** 0.1.0
+**Status:** Active  
+**Version:** 1.0.0
 
 > Time provides the temporal semantics needed to identify instants, intervals, durations, ordering, and temporal context across phenomena, acquisition, processing, result generation, and presentation.
 
@@ -69,7 +69,7 @@ Temporal claims require an identified temporal reference system whenever clock d
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
