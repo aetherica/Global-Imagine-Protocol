@@ -1,19 +1,19 @@
 # Representations
 
 **Semantic Area:** Representation and Information-Bearing Forms  
-**Status:** Active Canonical Scope  
-**Version:** 1.0.0  
+**Status:** Active Canonical Scope + Controlled Extension Intake  
+**Version:** 1.1.0  
 **Primary Responsibility:** Information-bearing forms through which canonical information, results, resources, or other semantic content are expressed, exchanged, stored, presented, or made available for interpretation.
 
 ## Scope
 
 The `representations` semantic area defines the canonical meaning of Representation and the principal semantic concepts required to describe information-bearing forms without collapsing representation, format, encoding, storage, presentation, perception, or conformance into one layer.
 
-The semantic nucleus is:
+The generic nucleus is:
 
 `SEM-REPRESENTATION-GENERIC-001 — Representation`
 
-The folder also contains the existing canonical Display entry and may contain representation-adjacent concepts only when their primary semantic responsibility is independently justified.
+The current canonical batch also includes Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, and Profile. Their distinct responsibilities are preserved; the folder does not treat them as a universal inheritance hierarchy.
 
 ## Semantic Model
 
@@ -41,29 +41,13 @@ Canonical Information / Result / Resource
             File / Stream
 ```
 
-This is a coordination model, not a universal subclass hierarchy. Format, Encoding, Media Type, Serialization, Compression, Packaging, Display, Profile, and Conformance have distinct semantic responsibilities.
+This is a coordination model, not a universal subclass hierarchy.
 
 ## Core Boundary
 
-Representation is not synonymous with:
+Representation is not synonymous with Information/Knowledge, Result, Dataset, File/Bitstream, Format, Encoding, Serialization activity, Media Type, Compression, Packaging, Display, Observation, Perception, Measurement Result, or Conformance.
 
-- Information or Knowledge;
-- Result;
-- Dataset;
-- File or Bitstream;
-- Format;
-- Encoding;
-- Serialization activity;
-- Media Type;
-- Compression;
-- Packaging;
-- Display;
-- Observation;
-- Perception;
-- Measurement Result;
-- Conformance.
-
-A related concept must be linked through an appropriate relation or cross-layer reference rather than absorbed into the Representation definition.
+A related concept must be routed through its own semantic responsibility or an appropriate relation/cross-layer reference rather than absorbed into Representation.
 
 ## Canonical Entry Set
 
@@ -71,72 +55,47 @@ A related concept must be linked through an appropriate relation or cross-layer 
 |---|---|---|---|
 | `SEM-REPRESENTATION-GENERIC-001` | Representation | Information-bearing form | Active |
 | `SEM-DISPLAY-001` | Display | Presentation system / mechanism | Active |
+| `SEM-REPRESENTATION-FORMAT-001` | Format | Structural/syntactic specification | Active |
+| `SEM-REPRESENTATION-ENCODING-001` | Encoding | Coding/transformation scheme | Active |
+| `SEM-REPRESENTATION-SERIALIZATION-001` | Serialization | Abstract-to-concrete expression | Active |
+| `SEM-REPRESENTATION-MEDIA-TYPE-001` | Media Type | Interoperable representation-data identification | Active |
+| `SEM-REPRESENTATION-COMPRESSION-001` | Compression | Representation-data transformation | Active |
+| `SEM-REPRESENTATION-PACKAGING-001` | Packaging | Aggregation/containerization | Active |
+| `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Active |
 
-The following are prepared as controlled representation-related concepts and require their own boundary and evidence treatment before canonical promotion:
+## Advanced Extension Intake
 
-- Format
-- Encoding
-- Serialization
-- Media Type
-- Compression
-- Packaging
-- Profile
+A first controlled extension dataset has been added for AI, robotics, computational, spatial, temporal, agent/action, and advanced information-bearing forms. It records material coverage gaps without prematurely forcing orthogonal dimensions into one hierarchy.
 
-Conformance is treated primarily as a relation/assertion concern and must not become a duplicate relation authority in this folder.
+See `REPRESENTATION-ADVANCED-EXTENSION-CATALOG.md`.
+
+The intake currently prioritizes Belief, Object-Centric, Relation-Centric, Affordance, Action, Event, Spatiotemporal, Causal, Predictive, Neural Field, Program, Intermediate, Digital-Twin, Skill, Trajectory, Scene, World, and Map representations for independent promotion review.
+
+## Multidimensional Organization Rule
+
+Representation families must not be modeled as a single flat taxonomy when their classification dimensions are orthogonal. Digital/physical realization, modality, symbolicity, structure, abstraction, temporal scope, referent, agent coupling, uncertainty, and computational realization may intersect.
+
+Therefore:
+
+`Representation → multidimensional classification / specialized responsibility`
+
+is preferred over a universal single-inheritance tree such as `Digital → Visual → Structured → ...`.
 
 ## Visitor Universe and Entry Depth
 
-Visitor Universe does not create separate representation ontologies or audience-specific semantic copies.
-
-The same canonical entries support different entry depths:
-
-```text
-CANONICAL REPRESENTATION KNOWLEDGE
-              |
-         VISITOR UNIVERSE
-              |
-          ENTRY DEPTH
-              |
-     HUMAN / MACHINE CONSUMPTION
-```
-
-General visitors can use the identity and orientation sections. Learners and creative practitioners can use distinctions and examples. Engineers and scientists can use structure, transformation, provenance, and validation detail. Machine/API consumers can use stable IDs, relations, profiles, constraints, and deterministic retrieval anchors.
-
-No ordinary semantic entry should contain a separate `Visitor Universe` section merely to duplicate this routing model.
+Visitor Universe does not create separate representation ontologies or audience-specific semantic copies. The same canonical entries support different entry depths and retrieval patterns. No ordinary semantic entry should contain a separate Visitor Universe section merely to duplicate this routing model.
 
 ## Authoring Standard
 
-Representation entries follow the Foundation authoring pattern while remaining artifact-specific:
+Representation entries follow the Foundation authoring pattern while remaining artifact-specific: identity/metadata, 5W1H orientation where useful, semantic definition, scope/structure, distinctions, boundary cases, technical significance, relations, provenance/evidence, trust/validation, lifecycle, and retrieval anchors.
 
-1. Identity / metadata
-2. 5W1H orientation where useful
-3. Semantic definition
-4. Scope and structure
-5. Core distinctions
-6. Boundary cases
-7. Technical and cross-domain significance
-8. Relations
-9. Provenance and evidence
-10. Trust / validation
-11. Lifecycle
-12. Retrieval anchors
-
-Normative statements, explanations, examples, historical material, and implementation notes must remain explicitly distinguishable.
+Normative statements, explanations, examples, historical material, and implementation notes remain explicitly distinguishable.
 
 ## Provenance and Evidence
 
-External standards are evidence sources, not copied GIOP definitions. Important reference families include:
+Evidence is drawn across standards, information architecture, preservation, data/AI, robotics, computer vision, programming-language, and world-model traditions. External specifications remain evidence sources rather than GIOP authority.
 
-- RFC 9110 — HTTP Semantics;
-- W3C RDF 1.2 Concepts and Abstract Data Model;
-- W3C DCAT;
-- W3C PROV / PROV-O;
-- W3C Profiles Vocabulary;
-- PREMIS Data Dictionary;
-- ISO 14721:2025 (OAIS);
-- relevant IANA media-type registrations and format specifications.
-
-Where sources use the same term with materially different scope, GIOP preserves the distinction and records the synthesis rather than silently averaging definitions.
+Important evidence families include RFC 9110; W3C RDF, DCAT, PROV, and Profiles; PREMIS; ISO 14721:2025; IANA media-type practice; robotics scene/world representation literature; representation-learning and world-model research; and compiler/intermediate-representation practice.
 
 ## Cross-Layer Routing
 
@@ -154,4 +113,4 @@ Where sources use the same term with materially different scope, GIOP preserves 
 
 ## Completion Principle
 
-A representation-related topic is not canonical merely because a file exists. Canonical status requires semantic classification, evidence review, boundary validation, relation validation, lifecycle assignment, and compliance with the applicable Foundation gates.
+A representation-related topic is not canonical merely because a file exists or because it is common in research. Each extension requires semantic classification, existing-entry check, evidence review, boundary validation, relation validation, lifecycle assignment, and Foundation-gate compliance.
