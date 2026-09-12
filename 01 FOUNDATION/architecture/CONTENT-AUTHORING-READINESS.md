@@ -1,6 +1,6 @@
 # GIOP V3.1 — Content Authoring Readiness Specification
 
-Status: PREPARATION ONLY
+Status: READY FOR SCOPED CANONICAL PILOT PROMOTION
 Scope: This document defines the conditions, templates, controls, and validation gates that must exist before substantive GIOP content is authored or migrated.
 
 ## 1. Objective
@@ -16,7 +16,7 @@ Create a controlled authoring environment in which every future content artifact
 - cross-reference rules;
 - preservation rules for V3 history.
 
-No substantive content is authorized by this document.
+Substantive content is authorized only within the scope explicitly cleared by the applicable validation and promotion decision.
 
 ## 2. Source hierarchy
 
@@ -126,6 +126,8 @@ For every material claim, the authoring process must allow:
 
 Statements copied from V3 remain historical/source material until independently validated for promotion.
 
+The executable provenance and evidence policy is defined in `01 FOUNDATION/architecture/PROVENANCE-EVIDENCE-CONTROL.md`.
+
 ## 9. Cross-reference controls
 
 References must target canonical identifiers or stable paths.
@@ -134,10 +136,13 @@ Cross-domain references should resolve through registry/semantic identity.
 
 ## 10. Lifecycle controls
 
-Planned lifecycle vocabulary:
-DRAFT → REVIEW → VALIDATED → CERTIFIED → ACTIVE → SUPERSEDED → ARCHIVED
+Canonical lifecycle vocabulary:
+DRAFT → REVIEW → VALIDATED → ACTIVE → SUPERSEDED → ARCHIVED
 
+`PROVISIONAL` is permitted for controlled pilot artifacts before activation.
 Historical V3 material may remain PRESERVED independently of active lifecycle state.
+
+The registry/lifecycle contract is defined in `01 FOUNDATION/architecture/CANONICAL-REGISTRY-LIFECYCLE-CONTROL.md`.
 
 ## 11. Validation gates
 
@@ -152,7 +157,7 @@ Gate H — version/supersession state valid.
 Gate I — trust/integrity metadata ready.
 Gate J — migration/promotion approval.
 
-Failure at any gate blocks canonical promotion.
+Failure at any gate blocks canonical promotion unless a scoped Gate-J approval explicitly records resolution of the applicable blocker.
 
 ## 12. Separation of concerns
 
@@ -167,16 +172,17 @@ No source artifact may be destroyed merely because a V4 representation has been 
 
 ## 14. Readiness definition
 
-Content authoring becomes READY only when:
+Content authoring is READY within an explicitly approved scope when:
 - templates exist;
 - metadata vocabulary is fixed;
 - identifier policy is fixed;
 - lifecycle states are fixed;
-- provenance/evidence model is fixed;
+- provenance/evidence model is executable;
 - formula/claim controls are fixed;
 - validation gates are executable;
 - cross-reference rules are fixed;
 - preservation path exists;
-- pilot artifact workflow can be validated end-to-end.
+- the pilot artifact workflow has been validated end-to-end;
+- Gate J approval exists for the scoped promotion.
 
-Until then, work remains preparation-only.
+The current semantic pilot batch is cleared under Gate J. Future batches remain gated independently.
