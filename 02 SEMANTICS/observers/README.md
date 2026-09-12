@@ -1,15 +1,15 @@
 # Observer Semantic Layer
 
 **Semantic Layer:** Observer  
-**Status:** Provisional layer package  
-**Version:** 1.0.0  
+**Status:** Active / Closed for V3.1 Core Scope  
+**Version:** 1.1.0  
 **Authority:** GIOP  
 
 ## Responsibility
 
 The Observer layer identifies semantic constructs concerned with an observing entity or participant and with reusable models of observer response. It does not replace Observation, Perception, Measurement, or Activity semantics.
 
-The canonical Class `SEM-CLASS-OBSERVER-001` owns the identity of an Observer as an eligible observing entity or participant. `SEM-OBSERVER-MODEL-001` owns the reusable model-level semantics of observer response. The existing `observer-model.md` remains the detailed model entry and is intentionally retained as Provisional until its promotion gate is satisfied.
+The canonical Class `SEM-CLASS-OBSERVER-001` owns the identity of an Observer as an eligible observing entity or participant. `SEM-OBSERVER-MODEL-001` owns the reusable model-level semantics of observer response. The Observer Model is Active within the V3.1 core scope.
 
 ## Boundary
 
@@ -27,8 +27,8 @@ Observer entries use the Foundation identity envelope, 5W1H orientation, semanti
 
 ## Current Canonical Nucleus
 
-- `SEM-CLASS-OBSERVER-001` — Observer (Class layer)
-- `SEM-OBSERVER-MODEL-001` — Observer Model (Model layer; currently Provisional)
+- `SEM-CLASS-OBSERVER-001` — Observer (Class layer; Active)
+- `SEM-OBSERVER-MODEL-001` — Observer Model (Model layer; Active)
 
 ## Controlled Candidates
 
@@ -40,12 +40,18 @@ Observer entries use the Foundation identity envelope, 5W1H orientation, semanti
 - Individual Observer Model
 - Colorimetric Observer Model
 - Task-Specific Observer Model
+- CIE 1931 Standard Colorimetric Observer
+- CIE 1964 Standard Colorimetric Observer
 
-These are not automatically separate canonical roots.
+These are not automatically separate canonical roots. They remain controlled candidates pending independent promotion gates.
 
 ## Evidence Anchors
 
 CIE S 017:2020 identifies the CIE standard colorimetric observer and the CIE 1931 and CIE 1964 standard colorimetric observers as defined observer concepts. ISO/CIE 11664-1:2019 specifies the corresponding colour-matching functions and applicability domains. These sources support the distinction between an observer model and the datasets, functions, standards, or implementations that represent or operationalize it.
+
+## Closure
+
+The V3.1 Observer core is closed by `OBSERVER-FOLDER-CLOSURE-AUDIT.md`. Closure activates the generic Observer Model responsibility but does not promote controlled specializations.
 
 ## Retrieval Anchors
 
