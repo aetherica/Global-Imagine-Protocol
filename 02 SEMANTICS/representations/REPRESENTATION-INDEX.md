@@ -1,7 +1,7 @@
 # Representation Index
 
 **Status:** Active Canonical Index  
-**Version:** 1.3.0
+**Version:** 2.0.0
 
 ## Canonical / Active
 
@@ -18,6 +18,22 @@
 | `SEM-REPRESENTATION-PROFILE-001` | Profile | Specification constraint/extension/guidance | Active |
 | `SEM-REPRESENTATION-BELIEF-001` | Belief Representation | Agent-relative belief, uncertainty, or epistemic state representation | Active |
 | `SEM-REPRESENTATION-OBJECT-CENTRIC-001` | Object-Centric Representation | Object-organized information-bearing form | Active |
+| `SEM-REPRESENTATION-RELATION-CENTRIC-001` | Relation-Centric Representation | Relation-organized information-bearing form | Active |
+| `SEM-REPRESENTATION-AFFORDANCE-001` | Affordance Representation | Action-opportunity representation | Active |
+| `SEM-REPRESENTATION-ACTION-001` | Action Representation | Action structure/parameter representation | Active |
+| `SEM-REPRESENTATION-EVENT-001` | Event Representation | Event occurrence representation | Active |
+| `SEM-REPRESENTATION-SPATIOTEMPORAL-001` | Spatiotemporal Representation | Joint spatial-temporal representation | Active |
+| `SEM-REPRESENTATION-CAUSAL-001` | Causal Representation | Causal structure representation | Active |
+| `SEM-REPRESENTATION-PREDICTIVE-001` | Predictive Representation | Prediction-oriented information-bearing form | Active |
+| `SEM-REPRESENTATION-NEURAL-FIELD-001` | Neural Field Representation | Field-based learned representation | Active |
+| `SEM-REPRESENTATION-PROGRAM-001` | Program Representation | Computational program structure representation | Active |
+| `SEM-REPRESENTATION-INTERMEDIATE-001` | Intermediate Representation | Intermediate computational/program form | Active |
+| `SEM-REPRESENTATION-DIGITAL-TWIN-001` | Digital-Twin Representation | Digital-twin counterpart representation | Active |
+| `SEM-REPRESENTATION-SKILL-001` | Skill Representation | Reusable skill/competence representation | Active |
+| `SEM-REPRESENTATION-TRAJECTORY-001` | Trajectory Representation | Ordered evolution representation | Active |
+| `SEM-REPRESENTATION-SCENE-001` | Scene Representation | Scene structure representation | Active |
+| `SEM-REPRESENTATION-WORLD-001` | World Representation | Broader environment/world representation | Active |
+| `SEM-REPRESENTATION-MAP-001` | Map Representation | Spatial map representation | Active |
 
 ## Routed Responsibility
 
@@ -25,56 +41,46 @@ Conformance is not registered here as a representation concept. Its authoritativ
 
 ## Advanced Extension Intake
 
-The following concepts remain controlled candidates and require independent promotion review:
+The first advanced Representation extension batch is now fully promoted. Each concept passed independent identity, responsibility, existing-entry, boundary, evidence, relation-authority, cross-layer, lifecycle, and retrieval validation. Promotion does not imply that narrower implementation families are canonical.
 
-- Relation-Centric Representation
-- Affordance Representation
-- Action Representation
-- Event Representation
-- Spatiotemporal Representation
-- Causal Representation
-- Predictive Representation
-- Neural Field Representation
-- Program Representation
-- Intermediate Representation
-- Digital-Twin Representation
-- Skill Representation
-- Trajectory Representation
-- Scene Representation
-- World Representation
-- Map Representation
-
-Belief Representation and Object-Centric Representation have been promoted independently after passing the GIOP canonicalization gates. No other candidate is promoted by association.
-
-## Retrieval Map
+## Coordination Map
 
 ```text
 Representation
 ├── Format
-├── Media Type
 ├── Encoding
 ├── Serialization
+├── Media Type
 ├── Compression
 ├── Packaging
 ├── Display
 ├── Profile
 ├── Belief Representation
-└── Object-Centric Representation
-
-Conformance → relation/assertion semantics
-
-Advanced controlled candidates → independent promotion review
+├── Object-Centric Representation
+├── Relation-Centric Representation
+├── Affordance Representation
+├── Action Representation
+├── Event Representation
+├── Spatiotemporal Representation
+├── Causal Representation
+├── Predictive Representation
+├── Neural Field Representation
+├── Program Representation
+├── Intermediate Representation
+├── Digital-Twin Representation
+├── Skill Representation
+├── Trajectory Representation
+├── Scene Representation
+├── World Representation
+└── Map Representation
 ```
 
 The map is a coordination/routing map, not a universal inheritance hierarchy.
 
+## Deliberately Routed / Dimensional Terms
+
+Digital Representation, Physical Representation, Visual/Textual/Audio/Video Representation, Multimodal Representation, Structured/Unstructured Representation, Machine-Readable/Interpretable/Actionable/Executable, Representation Granularity, Representation Abstraction, Representation Quality, Representation Learning, Feature Representation, Embedding Representation, Latent Representation, Tensor Representation, and Neural Representation remain routed or dimensional unless a future review establishes a distinct primary semantic responsibility.
+
 ## Visitor Entry Depth
 
-- General/Curious: identity, definition, basic distinctions.
-- Student/Learner: structure, examples, boundaries.
-- Creative/Imaging: display, file, format, compression, fidelity implications.
-- Engineering/Science: formal distinctions, transformations, provenance, validation.
-- AI/Data/API: serialization, media type, profile, belief representation, object-centric representation, constraints, machine retrieval.
-- Standards/Preservation: specification, conformance, provenance, package/file boundaries.
-
-These are retrieval/entry-depth cues, not separate semantic records.
+Visitor Universe remains access-depth routing only. The same canonical entries support general/curious, learner, creative/imaging, engineering/science, AI/data/API, and standards/preservation entry depths without creating visitor-specific semantic records.
