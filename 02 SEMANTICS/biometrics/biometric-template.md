@@ -1,86 +1,56 @@
 # Biometric Template
 
-**Semantic ID:** `SEM-BIOMETRIC-TEMPLATE-001`  
-**Preferred Name:** Biometric Template  
-**Semantic Class:** Biometrics Concept  
-**Domain:** Biometrics  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.2.0
+## Identity / Metadata
+- GIOP ID: SEM-BIOMETRIC-TEMPLATE-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Biometrics
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Representation, Computation, Identity, Provenance, Temporal
 
 ## 5W1H Orientation
 
 ### What
-A Biometric Template is a structured or encoded representation derived from biometric information for a defined biometric comparison, recognition, or related system purpose.
+A Biometric Template is a processed representation of biometric information structured for comparison or decision-making by a biometric system. It generally contains derived features rather than a direct unprocessed sample.
 
 ### Why
-Templates provide a system-usable representation of biometric information for later comparison or processing and may allow systems to operate without retaining the original source sample in the same form.
+Templates make biometric comparison computationally tractable and can reduce dependence on retaining raw samples. Their representation and security properties depend on the biometric modality and algorithm.
 
 ### Who
-Applicable to biometric recognition and enrollment systems, comparison engines, evaluation systems, protected repositories, forensic systems, and machine-readable biometric infrastructures.
+Templates are produced and consumed by biometric algorithms and systems operated by authorized entities. Different systems may generate incompatible templates from the same underlying biometric characteristic.
 
 ### Where
-Templates may be generated, stored, transmitted, compared, evaluated, or protected within declared biometric systems.
+Templates may be stored in biometric repositories, devices, credentials, or protected application systems. Storage and protection mechanisms are implementation concerns, while the template's semantic role remains a biometric representation.
 
 ### When
-A template is generated under a defined representation method and system context. Changes in algorithms, versions, source data, quality, or operating conditions may affect compatibility and may require re-enrollment or template renewal.
+A template is generated during enrollment or update and may be replaced, revoked, archived, or deleted. Template age and algorithm version can affect its operational usefulness.
 
 ### How
-Feature extraction, encoding, normalization, quality processing, and system-specific transformation can contribute to template generation. These are methods or implementations, not the semantic identity of the template concept.
+A sample is acquired and processed by a feature-extraction or encoding method to produce a template. Later samples are transformed using compatible processing and compared according to a defined biometric method.
 
 ## Semantic Definition
-
-**Biometric Template** is a system-purpose representation derived from biometric information for subsequent biometric comparison, recognition, decision support, or related processing.
+A Biometric Template is a derived biometric representation intended for computational comparison within a specified biometric system or algorithmic ecosystem.
 
 ## Scope / Boundary
-
-Biometric Template owns the semantic concept of the derived system-purpose representation. It does not own:
-
-- the underlying Biometric Characteristic;
-- the acquired Sample;
-- the comparison-reference role itself;
-- Identity;
-- generic Representation semantics;
-- the computational algorithm or implementation used to generate it;
-- the recognition/verification decision;
-- BIL integrity evaluation.
-
-Template format, encoding, dimensionality, model architecture, and algorithm version remain implementation- or method-specific unless separately promoted.
+Template owns the derived biometric representation concept. Generic Representation owns representation semantics. Computational Method owns feature extraction and comparison algorithms. Identity owns referent semantics. A template is not inherently an identifier or identity proof.
 
 ## Core Distinctions
-
-### Template vs Sample
-A template is a derived system-purpose representation; a sample is an acquired instance of biometric information.
-
-### Template vs Feature
-A feature is a selected measurable or derived characteristic; a template is the representation package used by a defined biometric system.
-
-### Template vs Reference
-Reference denotes a comparison role; template denotes a representation form. A template may serve as a biometric reference.
-
-### Template vs Identity
-A template can support identity-related comparison but does not constitute identity.
+- Template ≠ sample.
+- Template ≠ characteristic.
+- Template ≠ identity.
+- Template ≠ identifier.
+- Template compatibility is method- and representation-dependent.
 
 ## Cross-Domain Significance
-
-`Biometric Characteristic → Acquisition / Sample → Representation → Template → Reference / Comparison → Assessment / Decision → Identity`
-
-Computational Method, Implementation, Provenance, Security/Privacy, and BIL remain external authorities consumed by this domain.
+Templates bridge biometric sensing, representation, computation, identity, security, and evaluation. Their outputs may contribute evidence to verification or identification workflows but do not independently determine semantic truth.
 
 ## Trust / Evidence
-
-Template assertions should identify source context, generation method/version where known, quality information, representation compatibility, transformation history, protection status, and provenance. ISO/IEC 24745 is relevant to protection and renewability/revocability considerations for biometric information.
+Trust depends on acquisition provenance, algorithm/version, template integrity, subject binding, quality, lifecycle, and protection. A high similarity score is not equivalent to a proven identity.
 
 ## Visitor Universe
-
-**Novice:** template versus sample, feature, reference, and identity.  
-**Intermediate:** derivation, compatibility, quality, storage, and template lifecycle.  
-**Expert:** representation invariance, algorithm/version dependence, protection, renewability, revocability, interoperability, and provenance.  
-**Machine:** stable ID, source links, method/version, representation metadata, reference role, lifecycle state, provenance, and uncertainty.
+Novices need the sample/feature/template distinction. Experts need interoperability, algorithm dependence, template protection, versioning, quality, comparison scores, thresholds, and uncertainty. Machines need typed template metadata, modality, algorithm, subject/reference binding, and provenance.
 
 ## Lifecycle
-
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Generation → validation → enrollment/storage → comparison → version migration or replacement → revocation/retirement → deletion or archival according to policy.
 
 ## Retrieval Anchors
-
-`BIOMETRIC TEMPLATE`, `BIOMETRIC TEMPLATE DATA`, `TEMPLATE REPRESENTATION`, `BIOMETRIC TEMPLATE FORMAT`, `FEATURE TEMPLATE`
+biometric template, biometric feature template, biometric feature representation, comparison template
