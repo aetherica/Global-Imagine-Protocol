@@ -1,37 +1,55 @@
 # Garment Pattern
 
-**Semantic ID:** `SEM-GARMENT-PATTERN-001`  
-**Preferred Name:** Garment Pattern  
-**Semantic Class:** Garment Domain Concept  
-**Domain:** Garment  
-**Status:** CANONICAL CANDIDATE — V3.1 SEED  
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-GARMENT-PATTERN-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Garment
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Garment, Component, Representation, Process, Quantity
 
 ## 5W1H Orientation
-A Garment Pattern is a geometric/template artifact used to define or communicate the intended shape and construction of one or more garment components.
+
+### What
+A Garment Pattern is a defined two-dimensional or otherwise specified construction template used to guide the cutting or formation of garment components.
+
+### Why
+Patterns translate garment design intent and body/fit requirements into repeatable component shapes and dimensions used during garment construction.
+
+### Who
+Pattern makers, designers, manufacturers, digital garment systems, educators, and quality-control personnel use pattern semantics.
+
+### Where
+Patterns exist as physical paper pieces, digital CAD objects, graded size sets, technical representations, or production templates.
+
+### When
+Patterns are created, revised, graded, validated, released, modified, and retired throughout garment design and production.
+
+### How
+A pattern specifies component geometry, reference lines, allowances, notches, grain or orientation information, and other construction instructions as required by the pattern system.
 
 ## Semantic Definition
-**Garment Pattern** is a garment-domain design/template concept specifying geometric or constructional information used to form garment components.
+Garment Pattern is a construction-oriented template defining the geometry and relevant instructions for forming one or more garment components.
 
 ## Scope / Boundary
-The pattern's image, drawing, CAD file, mesh, or other encoding is a Representation. Pattern-making and cutting are activities/processes. Pattern does not replace Garment Construction or Size Designation.
+Pattern owns garment-specific pattern-artifact semantics. Quantity owns dimensions; Representation owns the digital/physical representation; Construction owns assembly; Fit owns garment-body correspondence; Process owns cutting and manufacturing operations.
 
 ## Core Distinctions
-**Pattern vs Garment:** design/template artifact versus assembled article.  
-**Pattern vs Representation:** pattern is the domain role; its encoding is a representation.  
-**Pattern vs Size:** geometric construction information versus sizing designation.
+- Pattern ≠ garment component.
+- Pattern ≠ garment construction.
+- Pattern dimension ≠ body measurement.
+- Pattern representation ≠ physical garment.
 
 ## Cross-Domain Significance
-Connects Garment, Representation, Geometry/Spatial semantics, Quantity, Construction, and Process.
+Patterns connect design, anthropometry, sizing, fit, textile behavior, manufacturing, digital modeling, and quality control.
 
 ## Trust / Evidence
-Pattern interpretation should declare scale, units, intended size system, grading assumptions, and representation source where relevant.
+Pattern validity depends on revision identity, source design, grading rules, dimensions, construction assumptions, and validation. A pattern should not be treated as production-ready without appropriate validation.
 
 ## Visitor Universe
-Novice: pattern versus finished garment. Expert: geometry, grading, seam allowance, representation fidelity. Machine: pattern identity, representation links, scale, units, evidence.
+Novices need pattern-versus-garment distinction. Experts need grading, allowances, orientation, revisions, fit implications, and manufacturing constraints. Machines need geometry, component mapping, revision, and dimensional metadata.
 
 ## Lifecycle
-Candidate seed → cross-layer validation → Gate-J → Active Canonical.
+Design → drafting → validation → grading → production release → revision → retirement.
 
 ## Retrieval Anchors
-`GARMENT PATTERN`, `CLOTHING PATTERN`, `PATTERN PIECE`, `PATTERN TEMPLATE`, `PATTERN GEOMETRY`
+garment pattern, apparel pattern, pattern piece, clothing pattern, pattern template
