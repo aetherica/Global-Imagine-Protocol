@@ -1,7 +1,7 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS
-**Branch:** `v3.1-tree-architecture`
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS  
+**Branch:** `v3.1-tree-architecture`  
 **Purpose:** Repository-wide closure map for semantic layers and domain seeds audited and completed in the current implementation wave.
 
 ## Governing rule
@@ -35,10 +35,10 @@ These are completed implementation seeds for previously empty semantic folders. 
 
 | Domain folder | Seed scope | State | Closure treatment |
 |---|---|---|---|
-| `identity/` | Identity, Identity Attribute, Identifier, Identity Representation, Identity Resolution | Implementation-complete — candidate | Domain ownership established; digital identity/authentication and BIL boundaries explicit |
-| `biometrics/` | Biometric Characteristic, Biometric Reference, Biometric Template; modality/sample/verification/identification retained in controlled seed register | Implementation-complete — candidate | Biometric ownership established; operational decisions route to Activity/Process/Workflow |
-| `textile/` | Textile, Textile Fibre, Yarn, Fabric; Textile Structure and Textile Finish retained as controlled seed concepts | Implementation-complete — candidate | Textile/material boundary established; garment boundary explicit |
-| `garment/` | Garment; component, construction, pattern, size, fit, fastening retained as controlled seed concepts | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
+| `identity/` | Identity, Identity Attribute, Identifier, Identity Representation, Identity Resolution | Implementation-complete — candidate | Domain ownership established; identity, identifier, representation, resolution, provenance, and BIL boundaries explicit |
+| `biometrics/` | Biometric Characteristic, Biometric Reference, Biometric Template; modality/sample/verification/identification retained as controlled candidates | Implementation-complete — candidate | Biometric ownership established; operational tasks route to Activity/Process/Workflow |
+| `textile/` | Textile, Textile Fibre, Yarn, Fabric, Textile Structure, Textile Finish | Implementation-complete — candidate | Textile/material/garment boundaries established; structure and finish now have explicit seed entries |
+| `garment/` | Garment, Garment Component, Garment Construction, Garment Pattern, Garment Size Designation, Garment Fit, Garment Fastening | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
 
 ## Cross-layer canonical chains
 
