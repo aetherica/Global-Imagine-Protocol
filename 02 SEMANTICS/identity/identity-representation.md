@@ -1,74 +1,56 @@
 # Identity Representation
 
-**Semantic ID:** `SEM-IDENTITY-REPRESENTATION-001`
-**Preferred Name:** Identity Representation
-**Semantic Class:** Identity Concept
-**Domain:** Identity
-**Status:** CANONICAL CANDIDATE — V3.1 SEED
-**Version:** 0.1.0
+## Identity / Metadata
+- GIOP ID: SEM-IDENTITY-REPRESENTATION-001
+- Semantic Layer: Domain Semantic Layer
+- Domain: Identity
+- Status: CANONICAL CANDIDATE — V3.1 SEED
+- Cross-layer dependencies: Identity, Representation, Provenance, Temporal
 
 ## 5W1H Orientation
 
 ### What
-
-An Identity Representation is a representation that conveys information used to refer to, describe, distinguish, or resolve an identity.
+An Identity Representation is a representation that conveys, depicts, describes, encodes, or references information about an identity. It can be visual, textual, symbolic, structured, biometric, or multimodal.
 
 ### Why
-
-An identity can be represented by text, image, audio, video, structured records, biometric data, identifiers, or multimodal combinations. Representation must not be mistaken for the identity itself.
+Identity representations allow an identity to be communicated, stored, compared, retrieved, or interpreted across systems. They provide observable or encoded evidence without becoming the underlying identity.
 
 ### Who
-
-Humans, machines, archives, databases, imaging systems, digital identity systems, and AI pipelines consume or create identity representations.
+Representations may be produced or consumed by people, sensors, databases, software, institutions, or automated systems. Their authority depends on provenance, generation method, and context.
 
 ### Where
-
-Documents, photographs, video, audio, records, datasets, profiles, credentials, registries, and model inputs/outputs.
+An identity representation may occur in documents, profiles, databases, images, video, audio, tokens, templates, records, or other media. Representation semantics remain governed by the generic Representation layer.
 
 ### When
-
-A representation is associated with a representation time and may refer to an identity at another time. Temporal mismatch can affect resolution.
+Representations are generated, updated, transformed, transmitted, stored, or retired over time. A representation may become stale or inconsistent while the identity remains unchanged.
 
 ### How
-
-Identity representations encode observable or declared evidence according to a representation scheme and may be partial, lossy, ambiguous, transformed, or synthetic.
+An identity is represented through a defined representational form, with provenance and contextual metadata where required. Interpretation requires distinguishing the represented referent from the representation artifact.
 
 ## Semantic Definition
-
-**Identity Representation** is a representation whose semantic purpose includes referring to, describing, distinguishing, or supporting resolution of an identity.
+An Identity Representation is a representation whose intended referent or semantic subject is an identity. It may contain identity attributes, identifiers, biometric information, or other evidence, but it is not itself the identity.
 
 ## Scope / Boundary
-
-Representation remains owned by the Representation layer. This concept qualifies a representation by its identity-related role; it does not create a second representation ontology.
-
-**Identity Representation ≠ Identity:** the representation is information about or referring to the identity.
-
-**Identity Representation ≠ Provenance:** provenance concerns origin/history/trust records.
-
-**Identity Representation ≠ BIL Reference:** a BIL reference is a reference used for integrity evaluation and may contain an identity representation.
+This folder owns the identity-specific role of representations. Generic Representation owns representation types and mechanics. Biometrics owns biometric references/templates. Provenance owns lineage and authenticity claims. BIL evaluates representation integrity when relevant to an integrity profile.
 
 ## Core Distinctions
-
-Textual, visual, audio, biometric, structured, and multimodal identity representations can coexist. A representation can be authentic yet semantically wrong, or synthetic yet explicitly valid for a declared purpose.
+- Representation ≠ Identity.
+- Representation ≠ Identifier.
+- Representation ≠ Identity Attribute.
+- Representation ≠ Evidence of truth by default.
+- Representation fidelity and provenance are distinct properties.
 
 ## Cross-Domain Significance
-
-Connects Identity with Representation, Provenance, Observation, Biometrics, Records, and BIL.
+Identity representations connect identity semantics to imaging, text, audio, structured data, biometrics, provenance, and retrieval. Cross-representation consistency is important when several representations claim to refer to the same identity.
 
 ## Trust / Evidence
-
-Representation type, source, acquisition conditions, transformation history, temporal reference, and uncertainty should be retained where identity inference depends on them.
+Trust depends on provenance, source authority, generation history, integrity controls, and contextual suitability. Authentic provenance does not by itself prove that the representation accurately describes the claimed identity.
 
 ## Visitor Universe
-
-Novice: representation is evidence about identity, not identity itself.
-
-Expert: modality, temporal reference, transformation, uncertainty, and cross-representation consistency.
+Novices need referent-versus-representation clarity. Experts need representation lineage, transformations, temporal validity, cross-representation consistency, and evidence quality. Machines need typed representation links, provenance, and identity references.
 
 ## Lifecycle
-
-Candidate seed → validation → Gate-J → Active Canonical.
+A representation may be created, captured, transformed, validated, published, superseded, archived, or withdrawn. These lifecycle events do not necessarily alter the underlying identity.
 
 ## Retrieval Anchors
-
-`IDENTITY REPRESENTATION`, `IDENTITY IMAGE`, `IDENTITY RECORD`, `IDENTITY PORTRAYAL`, `REFERENCE REPRESENTATION`
+identity representation, identity record, identity depiction, identity encoding, identity profile representation, identity evidence representation
