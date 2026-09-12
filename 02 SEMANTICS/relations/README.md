@@ -1,45 +1,28 @@
 # GIOP Canonical Relations
 
 ## Status
-
 **CANONICAL — SCOPED V3.1 RELATION BATCH**
 
 The `relations/` directory is the authoritative published GIOP semantic layer for reusable relation concepts admitted to the current V3.1 relation vocabulary.
 
 ## Purpose
+The governing question is: **What typed semantic connection may hold between eligible participants?**
 
-The governing question is:
-
-> **What typed semantic connection may hold between eligible participants?**
-
-A Relation is a reusable canonical semantic concept specifying a typed connection between eligible entities, concepts, activities, processes, representations, or other semantic elements.
-
-A Relation is not a class, property, quantity, value, state, status, condition, activity, process, representation, measurement result, or implementation claim.
+A Relation is a reusable canonical semantic concept specifying a typed connection between eligible entities, concepts, activities, processes, representations, or other semantic elements. A Relation is not itself a class, property, quantity, value, state, condition, activity, process, result, representation, or implementation claim.
 
 ## Canonical Relation Definition
-
 **Relation is a reusable canonical semantic concept specifying a typed connection between eligible semantic participants.**
 
-The Relation concept defines the kind of connection. A Relation assertion states that a particular connection holds between identified participants.
-
-The basic model is:
-
+The canonical model is:
 `RELATION CONCEPT → RELATION ASSERTION → OPTIONAL QUALIFICATION / CONTEXT`
 
-An asserted relation may support inference according to the canonical relation's logical characteristics:
-
-`ASSERTED RELATION → INFERENCE RULES → INFERRED RELATION`
-
-Canonical relation pages define semantic meaning and constraints; they do not store individual instance assertions.
+An asserted relation may support inference only according to the canonical relation's declared characteristics and boundaries.
 
 ## Authoring Standard
-
-`RELATION-AUTHORING-SPECIFICATION.md` defines the canonical content-authoring pattern for relation entries. It adapts the established GIOP semantic-entry pattern to the relation layer by adding domain/range, directionality, logical characteristics, qualification, inference boundary, and machine interpretation.
+`RELATION-AUTHORING-SPECIFICATION.md` defines the relation-specific canonical authoring pattern: identity, orientation, semantic contract, family, domain/range, direction, inverse, logical characteristics, qualification, distinctions, inference boundary, cross-layer significance, trust/evidence, machine interpretation, lifecycle, retrieval, and semantic boundary.
 
 ## Current Canonical Vocabulary
-
-The current V3.1 seed vocabulary is:
-
+The current conservative V3.1 seed is exactly:
 1. `part-of`
 2. `participates-in`
 3. `observes`
@@ -47,178 +30,57 @@ The current V3.1 seed vocabulary is:
 5. `derived-from`
 6. `has-result`
 
-`has-result` is admitted as the reusable output-link relation required to connect a result-producing activity or execution to a Result. Its admission does not imply that every activity produces a measurement result or that every output is a measurement result.
+`has-result` provides the reusable output link from an Activity/Execution to a Result. It does not imply that every activity has one result or that every result is a measurement result.
 
-This is the current canonical seed, not a claim that all recovered relation knowledge is exhausted by these six concepts.
+## Routed / Specialized Concepts
+`viewing-distance` (`SEM-RELATION-VIEWING-DISTANCE-001`) remains retained as a **ROUTED — SPECIALIZED RELATION CANDIDATE**. It is intentionally not part of the six-concept canonical seed because its primary responsibility is specialized spatial/viewing semantics and it requires reconciliation with the Spatial/Distance architecture.
 
-## Knowledge Retention
+This distinction is explicit:
+`CANONICAL SEED ≠ EXHAUSTIVE RELATION KNOWLEDGE`.
 
-GIOP does not discard relation knowledge merely because a relation is not currently canonical in `relations/`.
-
-Recovered relation knowledge must remain represented with semantic classification, epistemic status, evidence, conflicts or open questions, canonical decision, and destination. Knowledge may route to future or specialized semantic layers such as spatial, temporal, provenance, identity, causal, or associative semantics.
-
-Therefore:
-
-`VERIFIED ≠ CANONICAL`
-
-`NOT CANONICAL HERE ≠ NOT KNOWLEDGE`
-
-`DEFERRED ≠ DELETED`
-
-The semantic knowledge registry is a retention and audit layer, not a deletion queue and not a second canonical ontology.
+Routed, deferred, conflicted, or specialized knowledge is retained and remains discoverable; it is not deleted merely because it is outside the current seed.
 
 ## Relation Concept vs Assertion
-
-A canonical relation page describes a relation concept such as `part-of`.
-An assertion identifies participants and states that the relation holds, for example:
-
-`Lens-A part-of Camera-A`
-
-The assertion is instance-level knowledge and is outside the canonical relation concept page.
-
-The same relation concept may therefore occur in many assertions without creating a new relation concept for each occurrence.
+A canonical page defines a reusable relation concept. An instance assertion identifies subject, relation, and object and may carry assertion status, qualification, evidence, provenance, and inference status. Assertions do not belong in canonical relation concept pages.
 
 ## Directionality and Inverse
+Direction is semantically significant where applicable. An inverse is the reversed semantic direction and does not automatically require a separate canonical concept page.
 
-Direction is part of relation semantics where applicable. A directed relation distinguishes its subject/domain side from its object/range side.
-
-An inverse relation is the semantically reversed direction of a relation when an inverse is defined. An inverse term may be useful for retrieval or machine representation, but the existence of an inverse does not by itself require a separate canonical concept page.
-
-Examples:
-
-- `part-of` ↔ `has-part`
-- `participates-in` ↔ `has-participant`
-- `observes` ↔ `is-observed-by`
-- `represents` ↔ `is-represented-by`
-- `has-result` ↔ `is-result-of`
+Current inverse expressions include `has-part`, `has-participant`, `is-observed-by`, `is-represented-by`, reverse provenance traversal, and `is-result-of`.
 
 ## Domain and Range
+Each canonical relation declares eligible subject/domain and object/range positions. Examples do not establish domain/range, and domain/range do not imply that every eligible entity participates.
 
-Each relation page identifies the eligible semantic participant types for its subject/domain and object/range positions.
+## Logical Characteristics and Inference
+Logical characteristics such as symmetry, transitivity, reflexivity/irreflexivity, functionality, and inverse behaviour are semantic commitments, not decorative metadata. An unspecified characteristic is not silently treated as false. Validation constraints remain separate from ontology-level semantics.
 
-Domain and range are semantic applicability constraints. They are not implementation-only schema fields and must not be inferred solely from examples.
-
-A domain or range constraint does not imply that every eligible entity participates in the relation.
-
-## Logical Characteristics
-
-Where justified by relation semantics, canonical pages may specify characteristics such as:
-
-- reflexivity;
-- irreflexivity;
-- symmetry;
-- asymmetry;
-- transitivity;
-- non-transitivity;
-- inverse relationship;
-- functionality or other explicitly defined inference constraints.
-
-Logical characteristics are not decorative metadata. They affect valid inference and machine interpretation and therefore require evidence and semantic justification.
-
-A relation must not be declared transitive, symmetric, functional, or otherwise constrained merely because a source implementation happens to encode it that way.
-
-## Qualification and Context
-
-A relation may depend on qualification or context such as time, space, process stage, observation conditions, provenance, or measurement context.
-
-Context does not automatically change the underlying relation concept. Where qualification is essential to the meaning, the canonical page must state what qualification is required and what can or cannot be inferred without it.
-
-## Relation Families
-
-Recovered relation knowledge may belong to broader families, including:
-
-- structural / partitive;
-- component / system;
-- participation;
-- observation;
-- representation;
-- provenance / lineage;
-- result / output;
-- operational / usage;
-- dependency;
-- measurement;
-- spatial;
-- temporal;
-- causal / influence;
-- identity / equivalence;
-- associative / correspondence.
-
-Family membership is not automatically canonical admission. Specialized relation families may receive their primary canonical treatment in dedicated semantic folders when those folders are authored.
+## Qualification / Context
+Assertions may require time, space, configuration, process stage, observation conditions, measurement context, provenance, or other qualification. Qualification does not create a new relation unless the underlying semantic responsibility changes.
 
 ## Cross-Layer Boundary
-
-Relations connect semantic elements; they do not replace the concepts being connected.
-
-Examples:
-
+Relations connect semantic layers without absorbing their responsibilities. Examples:
 `Camera → CLASS`
-
 `Sensitivity → PROPERTY`
-
-`Focal Length → QUANTITY`
-
-`Calibration → ACTIVITY / PROCESS`
-
-`Calibration Status → STATE / STATUS`
-
+`Distance → QUANTITY`
+`Temperature Condition → CONDITION`
+`Calibration → ACTIVITY`
+`Result → RESULT`
 `Camera observes Scene → RELATION`
-
 `Representation represents Scene → RELATION`
-
 `Execution has-result Result → RELATION`
-
 `Artifact derived-from Source Artifact → RELATION`
 
-A relation may connect concepts from different semantic layers, but the relation itself remains a relationship concept.
+## Evidence / Trust
+External standards, formal ontologies, provenance models, scientific literature, and domain practice provide evidence and design reference. They do not automatically become GIOP authority. Provenance, evidence, authority, validation status, confidence, and historical status remain differentiated.
 
-## Evidence and Trust
-
-External standards, scientific literature, formal ontologies, provenance models, and domain practice provide evidence for relation semantics and logical characteristics.
-
-GIOP canonical relation pages are independent semantic syntheses. External RDF, OWL, OBO, SKOS, PROV-O, GeoSPARQL, Allen interval algebra, ISO terminology practices, or other formal systems are evidence and design references, not automatic GIOP authority.
-
-## Machine and AI Interpretation
-
-Machines must be able to distinguish at minimum:
-
-- relation concept;
-- relation assertion;
-- subject/domain;
-- object/range;
-- direction;
-- inverse;
-- logical characteristics;
-- qualification/context;
-- asserted vs inferred status;
-- provenance/evidence.
-
-A machine must not infer an assertion merely because two entities are both mentioned on the same page. Nor may it infer inverse, transitive, symmetric, causal, or temporal consequences unless the canonical relation explicitly permits that inference.
+## Machine / AI Interpretation
+Machines must distinguish relation concept, assertion, subject/domain, object/range, direction, inverse, logical characteristics, qualification, asserted/inferred status, and provenance/evidence. Mention or co-occurrence alone does not create a relation assertion.
 
 ## Visitor Universe
-
-The canonical relation concept remains one body of knowledge. Visitor Universes receive different entry depths into that same relation rather than separate relation definitions.
-
-- Orientation depth: plain semantic definition and purpose.
-- Technical depth: domain/range, direction, inverse, qualification, and distinctions.
-- Formal/machine depth: logical characteristics, inference boundaries, assertion status, provenance, and stable identifiers.
-
-No visitor-specific duplicate relation content is canonicalized.
+There are no visitor-specific duplicate relation definitions. Novice, expert, and machine-facing visitors receive different entry depths into the same canonical relation: orientation → semantic contract/boundaries → formal logic, inference, assertion, provenance, and machine interpretation.
 
 ## Lifecycle
-
-Canonical relation concepts use the GIOP lifecycle model and remain subject to evidence review, semantic revision, supersession, and preservation.
-
-A relation page may be `DRAFT`, `REVIEW`, `VALIDATED`, `ACTIVE`, `SUPERSEDED`, or `ARCHIVED` as applicable to the repository lifecycle policy. The current published seed pages are intended as canonical semantic content and carry explicit lifecycle metadata.
+Canonical concepts follow Candidate → Authored → Integrated → Validated → Approved → Active Canonical under the applicable promotion gate. Scoped promotion is not universal approval for future relation concepts. Routed candidates remain retained and may later be promoted, specialized, or redirected through explicit decision.
 
 ## Completion Rule
-
-The Relation folder is complete for a semantic pass only when:
-
-1. the relation authoring specification is established;
-2. the canonical index exists and is synchronized with admitted pages;
-3. every admitted seed relation has a complete canonical page;
-4. recovered non-seed relation knowledge is retained and categorized;
-5. deferred, specialized, conflicted, or routed relation knowledge remains discoverable with explicit decisions;
-6. no knowledge is silently discarded because it is not admitted to this folder.
-
-The six published relation pages constitute the current V3.1 canonical seed. The retained relation corpus is broader and continues through semantic routing.
+A Relation semantic pass is complete when the authoring specification is established, the canonical index is synchronized, every admitted seed relation has a complete page, routed/deferred relation knowledge remains discoverable, and no relation knowledge has been silently discarded. The current six-concept seed satisfies the canonical vocabulary scope; specialized/routed relation work remains explicitly separated.
