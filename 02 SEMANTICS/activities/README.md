@@ -2,15 +2,13 @@
 
 ## Status
 
-**SCOPED CANONICAL PILOT — PROVISIONAL ENTRIES**
+**ACTIVE CANONICAL — SCOPED ACTIVITY BATCH**
 
-This directory is the canonical semantic home for occurrence-level Activity concepts admitted to the current Activity authoring batch. The entries are provisional until the applicable validation and promotion gates are completed.
+This directory is the canonical semantic home for the occurrence-level Activity concepts admitted to the Activity batch. The batch has completed scoped semantic validation and promotion approval.
 
 ## Purpose
 
 The Activity layer represents what actually happens: an occurrence of doing, observing, measuring, acquiring, transforming, calibrating, or otherwise performing an operation.
-
-It is intentionally distinct from:
 
 ```text
 Procedure       = prescribed/specification-level way of doing
@@ -20,7 +18,7 @@ Result          = output of an occurrence
 Representation  = information-bearing form
 ```
 
-## Current Scoped Batch
+## Active Canonical Batch
 
 1. `activity.md` — Activity
 2. `execution.md` — Execution
@@ -29,6 +27,8 @@ Representation  = information-bearing form
 5. `acquisition.md` — Acquisition
 6. `processing.md` — Processing
 7. `calibration.md` — Calibration
+
+All seven entries are version `1.0.0` and have Active canonical status under the scoped Activity promotion decision.
 
 ## Semantic Model
 
@@ -74,11 +74,33 @@ Calibration ≠ Verification
 Calibration ≠ Maintenance
 ```
 
-## Relationship to Visitor Universe
+## Activity ↔ Process Boundary
+
+Activity is the occurrence layer: a concrete temporal happening or operation. Process is the broader transformation, development, progression, or organized temporal course. A Process may organize or contain multiple Activities; an Activity is not automatically a Process merely because it takes time.
+
+## Procedure ↔ Activity ↔ Result
+
+A Procedure describes how an operation is to be performed. An Activity records the occurrence. A Result is generated information/output. This separation is preserved throughout the batch. Activity-specific directional dependencies such as `specifies`, `uses`, and `produces` are explanatory unless separately admitted to canonical relation vocabulary.
+
+## Observation ↔ Measurement
+
+Observation is an information-obtaining activity with broader epistemic scope. Measurement is specifically concerned with experimentally obtaining quantity value(s). The Activity batch intentionally does not impose a universal subclass relation between them.
+
+## Acquisition ↔ Camera / Lens / Sensor
+
+Camera, Lens, and Sensor remain system/component entities. Acquisition is the actual information-capture occurrence. The established acquisition subsystem remains conceptually `Camera → Lens → Sensor`; Acquisition is the operational occurrence using or enabled by that subsystem, not another component in the hardware hierarchy.
+
+## Processing ↔ Algorithm / Software / Process
+
+Algorithm is a computational method; Software is an implementation artifact; Processing is the actual operation. A broader Process may include processing activities. Lexical similarity does not determine semantic placement.
+
+## Calibration Boundary
+
+Calibration is the metrological operation establishing a relationship between reference quantity values and measuring-system indications. Adjustment, Verification, and Maintenance remain distinct activity concepts and are not silently collapsed into Calibration.
+
+## Visitor Universe
 
 The Activity layer contains one canonical body of knowledge. Visitor Universe does not create audience-specific semantic entries or duplicate knowledge.
-
-Different visitors may enter the same entry at different depths:
 
 ```text
 Canonical Activity Knowledge
@@ -90,13 +112,11 @@ Entry / Traversal Depth
 Human or Machine Consumption
 ```
 
-Orientation supports novice access; semantic boundaries, technical depth, provenance, relations, validation, and retrieval anchors support professional and expert access. The underlying definition remains one canonical truth.
+Novice, professional, and expert visitors may receive different entry depth, orientation, navigation, and technical detail, but the underlying semantic identity, boundary, provenance, lifecycle, and canonical truth remain one.
 
-## Research Scope and Deferred Concepts
+## Deferred Concepts
 
-The current batch is deliberately limited to mature concepts supported by the completed Activity research pass.
-
-Validated but staged for later semantic work include:
+The following remain intentionally staged for separate semantic work:
 
 - Sampling
 - Assessment
@@ -104,24 +124,27 @@ Validated but staged for later semantic work include:
 - Verification
 - Adjustment
 - Actuation
+- Measurand
+- Sample
+- Measurement standards and specialized sampling semantics
 
-Future concepts such as Measurand, Sample, measurement standards, and specialized sampling semantics require their own semantic routing and must not be forced into this batch merely to increase folder completeness.
+Deferred concepts are not absent because they are unimportant; they require separate routing and boundary validation.
 
 ## Relation Policy
 
-The Activity entries may refer to canonical relations such as `part-of`, `participates-in`, `observes`, `represents`, `derived-from`, and `has-result` where those relation semantics apply.
-
-Activity-specific relations not yet admitted to the canonical relation vocabulary must remain conceptual candidates until independently resolved and promoted. No provisional Activity entry is an authority for silently creating a new relation concept.
+Canonical relations already admitted by GIOP may be used where their semantics apply, including `part-of`, `participates-in`, `observes`, `represents`, `derived-from`, and `has-result`. Activity entries do not silently create new relation authority. New relation concepts require independent semantic authoring, validation, and promotion.
 
 ## Provenance and Evidence
 
-The semantic synthesis for this batch is informed by W3C PROV/PROV-O, W3C SOSA/SSN, the International Vocabulary of Metrology (VIM), ISO process terminology, CIDOC CRM activity/measurement modelling, and the existing GIOP semantic architecture.
+The Activity batch is informed by W3C PROV/PROV-O, W3C SOSA/SSN, International Vocabulary of Metrology (VIM), ISO process terminology, CIDOC CRM activity/measurement modelling, and the existing GIOP semantic architecture. External sources are evidence for semantic analysis; GIOP Foundation controls govern canonical identity and lifecycle.
 
-External sources provide evidence for analysis; GIOP canonical identity and status remain governed by the Foundation controls.
+## Validation and Promotion
 
-## Lifecycle
+The batch was checked for identity, semantic responsibility, authoring structure, provenance/evidence, cross-layer boundaries, duplicate authority, lifecycle/versioning, trust metadata, and scoped Gate-J approval. The resulting state transition is:
 
-All entries in the current batch begin as `Provisional`. They require independent review, cross-layer validation, provenance/evidence verification, and scoped Gate-J promotion before becoming `Active` canonical content.
+`AUTHORED → INTEGRATED → VALIDATED → APPROVED → ACTIVE CANONICAL`
+
+Validation is scoped to this Activity batch and does not waive gates for future concepts.
 
 ## Retrieval Anchors
 
