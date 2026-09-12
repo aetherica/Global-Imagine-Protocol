@@ -6,8 +6,8 @@
 **Primary Responsibility:** Quantity  
 **Semantic Class:** Physical Quantity  
 **Domain:** General Physics / Optical Imaging  
-**Status:** Provisional  
-**Version:** 0.1.0  
+**Status:** Active  
+**Version:** 1.0.0  
 **Related IDs:** `SEM-CONDITION-TEMPERATURE-001`
 
 > Temperature is a physical quantity describing the thermodynamic state relevant to a defined physical system, region, or material; it must be distinguished from color temperature and correlated color temperature.
@@ -74,7 +74,7 @@ A technical temperature statement should identify the relevant physical system o
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active canonical semantic entry.
 
 ## Retrieval Anchors
 
