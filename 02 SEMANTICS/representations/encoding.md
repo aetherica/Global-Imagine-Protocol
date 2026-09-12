@@ -51,7 +51,7 @@ Character encodings such as UTF-8 and content codings such as gzip illustrate di
 
 ## Relations
 
-Relevant relations include `encoded-by`, `uses-encoding`, `derived-from`, and `applies-to`, using the authoritative GIOP relation vocabulary where available.
+Representation-related assertions must use the authoritative GIOP relation vocabulary. Existing canonical relations such as `derived-from`, `represents`, `part-of`, `participates-in`, and `has-result` may be used where semantically applicable. No new encoding-specific relation authority is introduced here.
 
 ## Trust and Validation
 
