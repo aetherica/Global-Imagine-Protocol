@@ -5,10 +5,10 @@
 **Semantic Class:** Model  
 **Primary Responsibility:** Observer Model  
 **Domain:** Observation / Imaging / Perception / Measurement  
-**Status:** Provisional  
-**Version:** 1.0.0  
+**Status:** Active  
+**Version:** 1.1.0  
 **Authority:** GIOP  
-**Provenance:** GIOP semantic synthesis from verified standards and research  
+**Provenance:** GIOP semantic synthesis from verified standards and research; V3.1 scoped promotion recorded by Observer Folder Closure Audit  
 **Related IDs:** `SEM-CLASS-OBSERVER-001`  
 
 ## 5W1H Orientation
@@ -499,7 +499,7 @@ Source statements, recovered knowledge, evidence, inference, implementation obse
 
 ## Lifecycle
 
-**Current state:** Provisional semantic entry.
+**Current state:** Active.
 
 Lifecycle follows the GIOP canonical vocabulary:
 
@@ -507,7 +507,7 @@ Lifecycle follows the GIOP canonical vocabulary:
 
 `PROVISIONAL` is permitted for controlled pilot artifacts before activation.
 
-Activation requires completion of the applicable GIOP validation and promotion gates.
+Activation was completed through the scoped V3.1 Observer promotion gate and recorded in `OBSERVER-FOLDER-CLOSURE-AUDIT.md`.
 
 ## Canonicalization Boundary
 
@@ -540,7 +540,7 @@ A material change in model semantics, task, assumptions, response behavior, or a
 
 ## Lifecycle and Change Notes
 
-This entry establishes the V3.1 semantic nucleus for Observer Model.
+This entry establishes the V3.1 semantic nucleus for Observer Model and is Active within the scoped Observer core closure.
 
 Specialized observer-model concepts remain subject to independent semantic validation and canonical promotion.
 
@@ -548,7 +548,7 @@ No visitor-specific semantic records are created by this entry. Visitor Universe
 
 ## Retrieval Anchors
 
-`OBSERVER MODEL`, `OBSERVER MODELING`, `MODEL OBSERVER`, `STANDARD OBSERVER`, `IDEAL OBSERVER`, `COMPUTATIONAL OBSERVER`, `HUMAN OBSERVER MODEL`, `INDIVIDUAL OBSERVER MODEL`, `POPULATION OBSERVER MODEL`, `COLORIMETRIC OBSERVER`, `OBSERVER RESPONSE`, `OBSERVER FUNCTION`, `RESPONSE FUNCTION`, `MODEL OBSERVER`, `MODEL RESPONSE`, `OBSERVATION MODEL`, `OBSERVER METAMERISM`, `CIE OBSERVER`
+`OBSERVER MODEL`, `OBSERVER MODELING`, `MODEL OBSERVER`, `STANDARD OBSERVER`, `IDEAL OBSERVER`, `COMPUTATIONAL OBSERVER`, `HUMAN OBSERVER MODEL`, `INDIVIDUAL OBSERVER MODEL`, `POPULATION OBSERVER MODEL`, `COLORIMETRIC OBSERVER`, `OBSERVER RESPONSE`, `OBSERVER FUNCTION`, `RESPONSE FUNCTION`, `MODEL RESPONSE`, `OBSERVATION MODEL`, `OBSERVER METAMERISM`, `CIE OBSERVER`
 
 ## Sources / Evidence Basis
 
