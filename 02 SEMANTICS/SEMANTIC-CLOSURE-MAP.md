@@ -1,6 +1,6 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE + CLASS-ROUTED MATERIAL DOMAIN COORDINATION  
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE + CLASS-ROUTED MATERIAL DOMAIN COORDINATION + COLOR CROSS-LAYER DOMAIN COORDINATION  
 **Branch:** `v3.1-tree-architecture`  
 **Purpose:** Repository-wide closure map for semantic layers and bounded domain/candidate extensions audited and completed in the current implementation wave.
 
@@ -33,7 +33,7 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 
 ## V3.1 domain-seed closure extensions
 
-These are completed implementation seeds for previously empty semantic folders. They are **candidate domains**, not automatically Active Canonical nuclei. Their internal implementation is closed for the stated phase; promotion remains subject to semantic validation and Gate-J.
+These are completed implementation seeds for bounded semantic folders. They are **candidate domains or coordination surfaces**, not automatically new canonical semantic layers. Their internal implementation is closed for the stated phase; promotion remains subject to semantic validation and Gate-J where promotion is applicable.
 
 | Domain folder | Seed scope | State | Closure treatment |
 |---|---|---|---|
@@ -43,6 +43,7 @@ These are completed implementation seeds for previously empty semantic folders. 
 | `garment/` | Garment, Garment Component, Garment Construction, Garment Pattern, Garment Size Designation, Garment Fit, Garment Fastening | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
 | `attachment/` | Attachment as physical/configurational relation pattern | Implementation-complete — candidate | Relation-routed candidate; no new canonical relation predicate; digital/file and psychological meanings excluded |
 | `material/` | Domain coordination around canonical Material Class responsibility | Implementation-complete — coordination | `SEM-CLASS-MATERIAL-001` remains the canonical owner; folder adds no `SEM-MATERIAL-*` identity |
+| `color/` | Color Semantic Domain / cross-layer routing authority | Implementation-complete — coordination | Coordinates colour senses and routing; no standalone Color layer, universal Color concept, or new relation predicate |
 
 ## Cross-layer canonical chains
 
@@ -92,6 +93,12 @@ The material node remains the existing Class authority. This chain does not crea
 
 Any act that establishes or changes the connection routes separately to Activity / Process / Workflow. No new relation predicate is implied by the chain.
 
+### Color cross-layer coordination
+
+`Colour-related claim → sense identification → responsible semantic layer/domain → qualified representation/result/meaning`
+
+Typical routing: `Stimulus / Surface / Object → Condition → Observation / Measurement → Perception or Result → Representation`, with physical coloration mechanisms routed to responsible material/physical domains and functional meanings routed to context/function. This chain is a coordination pattern, not a new ontology layer or relation namespace.
+
 ## Explicit non-collapses
 
 - Class ≠ Property ≠ Condition ≠ State ≠ Quantity ≠ Activity ≠ Process.
@@ -109,6 +116,8 @@ Any act that establishes or changes the connection routes separately to Activity
 - Biometric Reference ≠ Biometric Identity; Biometric Template ≠ generic Representation.
 - Attachment ≠ Part-of ≠ Activity ≠ Process ≠ State ≠ Representation.
 - Physical Attachment ≠ Psychological Attachment ≠ Digital/File Attachment.
+- Color ≠ Perception ≠ Property ≠ Quantity ≠ Quantity Value ≠ Measurement ≠ Result ≠ Representation ≠ Signal ≠ Meaning ≠ Mechanism ≠ Evidence.
+- Color Space ≠ Color; Color Encoding ≠ Color; False Color ≠ intrinsic object/surface colour.
 
 ## Candidate discipline
 
@@ -130,6 +139,10 @@ The `attachment/` folder is implementation-complete for a bounded Relation-route
 
 The `material/` folder is implementation-complete as a domain coordination and routing surface. `SEM-CLASS-MATERIAL-001` remains the single canonical Material identity. The folder does not create a second Material layer, promote material subtypes, or replace established Class, Property, Quantity, Activity, Process, Result, Representation, Textile, Garment, State, Condition, or Provenance responsibilities.
 
+## Color coordination decision
+
+The `color/` folder is implementation-complete as a **Color Semantic Domain / Cross-Layer Routing Authority**. `SEM-COLOR-DOMAIN-001` coordinates colour senses and retrieval without becoming a canonical semantic layer or universal Color concept. Perception, Property, Quantity, Measurement, Result, Representation, physical/material mechanism, signal/meaning, State, Evidence, and integrity responsibilities remain separately owned. No new relation predicate is admitted.
+
 ## Final decision
 
-The populated domain folders remain distinct from BIL. Model semantics are distinct from Representation and computational layers. Attachment remains distinct from Garment Fastening, Textile operations, Relation assertions, and Representation. Material remains owned by the canonical Class layer while its domain folder supplies coordination and boundary governance. No existing canonical layer has been redefined, and no new relation predicate has been admitted.
+The populated domain folders remain distinct from BIL. Model semantics are distinct from Representation and computational layers. Attachment remains distinct from Garment Fastening, Textile operations, Relation assertions, and Representation. Material remains owned by the canonical Class layer while its domain folder supplies coordination and boundary governance. Color remains a cross-layer coordination domain while existing semantic layers and physical domains retain authority over their respective colour-related targets. No existing canonical layer has been redefined, and no new relation predicate has been admitted.

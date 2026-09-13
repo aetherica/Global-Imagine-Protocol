@@ -1,13 +1,13 @@
 # GIOP V3.1 — Semantic Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE + CLASS-ROUTED MATERIAL DOMAIN COORDINATION  
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE + CLASS-ROUTED MATERIAL DOMAIN COORDINATION + COLOR CROSS-LAYER DOMAIN COORDINATION  
 **Branch:** `v3.1-tree-architecture`
 
 ## Governing model
 
 `Visitor Universe → different entry depth → same canonical knowledge`
 
-Visitor Universe changes orientation, entry depth and navigation. It does not create alternate semantic identities. Repository placement is organizational; semantic responsibility is authoritative.
+Visitor routing changes orientation, entry depth and navigation. It does not create alternate semantic identities. Repository placement is organizational; semantic responsibility is authoritative.
 
 ## Current integrated nuclei
 
@@ -28,6 +28,7 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 | Algorithm | Computational method | `computational-methods/algorithm.md` | Current nucleus closed |
 | Software | Computational implementation | `implementations/software.md` | Current nucleus closed |
 | Attachment Candidate | Physical/configurational connection pattern | `attachment/` | Candidate, routed to Relation; not canonical |
+| Color Semantic Domain | Cross-layer colour sense resolution and routing | `color/` | Implementation-complete coordination; not a canonical layer |
 
 ## Canonical / Candidate chains
 
@@ -69,6 +70,12 @@ The material node remains the existing Class authority. The chain does not creat
 
 This pattern is evaluated within Relation responsibility. The operation that establishes the connection routes to Activity/Process/Workflow; a recording of the connection routes to Representation; a garment-specific securing mechanism routes to Garment.
 
+### Color cross-layer routing
+
+`Colour claim → sense/target identification → responsible authority → qualified value/result/representation/context`
+
+Typical chains include `Stimulus / Surface / Object → Condition → Observation / Measurement → Perception or Result → Representation` and `Material / Structure / Illumination → coloration mechanism → stimulus`. Functional or normative colour meaning routes through Context/Function/Representation rather than intrinsic Color identity.
+
 ## Boundary decisions
 
 1. No important noun is promoted to Class merely because it is important.
@@ -88,6 +95,9 @@ This pattern is evaluated within Relation responsibility. The operation that est
 15. Model types such as machine-learning, causal, predictive, world, system, architecture, and digital-twin models remain independent candidate vocabulary and are not automatically separate canonical concepts.
 16. Attachment is a bounded candidate pattern within Relation responsibility, not a parallel relation layer.
 17. Physical attachment is not collapsed with psychological attachment or digital/file attachment.
+18. Color is a cross-layer coordination domain, not a parallel semantic layer.
+19. Color is not collapsed with Perception, Property, Quantity, Measurement, Result, Representation, Signal, Meaning, Mechanism, Evidence, State, or Integrity.
+20. False colour and encoded/displayed colour are not automatically intrinsic object/surface colour.
 
 ## Closure rule
 
