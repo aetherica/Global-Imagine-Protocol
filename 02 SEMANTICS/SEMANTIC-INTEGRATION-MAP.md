@@ -1,6 +1,6 @@
 # GIOP V3.1 — Semantic Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI  
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + PROVISIONAL MODEL CANDIDATE  
 **Branch:** `v3.1-tree-architecture`
 
 ## Governing model
@@ -19,14 +19,15 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 | State | Temporal/configurational mode | `states/state.md` | Generic nucleus active; specialized states deferred |
 | Activity | Temporal occurrence of doing/observing/measuring/acquiring/processing | `activities/` | Seven-concept scoped batch active canonical |
 | Relation | Typed semantic connection | `relations/` | Six-concept scoped seed active canonical; `viewing-distance` routed candidate |
-| Representation | Information-bearing form | `representations/` | Generic batch closed |
+| Representation | Information-bearing form | `representations/` | Generic nucleus + first advanced extension batch closed |
+| Model | Purpose-specific target-oriented abstraction or construct | `models/model.md` | Provisional candidate layer; specialized model vocabulary deferred |
 | Time | Temporal semantics | `temporal/time.md` | Current nucleus closed |
 | Result | Activity/execution-generated outcome entity | `results/result.md` | Current nucleus closed |
 | Measurement Procedure | Reusable procedure/workflow specification | `workflows/measurement-procedure.md` | Current nucleus closed |
 | Algorithm | Computational method | `computational-methods/algorithm.md` | Current nucleus closed |
 | Software | Computational implementation | `implementations/software.md` | Current nucleus closed |
 
-## Canonical chains
+## Canonical / Candidate chains
 
 ### Measurement
 
@@ -39,6 +40,12 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 ### Computational realization
 
 `Algorithm → Software Implementation → Execution / Processing → Result`
+
+### Model-oriented realization
+
+`Target / Phenomenon → Model → Algorithm / Activity / Process → Result / Representation`
+
+This is a coordination pattern rather than a new relation vocabulary. It does not imply that every model is computational or that every model has an algorithmic implementation.
 
 ### Temporal qualification
 
@@ -55,15 +62,17 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 3. Activity is distinct from Process; Procedure is distinct from Activity/Execution.
 4. Result is distinct from Representation and from Measurement Result.
 5. Algorithm is distinct from Software and actual Processing.
-6. Relation concept is distinct from relation assertion and validation constraint.
-7. `part-of` is distinct from `participates-in`.
-8. `derived-from` is lineage/provenance, not generic causality.
-9. `has-result` is a reusable output relation and does not globally impose measurement semantics or fixed cardinality.
-10. Time is temporal semantics, not merely a timestamp field.
-11. Viewing Distance remains a specialized relation candidate and is not silently promoted into the canonical relation seed.
+6. Model is distinct from Representation, Algorithm, Software, Activity, Process and Result.
+7. Relation concept is distinct from relation assertion and validation constraint.
+8. `part-of` is distinct from `participates-in`.
+9. `derived-from` is lineage/provenance, not generic causality.
+10. `has-result` is a reusable output relation and does not globally impose measurement semantics or fixed cardinality.
+11. Time is temporal semantics, not merely a timestamp field.
+12. Viewing Distance remains a specialized relation candidate and is not silently promoted into the canonical relation seed.
+13. Model types such as machine-learning, causal, predictive, world, system, architecture, and digital-twin models remain independent candidate vocabulary and are not automatically separate canonical concepts.
 
 ## Closure rule
 
-A layer is considered closed only for its stated nucleus when identity, semantic responsibility, boundaries, relation authority, Visitor Universe routing, retrieval, lifecycle and cross-layer integration have been checked. Controlled candidates and deferred concepts remain retained and require independent promotion.
+A layer is considered closed only for its stated nucleus or explicitly bounded candidate scope when identity, semantic responsibility, boundaries, relation authority, Visitor Universe routing, retrieval, lifecycle and cross-layer integration have been checked. Controlled candidates and deferred concepts remain retained and require independent promotion.
 
 The detailed closure state is recorded in `02 SEMANTICS/SEMANTIC-CLOSURE-MAP.md`.

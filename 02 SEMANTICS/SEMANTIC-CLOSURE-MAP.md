@@ -1,8 +1,8 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS  
-**Branch:** `v3.1-tree-architecture`  
-**Purpose:** Repository-wide closure map for semantic layers and domain seeds audited and completed in the current implementation wave.
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE
+**Branch:** `v3.1-tree-architecture`
+**Purpose:** Repository-wide closure map for semantic layers and bounded domain/candidate extensions audited and completed in the current implementation wave.
 
 ## Governing rule
 
@@ -22,7 +22,8 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 | Relations | part-of, participates-in, observes, represents, derived-from, has-result | Active canonical — scoped | Six-concept seed closed; viewing-distance routed candidate |
 | Quantities | Registered active nucleus in `QUANTITY-INDEX.md` | Active canonical | Current nucleus closed; candidate/deferred sets retained |
 | Processes | `SEM-PROCESS-GENERIC-001` — Process | Active canonical — scoped | Generic process closed; four specialized candidates deferred |
-| Representations | Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile | Active canonical | Generic batch closed |
+| Representations | Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile, Belief, Object-Centric, and first advanced extension batch | Active canonical | Generic core + first advanced extension batch closed |
+| Models | `SEM-MODEL-GENERIC-001` — Model | Provisional candidate layer | Generic candidate fully authored and bounded; specialized model vocabulary deferred; Active promotion not granted |
 | Temporal | `SEM-TEMPORAL-TIME-001` — Time | Active canonical | Current temporal nucleus closed |
 | Results | `SEM-RESULT-GENERIC-001` — Result | Active canonical | Current result nucleus closed |
 | Workflows | `SEM-WORKFLOW-MEASUREMENT-PROCEDURE-001` — Measurement Procedure | Active canonical | Current procedure nucleus closed |
@@ -31,7 +32,7 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 
 ## V3.1 domain-seed closure extensions
 
-These are completed implementation seeds for previously empty semantic folders. They are **candidate domains**, not automatically Active Canonical nuclei. Their internal implementation is closed for this phase; promotion remains subject to semantic validation and Gate-J.
+These are completed implementation seeds for previously empty semantic folders. They are **candidate domains**, not automatically Active Canonical nuclei. Their internal implementation is closed for the stated phase; promotion remains subject to semantic validation and Gate-J.
 
 | Domain folder | Seed scope | State | Closure treatment |
 |---|---|---|---|
@@ -53,6 +54,12 @@ These are completed implementation seeds for previously empty semantic folders. 
 ### Computational realization
 
 `Algorithm → Software Implementation → Execution / Processing → Result`
+
+### Model-mediated realization
+
+`Target / Phenomenon → Model → Algorithm / Activity / Process → Result / Representation`
+
+This is a semantic coordination pattern, not a new relation namespace. A model may be non-computational and does not require an algorithm or software implementation.
 
 ### Temporal qualification
 
@@ -80,6 +87,7 @@ For biometric applications:
 - Quantity ≠ Quantity Value ≠ Unit ≠ Measurement.
 - Time ≠ timestamp value ≠ duration quantity.
 - Display ≠ Representation.
+- Model ≠ Representation ≠ Algorithm ≠ Software ≠ Activity ≠ Process ≠ Result.
 - Identity ≠ Identifier ≠ Identity Representation ≠ Biometrics ≠ BIL integrity.
 - Textile ≠ Material ontology; Garment ≠ Textile; Fabric ≠ Garment.
 - Biometric Reference ≠ Biometric Identity; Biometric Template ≠ generic Representation.
@@ -92,8 +100,10 @@ Closure means the present implementation is internally integrated. It does not p
 
 `.gitkeep` files in semantic folders are repository placeholders only. Their presence is not used as a completeness test. Folder closure is determined by semantic identity, governance, validation, index integrity, lifecycle state, and cross-layer consistency.
 
+## Model candidate decision
+
+The `models/` folder is implementation-complete for one generic provisional candidate responsibility. It is not Active Canonical. AI model, machine-learning model, causal model, predictive model, world model, system model, architecture model, and digital-twin model remain controlled vocabulary requiring independent promotion review.
+
 ## Final decision
 
-The four newly populated domain folders are **not** treated as a relocation of BIL. Their domain concepts were extracted and re-scoped from the research surface, while BIL remains the integrity-evaluation framework that consumes identity, biometric, textile, garment, representation, property, state, relation, and observation evidence as applicable.
-
-Future expansion proceeds by candidate-level validation and explicit promotion rather than folder-name inference.
+The populated domain folders remain distinct from BIL. Model semantics are likewise distinct: BIL may evaluate integrity of model-associated information or configurations but does not own Model. No existing canonical layer has been redefined, and no new relation predicate has been admitted.
