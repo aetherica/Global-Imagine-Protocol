@@ -1,6 +1,6 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE  
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE + CLASS-ROUTED MATERIAL DOMAIN COORDINATION  
 **Branch:** `v3.1-tree-architecture`  
 **Purpose:** Repository-wide closure map for semantic layers and bounded domain/candidate extensions audited and completed in the current implementation wave.
 
@@ -24,6 +24,7 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 | Processes | `SEM-PROCESS-GENERIC-001` — Process | Active canonical — scoped | Generic process closed; four specialized candidates deferred |
 | Representations | Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile, Belief, Object-Centric, and first advanced extension batch | Active canonical | Generic core + first advanced extension batch closed |
 | Models | `SEM-MODEL-GENERIC-001` — Model | Provisional candidate layer | Generic candidate fully authored and bounded; specialized model vocabulary deferred; Active promotion not granted |
+| Material | `SEM-CLASS-MATERIAL-001` — Material | Active canonical Class | `material/` provides domain coordination and routing only; no parallel Material semantic layer |
 | Temporal | `SEM-TEMPORAL-TIME-001` — Time | Active canonical | Current temporal nucleus closed |
 | Results | `SEM-RESULT-GENERIC-001` — Result | Active canonical | Current result nucleus closed |
 | Workflows | `SEM-WORKFLOW-MEASUREMENT-PROCEDURE-001` — Measurement Procedure | Active canonical | Current procedure nucleus closed |
@@ -41,6 +42,7 @@ These are completed implementation seeds for previously empty semantic folders. 
 | `textile/` | Textile, Textile Fibre, Yarn, Fabric, Textile Structure, Textile Finish | Implementation-complete — candidate | Textile/material/garment boundaries established; structure and finish now have explicit seed entries |
 | `garment/` | Garment, Garment Component, Garment Construction, Garment Pattern, Garment Size Designation, Garment Fit, Garment Fastening | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
 | `attachment/` | Attachment as physical/configurational relation pattern | Implementation-complete — candidate | Relation-routed candidate; no new canonical relation predicate; digital/file and psychological meanings excluded |
+| `material/` | Domain coordination around canonical Material Class responsibility | Implementation-complete — coordination | `SEM-CLASS-MATERIAL-001` remains the canonical owner; folder adds no `SEM-MATERIAL-*` identity |
 
 ## Cross-layer canonical chains
 
@@ -78,6 +80,12 @@ For biometric applications:
 
 `Textile Fibre → Yarn → Fabric / Textile Structure → Garment Component → Garment → Fit / Use Context`
 
+### Material coordination
+
+`Material Class identity → Property / Quantity / Measurement → Result / Representation`
+
+The material node remains the existing Class authority. This chain does not create a Material semantic layer or a new relation predicate.
+
 ### Attachment candidate routing
 
 `Bearer A → Relation-layer Attachment Candidate → Bearer B`
@@ -95,6 +103,7 @@ Any act that establishes or changes the connection routes separately to Activity
 - Time ≠ timestamp value ≠ duration quantity.
 - Display ≠ Representation.
 - Model ≠ Representation ≠ Algorithm ≠ Software ≠ Activity ≠ Process ≠ Result.
+- Material ≠ Property ≠ Quantity ≠ Measurement Result ≠ Object ≠ Surface ≠ Textile ≠ Garment ≠ Representation.
 - Identity ≠ Identifier ≠ Identity Representation ≠ Biometrics ≠ BIL integrity.
 - Textile ≠ Material ontology; Garment ≠ Textile; Fabric ≠ Garment.
 - Biometric Reference ≠ Biometric Identity; Biometric Template ≠ generic Representation.
@@ -117,6 +126,10 @@ The `models/` folder is implementation-complete for one generic provisional cand
 
 The `attachment/` folder is implementation-complete for a bounded Relation-routed candidate. `SEM-ATTACHMENT-CANDIDATE-001` remains **CANDIDATE — NOT CANONICAL**. The candidate captures a reusable physical/configurational connection pattern for research and controlled routing but does not introduce a new canonical relation predicate or semantic layer.
 
+## Material coordination decision
+
+The `material/` folder is implementation-complete as a domain coordination and routing surface. `SEM-CLASS-MATERIAL-001` remains the single canonical Material identity. The folder does not create a second Material layer, promote material subtypes, or replace established Class, Property, Quantity, Activity, Process, Result, Representation, Textile, Garment, State, Condition, or Provenance responsibilities.
+
 ## Final decision
 
-The populated domain folders remain distinct from BIL. Model semantics are likewise distinct: BIL may evaluate integrity of model-associated information or configurations but does not own Model. Attachment remains distinct from Garment Fastening, Textile operations, Relation assertions, and Representation. No existing canonical layer has been redefined, and no new relation predicate has been admitted.
+The populated domain folders remain distinct from BIL. Model semantics are distinct from Representation and computational layers. Attachment remains distinct from Garment Fastening, Textile operations, Relation assertions, and Representation. Material remains owned by the canonical Class layer while its domain folder supplies coordination and boundary governance. No existing canonical layer has been redefined, and no new relation predicate has been admitted.
