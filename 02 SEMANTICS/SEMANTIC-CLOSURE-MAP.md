@@ -1,7 +1,7 @@
 # GIOP V3.1 — Semantic Closure and Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE
-**Branch:** `v3.1-tree-architecture`
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + DOMAIN SEED EXTENSIONS + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE  
+**Branch:** `v3.1-tree-architecture`  
 **Purpose:** Repository-wide closure map for semantic layers and bounded domain/candidate extensions audited and completed in the current implementation wave.
 
 ## Governing rule
@@ -19,7 +19,7 @@ Visitor routing never creates alternate semantic identities. Repository placemen
 | Properties | Existing canonical property corpus | Active | Property boundary preserved |
 | States | `SEM-STATE-GENERIC-001` — State | Active | Specialized states remain controlled candidates |
 | Activities | Activity, Execution, Observation, Measurement, Acquisition, Processing, Calibration | Active canonical — scoped | Seven-concept batch closed |
-| Relations | part-of, participates-in, observes, represents, derived-from, has-result | Active canonical — scoped | Six-concept seed closed; viewing-distance routed candidate |
+| Relations | part-of, participates-in, observes, represents, derived-from, has-result | Active canonical — scoped | Six-concept seed closed; viewing-distance and attachment remain controlled candidates |
 | Quantities | Registered active nucleus in `QUANTITY-INDEX.md` | Active canonical | Current nucleus closed; candidate/deferred sets retained |
 | Processes | `SEM-PROCESS-GENERIC-001` — Process | Active canonical — scoped | Generic process closed; four specialized candidates deferred |
 | Representations | Representation, Display, Format, Encoding, Serialization, Media Type, Compression, Packaging, Profile, Belief, Object-Centric, and first advanced extension batch | Active canonical | Generic core + first advanced extension batch closed |
@@ -40,6 +40,7 @@ These are completed implementation seeds for previously empty semantic folders. 
 | `biometrics/` | Biometric Characteristic, Biometric Reference, Biometric Template; modality/sample/verification/identification retained as controlled candidates | Implementation-complete — candidate | Biometric ownership established; operational tasks route to Activity/Process/Workflow |
 | `textile/` | Textile, Textile Fibre, Yarn, Fabric, Textile Structure, Textile Finish | Implementation-complete — candidate | Textile/material/garment boundaries established; structure and finish now have explicit seed entries |
 | `garment/` | Garment, Garment Component, Garment Construction, Garment Pattern, Garment Size Designation, Garment Fit, Garment Fastening | Implementation-complete — candidate | Assembled wearable-article boundary established; textile/body/representation/process boundaries explicit |
+| `attachment/` | Attachment as physical/configurational relation pattern | Implementation-complete — candidate | Relation-routed candidate; no new canonical relation predicate; digital/file and psychological meanings excluded |
 
 ## Cross-layer canonical chains
 
@@ -77,6 +78,12 @@ For biometric applications:
 
 `Textile Fibre → Yarn → Fabric / Textile Structure → Garment Component → Garment → Fit / Use Context`
 
+### Attachment candidate routing
+
+`Bearer A → Relation-layer Attachment Candidate → Bearer B`
+
+Any act that establishes or changes the connection routes separately to Activity / Process / Workflow. No new relation predicate is implied by the chain.
+
 ## Explicit non-collapses
 
 - Class ≠ Property ≠ Condition ≠ State ≠ Quantity ≠ Activity ≠ Process.
@@ -91,6 +98,8 @@ For biometric applications:
 - Identity ≠ Identifier ≠ Identity Representation ≠ Biometrics ≠ BIL integrity.
 - Textile ≠ Material ontology; Garment ≠ Textile; Fabric ≠ Garment.
 - Biometric Reference ≠ Biometric Identity; Biometric Template ≠ generic Representation.
+- Attachment ≠ Part-of ≠ Activity ≠ Process ≠ State ≠ Representation.
+- Physical Attachment ≠ Psychological Attachment ≠ Digital/File Attachment.
 
 ## Candidate discipline
 
@@ -104,6 +113,10 @@ Closure means the present implementation is internally integrated. It does not p
 
 The `models/` folder is implementation-complete for one generic provisional candidate responsibility. It is not Active Canonical. AI model, machine-learning model, causal model, predictive model, world model, system model, architecture model, and digital-twin model remain controlled vocabulary requiring independent promotion review.
 
+## Attachment candidate decision
+
+The `attachment/` folder is implementation-complete for a bounded Relation-routed candidate. `SEM-ATTACHMENT-CANDIDATE-001` remains **CANDIDATE — NOT CANONICAL**. The candidate captures a reusable physical/configurational connection pattern for research and controlled routing but does not introduce a new canonical relation predicate or semantic layer.
+
 ## Final decision
 
-The populated domain folders remain distinct from BIL. Model semantics are likewise distinct: BIL may evaluate integrity of model-associated information or configurations but does not own Model. No existing canonical layer has been redefined, and no new relation predicate has been admitted.
+The populated domain folders remain distinct from BIL. Model semantics are likewise distinct: BIL may evaluate integrity of model-associated information or configurations but does not own Model. Attachment remains distinct from Garment Fastening, Textile operations, Relation assertions, and Representation. No existing canonical layer has been redefined, and no new relation predicate has been admitted.

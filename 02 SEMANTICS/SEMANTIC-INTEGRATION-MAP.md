@@ -1,6 +1,6 @@
 # GIOP V3.1 — Semantic Integration Map
 
-**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + PROVISIONAL MODEL CANDIDATE  
+**Status:** CLOSED FOR CURRENT V3.1 SEMANTIC NUCLEI + PROVISIONAL MODEL CANDIDATE + RELATION-ROUTED ATTACHMENT CANDIDATE  
 **Branch:** `v3.1-tree-architecture`
 
 ## Governing model
@@ -18,7 +18,7 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 | Process | Processual transformation/organization | `processes/process.md` | Generic nucleus closed; specialized candidates deferred |
 | State | Temporal/configurational mode | `states/state.md` | Generic nucleus active; specialized states deferred |
 | Activity | Temporal occurrence of doing/observing/measuring/acquiring/processing | `activities/` | Seven-concept scoped batch active canonical |
-| Relation | Typed semantic connection | `relations/` | Six-concept scoped seed active canonical; `viewing-distance` routed candidate |
+| Relation | Typed semantic connection | `relations/` | Six-concept scoped seed active canonical; `viewing-distance` and attachment remain controlled candidates |
 | Representation | Information-bearing form | `representations/` | Generic nucleus + first advanced extension batch closed |
 | Model | Purpose-specific target-oriented abstraction or construct | `models/model.md` | Provisional candidate layer; specialized model vocabulary deferred |
 | Time | Temporal semantics | `temporal/time.md` | Current nucleus closed |
@@ -26,6 +26,7 @@ Visitor Universe changes orientation, entry depth and navigation. It does not cr
 | Measurement Procedure | Reusable procedure/workflow specification | `workflows/measurement-procedure.md` | Current nucleus closed |
 | Algorithm | Computational method | `computational-methods/algorithm.md` | Current nucleus closed |
 | Software | Computational implementation | `implementations/software.md` | Current nucleus closed |
+| Attachment Candidate | Physical/configurational connection pattern | `attachment/` | Candidate, routed to Relation; not canonical |
 
 ## Canonical / Candidate chains
 
@@ -55,6 +56,12 @@ This is a coordination pattern rather than a new relation vocabulary. It does no
 
 `Reference A → Viewing Distance → Reference B`, with a Distance quantity/value used as qualification where applicable.
 
+### Attachment candidate routing
+
+`Bearer A → Attachment candidate pattern → Bearer B`
+
+This pattern is evaluated within Relation responsibility. The operation that establishes the connection routes to Activity/Process/Workflow; a recording of the connection routes to Representation; a garment-specific securing mechanism routes to Garment.
+
 ## Boundary decisions
 
 1. No important noun is promoted to Class merely because it is important.
@@ -70,6 +77,8 @@ This is a coordination pattern rather than a new relation vocabulary. It does no
 11. Time is temporal semantics, not merely a timestamp field.
 12. Viewing Distance remains a specialized relation candidate and is not silently promoted into the canonical relation seed.
 13. Model types such as machine-learning, causal, predictive, world, system, architecture, and digital-twin models remain independent candidate vocabulary and are not automatically separate canonical concepts.
+14. Attachment is a bounded candidate pattern within Relation responsibility, not a parallel relation layer.
+15. Physical attachment is not collapsed with psychological attachment or digital/file attachment.
 
 ## Closure rule
 
