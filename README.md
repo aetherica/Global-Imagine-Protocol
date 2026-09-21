@@ -322,11 +322,13 @@ Enterprise licensing provides integration, support and institutional services.
 
 The licensing architecture will be maintained as an explicit project policy so that the rights associated with knowledge, data, software, certified artifacts, certification marks and services can be defined deliberately rather than assumed to be identical.
 
-## Contact
+## Contact & Project Identity
 
-For project enquiries, collaboration, contributions, architectural discussions, licensing questions, or professional use:
+**Project Entity:** Aetherica / Aetherica Inc.
 
-**aetherica.inc@gmail.com**
+**Primary Project Email:** **aetherica.inc@gmail.com**
+
+This email is the primary public contact associated with the Aetherica project identity for project enquiries, collaboration, contributions, architectural discussions, licensing questions, professional use, and related communications.
 
 ## License
 
