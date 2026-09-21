@@ -45,9 +45,13 @@ to screen.
   GIOP-Ready certification mark for camera manufacturers and
   streamers.
 
-## Contact
+## Contact & Project Identity
 
-Email: **aetherica.inc@gmail.com**
+**Project Entity:** Aetherica / Aetherica Inc.
+
+**Primary Project Email:** **aetherica.inc@gmail.com**
+
+This email is the primary public contact associated with the Aetherica project identity for project enquiries, collaboration, contributions, licensing, and related communications.
 
 ## License
 
