@@ -326,9 +326,13 @@ The licensing architecture will be maintained as an explicit project policy so t
 
 **Project Entity:** Aetherica / Aetherica Inc.
 
-**Primary Project Email:** **aetherica.inc@gmail.com**
+**Entity / Project Email:** **aetherica.inc@gmail.com**
 
-This email is the primary public contact associated with the Aetherica project identity for project enquiries, collaboration, contributions, architectural discussions, licensing questions, professional use, and related communications.
+**Existing Personal Project Email:** **anahita.arhania@gmail.com**
+
+**Existing Personal Project Email:** **zzaa.wann@gmail.com**
+
+These three email addresses are publicly associated with the project context: the first is the Aetherica entity / project contact, while the latter two are existing personal project-contact addresses associated with the project owner and ongoing project work.
 
 ## License
 
